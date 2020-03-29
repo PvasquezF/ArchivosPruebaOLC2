@@ -421,7 +421,7 @@ calcularNota = (est) => {
         .notaFinal = 0;
     }
 
-    if(.notaFinal > 100){
+    while(.notaFinal > 100){
         .notaFinal = trunk((.notaFinal / 2.0))+trunk(.mailSize/3.0);
     }
 
@@ -449,7 +449,7 @@ bubblesort = function(v) {
         hasChanged = TRUE
       }
     }
-    if ( !hasChanged ){break};
+    if ( !hasChanged ){break}
   }
   return(v)
 }

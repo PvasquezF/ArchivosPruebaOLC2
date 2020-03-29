@@ -472,7 +472,7 @@ agregarNotas = () => {
 agregarNotas();
 
 
-barplot(top10Notas, "Nota", "Estudiante", "Top 10 mejores notas", top10Nombres);
+barplot(top10Notas, "Estudiante", "Nota", "Top 10 mejores notas", top10Nombres);
 
 iterador = 1
 while(iterador <= length(todos)){ # HAHA

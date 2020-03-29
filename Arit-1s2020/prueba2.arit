@@ -30,7 +30,7 @@ i = c(b,FALSE,FALSE,FALSE,FALSE,TRUE) | (c < (a * -2 > c(a)+c((a+c)))) | falSe
 j = e[27] == c("A") ? 0 : -1;
 k = e[27] + e[27];
 
-if(!i | c(f[27] != k,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE) | c((j * c(-1)) == c(1),FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE){
+if(!i | c(f[27] != k,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE) | c((j * c(-1)) == c(1),FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE)){
     puntos = trunk(puntos - trunk(c[10]) - (c[7]+c[3]));
     print("TEST 2 - FAIL")
 }else{

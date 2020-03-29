@@ -423,8 +423,8 @@ calcularNota = (est) => {
         .notaFinal = 0;
     }
 
-    if(.notaFinal > 100){
-        .notaFinal = trunk((.notaFinal / 2))+trunk(.mailSize/3);
+    while(.notaFinal > 100){
+        .notaFinal = trunk((.notaFinal / 2.0))+trunk(.mailSize/3.0);
     }
 
     return(.notaFinal);

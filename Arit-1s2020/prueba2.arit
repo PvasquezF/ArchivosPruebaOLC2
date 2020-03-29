@@ -397,6 +397,7 @@ agregarNotas = () => {
 
 calcularNota = (est) => {
     .cui = est[2]
+    .carnet = est[3]
     .seccion = est[4]
     .name = est[5]
     .mail = est[6]
@@ -418,7 +419,7 @@ calcularNota = (est) => {
         .notaFinal = .notaFinal + 1;
     }
 
-    if(.name == '201503712'){
+    if(.carnet == '201503712'){
         .notaFinal = 0;
     }
 

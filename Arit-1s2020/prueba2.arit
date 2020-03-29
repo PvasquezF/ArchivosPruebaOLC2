@@ -50,7 +50,7 @@ if(typeof(puntos) != "integer"){
 l = e;
 l[90] = "expandiendo EL VECTOR";
 
-if(l[89] != "NULL"){
+if(l[89] != NULL){
     puntos = puntos - 3;
     print("TEST 4 - FAIL")
 }else{

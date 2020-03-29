@@ -381,18 +381,45 @@ pie(c(length(seccionA), length(seccionBMas), length(seccionBMenos), length(secci
 
 todos = c(seccionBMenos, seccionBMas, seccionC, seccionA);
 
-agregarNotas();
-
-agregarNotas = () => {
-    for(estudiante in todos){
-        nota = calcularNota(estudiante);
-        if(nota > top10Notas[10]){
-            top10Notas[1] = nota;
-            top10Nombres[1] = estudiante[5];
-            top10Notas = bubblesort(top10Notas);
+getVectorRango = function(inicio, fin){
+    if(fin > inicio){
+        salida = inicio;
+        inicio = inicio + 1;
+        while(inicio <= fin){
+            salida = c(salida, inicio);
+            inicio = inicio + 1;
         }
-        estudiante[7] = nota;
+        return(salida)
+    }else if(fin == inicio){
+        return(inicio);
     }
+    return(0);
+} 
+
+bubblesort = function(v) {
+  itemCount = length(v)
+  while(TRUE) {
+    hasChanged = FALSE
+    itemCount = itemCount - 1
+    if(itemCount == 0){
+        break;
+    }
+    range = getVectorRango(1, itemCount)
+    for(i in range) {
+      if ( v[i] > v[i+1] ) {
+        t = v[i]
+        v[i] = v[i+1]
+        v[i+1] = t
+
+        tt = top10Nombres[i]
+        top10Nombres[i] = top10Nombres[i+1]
+        top10Nombres[i+1] = tt
+        hasChanged = TRUE
+      }
+    }
+    if ( !hasChanged ){break};
+  }
+  return(v)
 }
 
 calcularNota = (est) => {
@@ -430,46 +457,20 @@ calcularNota = (est) => {
     return(.notaFinal);
 }
 
-bubblesort = function(v) {
-  itemCount = length(v)
-  while(TRUE) {
-    hasChanged = FALSE
-    itemCount = itemCount - 1
-    if(itemCount == 0){
-        break;
+agregarNotas = () => {
+    for(estudiante in todos){
+        nota = calcularNota(estudiante);
+        if(nota > top10Notas[10]){
+            top10Notas[1] = nota;
+            top10Nombres[1] = estudiante[5];
+            top10Notas = bubblesort(top10Notas);
+        }
+        estudiante[7] = nota;
     }
-    range = getVectorRango(1, itemCount)
-    for(i in range) {
-      if ( v[i] > v[i+1] ) {
-        t = v[i]
-        v[i] = v[i+1]
-        v[i+1] = t
-
-        tt = top10Nombres[i]
-        top10Nombres[i] = top10Nombres[i+1]
-        top10Nombres[i+1] = tt
-        hasChanged = TRUE
-      }
-    }
-    if ( !hasChanged ){break};
-  }
-  return(v)
 }
 
-getVectorRango = function(inicio, fin){
-    if(fin > inicio){
-        salida = inicio;
-        inicio = inicio + 1;
-        while(inicio <= fin){
-            salida = c(salida, inicio);
-            inicio = inicio + 1;
-        }
-        return(salida)
-    }else if(fin == inicio){
-        return(inicio);
-    }
-    return(0);
-} 
+agregarNotas();
+
 
 barplot(top10Notas, "Nota", "Estudiante", "Top 10 mejores notas", top10Nombres);
 

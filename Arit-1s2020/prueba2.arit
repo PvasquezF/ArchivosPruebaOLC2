@@ -451,7 +451,7 @@ bubblesort = function(v) {
         hasChanged = TRUE
       }
     }
-    if ( !hasChanged ){break};
+    if ( !hasChanged ){break}
   }
   return(v)
 }

@@ -1128,3 +1128,16 @@ print("C"+seccionC[3])
 
 print("J# IS COMING <3")
 print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-FIN-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+
+print("##############-SALIDA ESPERADA-#######################################################################")
+#*
+>>---------------------------------- EVALUANDO VECTORES --------------------------------------------------
+>>TEST 1 - EZ
+>>Error Semántico: Multiplicacion de tipos no permitida: 11(STRING) * 2(INTEGER) en Expresion en la línea: 21 y columna: 9
+>>TEST 2 - EZ
+>>ya me aburri
+>>TEST 3 - PASS
+>>TEST 4 - PASS
+>>TEST 5 - PASS
+>>PUNTEO EN EVALUACION SIMPLE DE VECTORES: 100
+*#

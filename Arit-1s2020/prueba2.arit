@@ -419,7 +419,7 @@ calcularNota = (est) => {
         .notaFinal = .notaFinal + 1;
     }
 
-    if(.carnet == '201503712'){
+    if(.carnet == "201503712"){
         .notaFinal = 0;
     }
 

@@ -126,7 +126,6 @@ SALIDA ESPERADA
 > ------------------------------------------------------------------
 > IMPRIMIENDO ESTA LISTA CON CIERTO MENSAJE
 > ------------------------------------------------------------------
-> "201503611", "P", "Pavel", "Vasquez", "B-", "0"
 > "201610673", "Y", "Yaiza", "Pineda", "B-", "100"
 > "201612272", "A", "Andres", "Carvajal", "B+", "100"
 > "201408486", "S", "Sharolin", "Lacunza", "A", "100"
@@ -146,7 +145,6 @@ SALIDA ESPERADA
 > LISTADO DE ESTUDIANTES DE LA SECCIÓN B-
 > ******************************************************************
 >  
-> "1", "789012", "201503611", "B-", "Pavel Alexander Vasquez Flores", "alexanderpavelv32@gmail.com"  
 > "1", "789012", "200310165", "B-", "José Abraham Navarro De León", "joseabrahamnavarro@gmail.com"  
 > "2", "789012", "200313243", "B-", "Randy Mauricio Orozco Reyes", "mauricioor@hotmail.com"  
 > "3", "789012", "200511819", "B-", "Pablo Gerardo García Perusina", "200511819@ingenieria.usac.edu.gt"  

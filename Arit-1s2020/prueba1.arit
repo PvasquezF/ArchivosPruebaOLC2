@@ -1,0 +1,212 @@
+# OLC2
+# PROYECTO 1
+# Archivo de prueba sencillo, puede contener errores :(
+
+getVectorEstudiante = function(carnet, inicial, nombre, apellido, seccion, nota) {
+    return(c(carnet, inicial, nombre, apellido, seccion, nota));
+}
+
+initList = function(est){
+    return(list(est)); 
+}
+
+addNode = function(list, est) {
+    list = c(list, list(est));
+    return(list)
+}
+
+printList = function(list){
+    counter = 0;
+    for(i in list){
+        if(counter == 0){
+            counter = counter + 1;
+        } else{
+            print(i)
+        }
+    }
+}
+
+listaGlobal = initList(getVectorEstudiante("201503611", "P", "Pavel", "Vasquez", "B-", 0));
+
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201610673", "Y","Yaiza", "Pineda", "B-", 100));
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201612272", "A","Andres", "Carvajal", "B+",100));
+
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201408486", "S","Sharolin", "Lacunza", "A",100));
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201612139", "A","Alejandra", "De Leon", "B-",97));
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201603029", "L","Luis", "Aguilar", "C",100));
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201602420", "I","Ingrid", "Perez", "B+",100));
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201602744", "O","Omar", "Enriquez", "B+",100));
+
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201700314", "C","Carlos", "Estrada", "B+",100));
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201503712", "O","Oscar", "Cuellar", "C", 54));
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201213177", "M","Marvin", "Calderon", "B-", 60));
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201403767", "P","Pablo", "Ramirez", "B-",100));
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201504002", "I","Inti", "Samayoa", "B+",100));
+
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("200412765", "E","Enrique", "Archer", "A",100));
+listaGlobal = addNode(listaGlobal, getVectorEstudiante("201503953", "Z","Zergio", "Leal", "B-", -1));
+print("------------------------------------------------------------------")
+print("IMPRIMIENDO ESTA LISTA CON CIERTO MENSAJE");
+print("------------------------------------------------------------------")
+printList(listaGlobal);
+print("------------------------------------------------------------------")
+
+
+
+print("******************************************************************");
+print("LISTADO DE ESTUDIANTES DE LA SECCIÓN B-")
+print("******************************************************************");
+seccionBMenos = initList(getVectorEstudiante(1, 789012, 201503611, "B-", "Pavel Alexander Vasquez Flores", "alexanderpavelv32@gmail.com"));
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(1,  789012, 200310165, "B-", "José Abraham Navarro De León", "joseabrahamnavarro@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(2,  789012, 200313243, "B-", "Randy Mauricio Orozco Reyes", "mauricioor@hotmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(3,  789012, 200511819, "B-", "Pablo Gerardo García Perusina", "200511819@ingenieria.usac.edu.gt"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(4,  789012, 200915147, "B-", "Rene Adrian Ramos Guzman", "xdrixnrxmos@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(5,  789012, 201010425, "B-", "Andrés Ricardo Ismael Guzmán", "a.ricardoguzman@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(6,  789012, 201020331, "B-", "Cristian Alexander Azurdia Ajú", "1983964490101@ingenieria.usac.edu.gt"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(7,  789012, 201020831, "B-", "Marco Antonio Fidencio Chávez Fuentes", "catalantt@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(8,  789012, 201020917, "B-", "Luis Carlos Mendez Rodas", "luiiscmr@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(9,  789012, 201021245, "B-", "Erin Leonel Flores", "erikfl.01@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(10, 789012, 201113875, "B-", "Peter Alexander Samuels", "Franco	peterinho14@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(11, 789012, 201114573, "B-", "Diego Javier Tejeda Wannam", "diegotejeda93@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(12, 789012, 201212945, "B-", "Elmer Edgardo Alay Yupe", "alayelmer1993@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(13, 789012, 201213059, "B-", "Kevin Ariel Cruz Ortiz", "kevincoma555@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(14, 789012, 201213123, "B-", "Kevin Madriel Juarez Cetino", "kevinm.3316@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(15, 789012, 201213177, "B-", "Marvin José Calderón García", "marvin93.0@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(16, 789012, 201313713, "B-", "Daniel Alejandro Herrera Hernández", "usac.daniel@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(17, 789012, 201313889, "B-", "Hilbert Josué Perucho Ramírez", "hilbert.perucho@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(18, 789012, 201313997, "B-", "Luis Noe Martinez Rivera", "luis56009@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(19, 789012, 201314059, "B-", "Salvador de Jesus López Bautista", "lobje17@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(20, 789012, 201314177, "B-", "Roberto Eduardo Caseros Reynoso", "robert.caseros@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(21, 789012, 201314241, "B-", "Andrea Lissette Flores Aguilar", "andreaflores2501@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(22, 789012, 201314571, "B-", "Wilson Yuviny Guerra Díaz", "yuvinygd@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(23, 789012, 201314697, "B-", "Katherine Mishelle Serrano del Cid", "michikatrins@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(24, 789012, 201325559, "B-", "Luis Alfonso Mencos Salazar", "lams0211@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(25, 789012, 201325657, "B-", "Selvin Estuardo Icu Son", "estuardo.icu@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(26, 789012, 201403767, "B-", "Pablo David Ramirez Fernandez", "pabloramirez.11294@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(27, 789012, 201403793, "B-", "Kevin Nicolas Garcia Martinez", "kg49954@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(28, 789012, 201403819, "B-", "Yoselin Annelice Lemus López", "annelice119@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(29, 789012, 201403841, "B-", "Huriel Uvaldo Gómez Gómez", "hurieluv2g2d93@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(30, 789012, 201403997, "B-", "Gary Stephen Giron Molina", "gsteph393@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(31, 789012, 201404215, "B-", "Jorge Luis Salazar Peralta", "jorsala01@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(32, 789012, 201404387, "B-", "Kevin Eduardo Estrada Martínez", "pex089@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(33, 789012, 201404423, "B-", "Jairo Pablo Hernandez Guzman", "Jairophg.lalala2014@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(34, 789012, 201408489, "B-", "Paul Steve Contreras Herrera", "stevcont96@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(35, 789012, 201408549, "B-", "Elba María Alvarez Domínguez", "elba1995@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(36, 789012, 201408603, "B-", "Berny Andree Cardona Ramos", "andreecr96@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(37, 789012, 201442819, "B-", "Jerson Eduardo Villatoro Nova", "jerduar.usac@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(38, 789012, 201503577, "B-", "Henry Francisco León Hernández", "henriscoh1995@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(39, 789012, 201503595, "B-", "Claudia Paola Casiano Sipac", "p.casiano33@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(40, 789012, 201503793, "B-", "Diana Maribel Jimenez Alonzo", "dianajimalon@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(41, 789012, 201503893, "B-", "Brandon Javier Soto Castañeda", "sotobrandon198@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(42, 789012, 201503911, "B-", "Juan Pablo Osuna De Leon", "juanpabloosuna1997@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(43, 789012, 201503925, "B-", "Sergio Geovany Guoz Tubac", "sergioguoz1@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(44, 789012, 201503935, "B-", "Douglas Daniel Aguilar Cuque", "ddaguilar017@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(45, 789012, 201503953, "B-", "Sergio Geovany Leal Cardona", "sgleal97@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(46, 789012, 201504231, "B-", "Jose Carlos Bautista Mazariegos", "jcbautista95@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(47, 789012, 201504427, "B-", "Carlos Eduardo Cordón Hernández", "carlos.edu.cordon@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(48, 789012, 201504475, "B-", "Luis Felipe González Orellana", "luisfe.go.03@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(49, 789012, 201602421, "B-", "Diego Alejandro Vásquez", "totodiego1897@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(50, 789012, 201602517, "B-", "Marvin Saúl Guzmán García", "marvin_saul@hotmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(51, 789012, 201602909, "B-", "Edward Danilo Gómez Hernández", "edgomher95@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(52, 789012, 201612113, "B-", "Raul Alexander Xiloj Lopez", "raulxiloj98@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(53, 789012, 201612139, "B-", "Jeralmy Alejandra De León Samayoa", "jeralmy0598@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(54, 789012, 201612383, "B-", "Javier Antonio Alvarez Gonzalez", "javier3448.ja@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(55, 789012, 201612419, "B-", "Edvin Miguel Castro Ajiatas", "emca9610@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(56, 789012, 201700327, "B-", "Marco Antonio López Grajeda", "juniorlograjeda@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(57, 789012, 201700345, "B-", "Luis Gerardo Chay Grijalva", "gerardo15.chay97@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(58, 789012, 201700465, "B-", "Max Leonel Florian Curtidor", "maxgt734@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(59, 789012, 201700473, "B-", "Javier Alejandro Golon Lopez", "javiagl98@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(60, 789012, 201700727, "B-", "Alberto Kanec Ixchop Ordoñez", "albertokanecixchop@gmail.com"))
+seccionBMenos = addNode(seccionBMenos, getVectorEstudiante(61, 789012, 201700801, "B-", "Erwin Alejandro Garcia Barrera", "alejandro76.gb@gmail.com"))
+printList(seccionBMenos)
+print("******************************************************************");
+
+#*
+SALIDA ESPERADA
+> ------------------------------------------------------------------
+> IMPRIMIENDO ESTA LISTA CON CIERTO MENSAJE
+> ------------------------------------------------------------------
+> "201503611", "P", "Pavel", "Vasquez", "B-", "0"
+> "201610673", "Y", "Yaiza", "Pineda", "B-", "100"
+> "201612272", "A", "Andres", "Carvajal", "B+", "100"
+> "201408486", "S", "Sharolin", "Lacunza", "A", "100"
+> "201612139", "A", "Alejandra", "De Leon", "B-", "97"
+> "201603029", "L", "Luis", "Aguilar", "C", "100"
+> "201602420", "I", "Ingrid", "Perez", "B+", "100"
+> "201602744", "O", "Omar", "Enriquez", "B+", "100"
+> "201700314", "C", "Carlos", "Estrada", "B+", "100"
+> "201503712", "O", "Oscar", "Cuellar", "C", "54"
+> "201213177", "M", "Marvin", "Calderon", "B-", "60"
+> "201403767", "P", "Pablo", "Ramirez", "B-", "100"
+> "201504002", "I", "Inti", "Samayoa", "B+", "100"
+> "200412765", "E", "Enrique", "Archer", "A", "100"
+> "201503953", "Z", "Zergio", "Leal", "B-", "-1"
+> ------------------------------------------------------------------
+> ******************************************************************
+> LISTADO DE ESTUDIANTES DE LA SECCIÓN B-
+> ******************************************************************
+>  
+> "1", "789012", "201503611", "B-", "Pavel Alexander Vasquez Flores", "alexanderpavelv32@gmail.com"  
+> "1", "789012", "200310165", "B-", "José Abraham Navarro De León", "joseabrahamnavarro@gmail.com"  
+> "2", "789012", "200313243", "B-", "Randy Mauricio Orozco Reyes", "mauricioor@hotmail.com"  
+> "3", "789012", "200511819", "B-", "Pablo Gerardo García Perusina", "200511819@ingenieria.usac.edu.gt"  
+> "4", "789012", "200915147", "B-", "Rene Adrian Ramos Guzman", "xdrixnrxmos@gmail.com"  
+> "5", "789012", "201010425", "B-", "Andrés Ricardo Ismael Guzmán", "a.ricardoguzman@gmail.com"  
+> "6", "789012", "201020331", "B-", "Cristian Alexander Azurdia Ajú", "1983964490101@ingenieria.usac.edu.gt"  
+> "7", "789012", "201020831", "B-", "Marco Antonio Fidencio Chávez Fuentes", "catalantt@gmail.com"  
+> "8", "789012", "201020917", "B-", "Luis Carlos Mendez Rodas", "luiiscmr@gmail.com"  
+> "9", "789012", "201021245", "B-", "Erin Leonel Flores", "erikfl.01@gmail.com"  
+> "10", "789012", "201113875", "B-", "Peter Alexander Samuels", "Franco	peterinho14@gmail.com"  
+> "11", "789012", "201114573", "B-", "Diego Javier Tejeda Wannam", "diegotejeda93@gmail.com"  
+> "12", "789012", "201212945", "B-", "Elmer Edgardo Alay Yupe", "alayelmer1993@gmail.com"  
+> "13", "789012", "201213059", "B-", "Kevin Ariel Cruz Ortiz", "kevincoma555@gmail.com"  
+> "14", "789012", "201213123", "B-", "Kevin Madriel Juarez Cetino", "kevinm.3316@gmail.com"  
+> "15", "789012", "201213177", "B-", "Marvin José Calderón García", "marvin93.0@gmail.com"  
+> "16", "789012", "201313713", "B-", "Daniel Alejandro Herrera Hernández", "usac.daniel@gmail.com"  
+> "17", "789012", "201313889", "B-", "Hilbert Josué Perucho Ramírez", "hilbert.perucho@gmail.com"  
+> "18", "789012", "201313997", "B-", "Luis Noe Martinez Rivera", "luis56009@gmail.com"  
+> "19", "789012", "201314059", "B-", "Salvador de Jesus López Bautista", "lobje17@gmail.com"  
+> "20", "789012", "201314177", "B-", "Roberto Eduardo Caseros Reynoso", "robert.caseros@gmail.com"  
+> "21", "789012", "201314241", "B-", "Andrea Lissette Flores Aguilar", "andreaflores2501@gmail.com"  
+> "22", "789012", "201314571", "B-", "Wilson Yuviny Guerra Díaz", "yuvinygd@gmail.com"  
+> "23", "789012", "201314697", "B-", "Katherine Mishelle Serrano del Cid", "michikatrins@gmail.com"  
+> "24", "789012", "201325559", "B-", "Luis Alfonso Mencos Salazar", "lams0211@gmail.com"  
+> "25", "789012", "201325657", "B-", "Selvin Estuardo Icu Son", "estuardo.icu@gmail.com"  
+> "26", "789012", "201403767", "B-", "Pablo David Ramirez Fernandez", "pabloramirez.11294@gmail.com"  
+> "27", "789012", "201403793", "B-", "Kevin Nicolas Garcia Martinez", "kg49954@gmail.com"  
+> "28", "789012", "201403819", "B-", "Yoselin Annelice Lemus López", "annelice119@gmail.com"  
+> "29", "789012", "201403841", "B-", "Huriel Uvaldo Gómez Gómez", "hurieluv2g2d93@gmail.com"  
+> "30", "789012", "201403997", "B-", "Gary Stephen Giron Molina", "gsteph393@gmail.com"  
+> "31", "789012", "201404215", "B-", "Jorge Luis Salazar Peralta", "jorsala01@gmail.com"  
+> "32", "789012", "201404387", "B-", "Kevin Eduardo Estrada Martínez", "pex089@gmail.com"  
+> "33", "789012", "201404423", "B-", "Jairo Pablo Hernandez Guzman", "Jairophg.lalala2014@gmail.com"  
+> "34", "789012", "201408489", "B-", "Paul Steve Contreras Herrera", "stevcont96@gmail.com"  
+> "35", "789012", "201408549", "B-", "Elba María Alvarez Domínguez", "elba1995@gmail.com"  
+> "36", "789012", "201408603", "B-", "Berny Andree Cardona Ramos", "andreecr96@gmail.com"  
+> "37", "789012", "201442819", "B-", "Jerson Eduardo Villatoro Nova", "jerduar.usac@gmail.com"  
+> "38", "789012", "201503577", "B-", "Henry Francisco León Hernández", "henriscoh1995@gmail.com"  
+> "39", "789012", "201503595", "B-", "Claudia Paola Casiano Sipac", "p.casiano33@gmail.com"  
+> "40", "789012", "201503793", "B-", "Diana Maribel Jimenez Alonzo", "dianajimalon@gmail.com"  
+> "41", "789012", "201503893", "B-", "Brandon Javier Soto Castañeda", "sotobrandon198@gmail.com"  
+> "42", "789012", "201503911", "B-", "Juan Pablo Osuna De Leon", "juanpabloosuna1997@gmail.com"  
+> "43", "789012", "201503925", "B-", "Sergio Geovany Guoz Tubac", "sergioguoz1@gmail.com"  
+> "44", "789012", "201503935", "B-", "Douglas Daniel Aguilar Cuque", "ddaguilar017@gmail.com"  
+> "45", "789012", "201503953", "B-", "Sergio Geovany Leal Cardona", "sgleal97@gmail.com"  
+> "46", "789012", "201504231", "B-", "Jose Carlos Bautista Mazariegos", "jcbautista95@gmail.com"  
+> "47", "789012", "201504427", "B-", "Carlos Eduardo Cordón Hernández", "carlos.edu.cordon@gmail.com"  
+> "48", "789012", "201504475", "B-", "Luis Felipe González Orellana", "luisfe.go.03@gmail.com"  
+> "49", "789012", "201602421", "B-", "Diego Alejandro Vásquez", "totodiego1897@gmail.com"  
+> "50", "789012", "201602517", "B-", "Marvin Saúl Guzmán García", "marvin_saul@hotmail.com"  
+> "51", "789012", "201602909", "B-", "Edward Danilo Gómez Hernández", "edgomher95@gmail.com"  
+> "52", "789012", "201612113", "B-", "Raul Alexander Xiloj Lopez", "raulxiloj98@gmail.com"  
+> "53", "789012", "201612139", "B-", "Jeralmy Alejandra De León Samayoa", "jeralmy0598@gmail.com"  
+> "54", "789012", "201612383", "B-", "Javier Antonio Alvarez Gonzalez", "javier3448.ja@gmail.com"  
+> "55", "789012", "201612419", "B-", "Edvin Miguel Castro Ajiatas", "emca9610@gmail.com"  
+> "56", "789012", "201700327", "B-", "Marco Antonio López Grajeda", "juniorlograjeda@gmail.com"  
+> "57", "789012", "201700345", "B-", "Luis Gerardo Chay Grijalva", "gerardo15.chay97@gmail.com"  
+> "58", "789012", "201700465", "B-", "Max Leonel Florian Curtidor", "maxgt734@gmail.com"  
+> "59", "789012", "201700473", "B-", "Javier Alejandro Golon Lopez", "javiagl98@gmail.com"  
+> "60", "789012", "201700727", "B-", "Alberto Kanec Ixchop Ordoñez", "albertokanecixchop@gmail.com"  
+> "61", "789012", "201700801", "B-", "Erwin Alejandro Garcia Barrera", "alejandro76.gb@gmail.com" 
+> ******************************************************************
+*#

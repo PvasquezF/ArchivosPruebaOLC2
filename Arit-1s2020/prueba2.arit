@@ -26,11 +26,11 @@ if(c(vectorSize) != c(36)){
 f = e + e;
 g = f * 2 # Se detecta el error, pero debe continuar ejecutando
 h = c(e, e)
-i = c(b,FALSE,FALSE,FALSE,FALSE,TRUE) | (c < (a * -2 > c(a)+c((a+c)))) | falSe
+i = c(b,FALSE,FALSE,FALSE,FALSE,TRUE) | ((a * -2 > c(a)+c((a+c)))) | falSe
 j = e[27] == c("A") ? 0 : -1;
 k = e[27] + e[27];
 
-if(!i | c(f[27] != k,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE) | c((j * c(-1)) == c(1),FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE){
+if(!i | c(f[27]) != c(k,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE) | c((j * c(-1))) == c(1,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE)){
     puntos = trunk(puntos - trunk(c[10]) - (c[7]+c[3]));
     print("TEST 2 - FAIL")
 }else{
@@ -50,7 +50,7 @@ if(typeof(puntos) != "integer"){
 l = e;
 l[90] = "expandiendo EL VECTOR";
 
-if(l[90] != "NULL"){
+if(l[89] != "NULL"){
     puntos = puntos - 3;
     print("TEST 4 - FAIL")
 }else{
@@ -59,14 +59,14 @@ if(l[90] != "NULL"){
 
 counter = 1
 for(ii in l){
-    if(counter > 36){
-        ii = counter % 3
+    if(counter < 36){
+        ii = counter %% 3
     }
     else if(counter == 89){
         counter = counter - 1;
         break;
     }
-    counter = counter + c(1) + 1 - 1 - c(c(c(c(c(c(c(C(C(c(C(C(c(c(1))))))))))))))
+    counter = counter + c(1) + 1 - 1 - c(c(c(c(c(c(c(c(c(c(c(c(c(c(1)))))))))))))) + 1
 }
 
 if(counter != 88){

@@ -1156,7 +1156,7 @@ print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-FIN-@@@@@@@@@@@@@@
 #*##############-SALIDA ESPERADA-#######################################################################
 >>---------------------------------- EVALUANDO VECTORES --------------------------------------------------
 >>TEST 1 - EZ
->>Error Semántico: Multiplicacion de tipos no permitida: 11(STRING) * 2(INTEGER) en Expresion en la línea: 21 y columna: 9
+>>Error Semántico: Multiplicacion de tipos no permitida: 11(STRING) * 2(INTEGER) en Expresion en la línea: 27 y columna: 5
 >>TEST 2 - EZ
 >>ya me aburri
 >>TEST 3 - PASS
@@ -1667,7 +1667,7 @@ print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-FIN-@@@@@@@@@@@@@@
 >>   Voy a ganar Compiladores 2 :D   
 >>======================================
 >>========= Error Ambitos ==============
->>Error Semántico: La variable amb1 no esixte en este ámbito. en Expresion en la línea: 70 y columna: 36
+>>Error Semántico: La variable amb1 no esixte en este ámbito. en Expresion en la línea: 612 y columna: 36.
 >>======================================
 >>================ Nice ================
 >>   Sin error: Desde ambito2   

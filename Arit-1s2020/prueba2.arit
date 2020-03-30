@@ -493,7 +493,8 @@ vectorPrueba[199] = "hola"
 print(vectorPrueba)
 
 print("---------------------------------- EVALUANDO ESTRUCTURAS: MATRICES ----------------------------------------")
-mattrizPRueba = matrix(c(2,3,4,5,90,12,5,565,6,565,8,0,34,1,3,4,5,0), 29,9);
+
+mattrizPRueba = matrix(c(2,3,4,5,9,12,5,5,6,6,8,0,4,1,3,4,5,0), 29,9);
 mattrizPRueba = mattrizPRueba ^ mattrizPRueba * mattrizPRueba - mattrizPRueba + 2 * mattrizPRueba;
 for(mm in mattrizPRueba){
     print(mm)
@@ -1140,14 +1141,14 @@ main();
 print("---------------------------------- FIN EVALUACION RECURSIVAS --------------------------------------------------")
 
 print("alumnos random que va ganar compi")
-print(" A :")
-print(seccionA[[48]])
-print(" B- :")
-print(seccionBMenos[[13]])
-print(" B+ :")
-print(seccionBMas[[29]])
-print(" C :")
-print(seccionC[[3]])
+print("seccion A");
+print(seccionA[48])
+print("seccion B-");
+print(seccionBMenos[13])
+print("seccion B+");
+print(seccionBMas[29])
+print("seccion C");
+print(seccionC[3])
 
 
 print("J# IS COMING <3")
@@ -1837,3 +1838,4 @@ resultados>
 >>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-FIN-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 *#
 #201314164
+#201701048

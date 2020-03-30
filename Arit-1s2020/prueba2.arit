@@ -1125,10 +1125,14 @@ main();
 
 
 print("alumnos random que va ganar compi")
-print("A"+seccionA[48])
-print("B-"+seccionBMenos[13])
-print("B+"+seccionBMas[29])
-print("C"+seccionC[3])
+print("seccion A");
+print(seccionA[48])
+print("seccion B-");
+print(seccionBMenos[13])
+print("seccion B+");
+print(seccionBMas[29])
+print("seccion C");
+print(seccionC[3])
 
 
 print("J# IS COMING <3")
@@ -1164,3 +1168,4 @@ print("##############-SALIDA ESPERADA-##########################################
 >>
 *#
 #201314164
+#201701048

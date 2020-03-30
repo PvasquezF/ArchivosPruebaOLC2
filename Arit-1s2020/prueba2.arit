@@ -485,9 +485,14 @@ print("")
 print("")
 print("")
 
+print("---------------------------------- EVALUANDO ESTRUCTURAS --------------------------------------------------")
+
+print("---------------------------------- EVALUANDO ESTRUCTURAS: VECTORES ----------------------------------------")
 vectorPrueba = 3;
 vectorPrueba[199] = "hola"
 print(vectorPrueba)
+
+print("---------------------------------- EVALUANDO ESTRUCTURAS: MATRICES ----------------------------------------")
 
 mattrizPRueba = matrix(c(2,3,4,5,9,12,5,5,6,6,8,0,4,1,3,4,5,0), 29,9);
 mattrizPRueba = mattrizPRueba ^ mattrizPRueba * mattrizPRueba - mattrizPRueba + 2 * mattrizPRueba;
@@ -506,6 +511,7 @@ print(mattrizPRueba)
 mattrizPRueba = mattrizPRueba + "J#"
 print(mattrizPRueba)
 
+print("---------------------------------- EVALUANDO ESTRUCTURAS: ARREGLOS -----------------------------------------")
 arregloPruebaVector = array(c(true,false), c(4,4,4,4))
 print(arregloPruebaVector)
 arregloPruebaVector[1][1][1][3] = 12
@@ -525,6 +531,16 @@ arregloPruebaLista[4][2][4][1] = 839.4093
 print(arregloPruebaLista)
 arregloPruebaLista[2][3][1][1] = list(c("J#","<3"))
 print(arregloPruebaLista)
+
+print("---------------------------------- FIN EVALUACION ESTRUCTURAS --------------------------------------------------")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+
+print("---------------------------------- EVALUANDO ARCHIVO DE ALBA --------------------------------------------------")
 # Archivo de alba :D
 var1 = 1;
 punteo = 0;
@@ -982,7 +998,7 @@ Inicio();
 }
 
 # fin
-
+print("---------------------------------- EVALUANDO RECURSIVAS --------------------------------------------------")
 # recursivas
 
 factorial = function(n) {
@@ -1122,7 +1138,7 @@ main();
 # FIN DE FUNCIONES
 
 # fin recursivaas
-
+print("---------------------------------- FIN EVALUACION RECURSIVAS --------------------------------------------------")
 
 print("alumnos random que va ganar compi")
 print("seccion A");
@@ -1138,11 +1154,10 @@ print(seccionC[3])
 print("J# IS COMING <3")
 print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-FIN-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
 
-print("##############-SALIDA ESPERADA-#######################################################################")
-#*
+#*##############-SALIDA ESPERADA-#######################################################################
 >>---------------------------------- EVALUANDO VECTORES --------------------------------------------------
 >>TEST 1 - EZ
->>Error Semántico: Multiplicacion de tipos no permitida: 11(STRING) * 2(INTEGER) en Expresion en la línea: 21 y columna: 9
+>>Error Semántico: Multiplicacion de tipos no permitida: 11(STRING) * 2(INTEGER) en Expresion en la línea: 27 y columna: 5
 >>TEST 2 - EZ
 >>ya me aburri
 >>TEST 3 - PASS
@@ -1165,7 +1180,662 @@ print("##############-SALIDA ESPERADA-##########################################
 >>
 >>
 >>
+>>---------------------------------- EVALUANDO ESTRUCTURAS --------------------------------------------------
+>>---------------------------------- EVALUANDO ESTRUCTURAS: VECTORES ----------------------------------------
+(DEPENDE DE COMO LO TRABAJARON)
+>>  3   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   hola  
+>>---------------------------------- EVALUANDO ESTRUCTURAS: MATRICES ----------------------------------------
+(TIENE QUE SALIR EL SIGUIENTE GRUPO ~14.5 VECES)
+>>10.0
+>>84.0
+>>1028.0
+>>15630.0
+>>3.48678441E9
+>>1.06993205379084E14
+>>15630.0
+>>15630.0
+>>279942.0
+>>279942.0
+>>1.34217736E8
+>>0.0
+>>1028.0
+>>2.0
+>>84.0
+>>1028.0
+>>15630.0
+>>0.0
+(HASTA ACA)
+>>   84.0   ,   1028.0   ,   1.06993205379084E14   ,   15630.0   ,   279942.0   ,   1028.0   ,   2.0   ,   15630.0   ,   0.0   
+>>   1028.0   ,   15630.0   ,   0.0   ,   10.0   ,   84.0   ,   1028.0   ,   15630.0   ,   3.48678441E9   ,   1.06993205379084E14   ,   15630.0   ,   15630.0   ,   279942.0   ,   279942.0   ,   1.34217736E8   ,   0.0   ,   1028.0   ,   2.0   ,   84.0   ,   1028.0   ,   15630.0   ,   0.0   ,   10.0   ,   84.0   ,   1028.0   ,   15630.0   ,   3.48678441E9   ,   1.06993205379084E14   ,   15630.0   ,   15630.0   
+>>   1028.0   
+>>   279942.0     
+>>                  [[ 1 ]]                     [[ 2 ]]                     [[ 3 ]]                     [[ 4 ]]                     [[ 5 ]]                     [[ 6 ]]                     [[ 7 ]]                     [[ 8 ]]                     [[ 9 ]]
+       [[ 1 ]]      11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1    
+       [[ 2 ]]      85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1    
+       [[ 3 ]]      1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1    
+       [[ 4 ]]      15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1    
+       [[ 5 ]]      3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1    
+       [[ 6 ]]      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1    
+       [[ 7 ]]      15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9    
+       [[ 8 ]]      15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14    
+       [[ 9 ]]      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1    
+       [[ 10 ]]     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1    
+       [[ 11 ]]     1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1    
+       [[ 12 ]]     1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1    
+       [[ 13 ]]     1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8    
+       [[ 14 ]]     3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1    
+       [[ 15 ]]     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1    
+       [[ 16 ]]     1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1    
+       [[ 17 ]]     15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1    
+       [[ 18 ]]     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1    
+       [[ 19 ]]     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1    
+       [[ 20 ]]     85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1    
+       [[ 21 ]]     1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1    
+       [[ 22 ]]     15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1    
+       [[ 23 ]]     3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1    
+       [[ 24 ]]     1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1    
+       [[ 25 ]]     15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9    
+       [[ 26 ]]     15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14    
+       [[ 27 ]]     279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1    
+       [[ 28 ]]     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1    
+       [[ 29 ]]     1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1 
+
+>>                  [[ 1 ]]                       [[ 2 ]]                       [[ 3 ]]                       [[ 4 ]]                       [[ 5 ]]                       [[ 6 ]]                       [[ 7 ]]                       [[ 8 ]]                       [[ 9 ]]
+       [[ 1 ]]      11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#    
+       [[ 2 ]]      85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#    
+       [[ 3 ]]      1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#    
+       [[ 4 ]]      15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#    
+       [[ 5 ]]      3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#    
+       [[ 6 ]]      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#    
+       [[ 7 ]]      15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#    
+       [[ 8 ]]      15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#    
+       [[ 9 ]]      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#    
+       [[ 10 ]]     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#    
+       [[ 11 ]]     1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#    
+       [[ 12 ]]     1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#    
+       [[ 13 ]]     1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#    
+       [[ 14 ]]     3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#    
+       [[ 15 ]]     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#    
+       [[ 16 ]]     1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#    
+       [[ 17 ]]     15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#    
+       [[ 18 ]]     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#    
+       [[ 19 ]]     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#    
+       [[ 20 ]]     85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#    
+       [[ 21 ]]     1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#    
+       [[ 22 ]]     15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#    
+       [[ 23 ]]     3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#    
+       [[ 24 ]]     1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#    
+       [[ 25 ]]     15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#    
+       [[ 26 ]]     15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#    
+       [[ 27 ]]     279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#    
+       [[ 28 ]]     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#    
+       [[ 29 ]]     1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J# 
+>>---------------------------------- EVALUANDO ESTRUCTURAS: ARREGLOS ----------------------------------------
+>>[[ , ,1 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,2 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,3 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,4 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,1 ,2]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,2 ,2]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,3 ,2]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,4 ,2]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,1 ,3]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,2 ,3]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,3 ,3]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,4 ,3]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,1 ,4]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,2 ,4]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,3 ,4]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,4 ,4]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,1 ,3]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         12                true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false    
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,4 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             839.4093          false             false  
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,1 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             J#                false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false   
+
+(IMPRIME EL MISMO ARREGLO PERO CON TODO DENTRO DE LISTAS)
+>>[[ , ,1 ,1]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   J#   ]        List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,2 ,1]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,3 ,1]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   12   ]        List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,4 ,1]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,1 ,2]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,2 ,2]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,3 ,2]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,4 ,2]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,1 ,3]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,2 ,3]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,3 ,3]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,4 ,3]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,1 ,4]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   839.4093   ]      List[   false   ]     List[   false   ]    
+
+[[ , ,2 ,4]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,3 ,4]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,4 ,4]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ] 
+
+
+
+>>[[ , ,1 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,2 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,3 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,4 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,1 ,2]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,2 ,2]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,3 ,2]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,4 ,2]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,1 ,3]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,2 ,3]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,3 ,3]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,4 ,3]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,1 ,4]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,2 ,4]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,3 ,4]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+[[ , ,4 ,4]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,1 ,3]]
+                    [[ 1 ]]                              [[ 2 ]]                              [[ 3 ]]                               [[ 4 ]]
+       [[ 1 ]]      List[   12   ]                    List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,4 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                              [[ 3 ]]                               [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   839.4093   ]              List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,1 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                              [[ 3 ]]                               [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[    J#   ,   <3   ]          List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+>>---------------------------------- FIN EVALUACION ESTRUCTURAS --------------------------------------------------
 >>
+>>
+>>
+>>
+>>
+---------------------------------- EVALUANDO ARCHIVO DE ALBA --------------------------------------------------
+>>-----------------CALIFICACION-----------------
+>>========= Metodo Declaracion =========
+>>   Voy a ganar Compiladores 2 :D   
+>>======================================
+>>========= Error Ambitos ==============
+>>Error Semántico: La variable amb1 no esixte en este ámbito. en Expresion en la línea: 612 y columna: 36.
+>>======================================
+>>================ Nice ================
+>>   Sin error: Desde ambito2   
+>>======================================
+>>==============Aritmeticas=============
+>>   Hola COMPI   
+>>   El valor de  n1 = 52.1   
+>>   El valor de n3 = 70.0   
+>>Operaciones Aritmeticas 1: valor esperado:  
+a)62   
+b)0   
+c)-19   
+d)256   
+resultados>
+>>   a) 62   
+>>   b) 0   
+>>   c) -19   
+>>   d) 256.0   
+>>Operaciones aritmeticas 1 bien :D
+>>Operaciones Aritmeticas 2: valor esperado> -20  41, resultado>
+>>   -20   
+>>   41.0   
+>>Operaciones aritmeticas 2 bien :D
+>>======================================
+>>==============Logicas1=============
+>>Bien primera condicion :)
+>>Bien segunda condicion:)
+>>======================================
+>>==============Logicas2=============
+>>Not y Ands Correctos
+>>Nots y Ors correectos
+>>======================================
+>>==============relacionales1=============
+>>salida Correcta Relacionales 1!
+>>======================================
+>>vas bien, animo :D
+>>============Relacionales2=============
+>>salida CORRECTA en relacionales2!!
+>>======================================
+>>    1   
+>>    1 2   
+>>    1 2 3   
+>>    1 2 3 4   
+>>    1 2 3 4 5   
+>>    1 2 3 4 5 6   
+>>    1 2 3 4 5 6 7   
+>>    1 2 3 4 5 6 7 8   
+>>   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    
+>>   . . . . . . . . . * * * . . . . . . . * * * . . . . . . . . .    
+>>   . . . . . . . * * * * * * * . . . * * * * * * * . . . . . . .    
+>>   . . . . . * * * * * * * * * * * * * * * * * * * * * . . . . .    
+>>   . . . . . * * * * * * * * * * * * * * * * * * * * * . . . . .    
+>>   . . . . * * * * * * * * * * * * * * * * * * * * * * * . . . .    
+>>   . . . . * * * * * * * * * * * * * * * * * * * * * * * . . . .    
+>>   . . . * * * * * * * * * * * * * * * * * * * * * * * * * . . .    
+>>   . . . * * * * * * * * * * * * * * * * * * * * * * * * * . . .    
+>>   . . . * * * * * * * * * * * * * * * * * * * * * * * * * . . .    
+>>   . . . . * * * * * * * * * * * * * * * * * * * * * * * . . . .    
+>>   . . . . * * * * * * * * * * * * * * * * * * * * * * * . . . .    
+>>   . . . . . * * * * * * * * * * * * * * * * * * * * * . . . . .    
+>>   . . . . . * * * * * * * * * * * * * * * * * * * * * . . . . .    
+>>   . . . . . . . * * * * * * * * * * * * * * * * * . . . . . . .    
+>>   . . . . . . . . * * * * * * * * * * * * * * * . . . . . . . .    
+>>   . . . . . . . . . * * * * * * * * * * * * * . . . . . . . . .    
+>>   . . . . . . . . . . * * * * * * * * * * * . . . . . . . . . .    
+>>   . . . . . . . . . . . * * * * * * * * * . . . . . . . . . . .    
+>>   . . . . . . . . . . . . * * * * * * * . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . * * * * * . . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . . * * * . . . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . . . * . . . . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    
+>>if la figura es un corazon +10 <3
+>>                       *    
+>>                     * * *    
+>>                   * * * * *    
+>>                 * * * * * * *    
+>>               * * * * * * * * *    
+>>             * * * * * * * * * * *    
+>>           * * * * * * * * * * * * *    
+>>         * * * * * * * * * * * * * * *    
+>>                   * * * * *    
+>>                   * * * * *    
+>>if la figura es un Arbol +10 <3
+>>Esto se va a print 2 veces :3
+>>Esto se va a print 2 veces :3
+>>   punteo Final: 54  
+
+>>---------------------------------- EVALUANDO RECURSIVAS --------------------------------------------------
+>>
+======================= FACTORIAL ======================
+
+>>   El factorial del numero 5 es: 120   
+>>
+======================= POTENCIA =======================
+
+>>   El numero 2 elevado a la 5 potencia es: 32   
+>>
+================= RECURSIVIDAD MULTIPLE =================
+
+>>
+============ HANOI ============
+
+>>   Solucion al problema de torres de Hanoi para n = 3   
+>>   mover disco de 1 a3   
+>>   mover disco de 1 a 2   
+>>   mover disco de 3 a2   
+>>   mover disco de 1 a 3   
+>>   mover disco de 2 a1   
+>>   mover disco de 2 a 3   
+>>   mover disco de 1 a3   
+>>
+================= RECURSIVIDAD CRUZADA
+>>
+===== Generar funciones Hoftadter
+
+>>
+== Femenina: 
+
+>>   1
+>>   0   
+>>   2   
+>>   1   
+>>   3   
+>>   2   
+>>   4   
+>>   3   
+>>   5   
+>>   4   
+>>
+== Masculina: 
+
+>>   0
+>>   1   
+>>   1   
+>>   2   
+>>   2   
+>>   3   
+>>   3   
+>>   4   
+>>   4   
+>>   5   
+>>
+===== Determinar la paridad de dos numeros
+
+>>   == El numero 17 es:    
+>>impar
+>>   == El numero 68 es:    
+>>par
+>>
+========== RECURSIVIDAD ANIDADA ==========
+
+>>   Funcion de Ackermann (3, 4) = 125    
+
+>>---------------------------------- FIN EVALUACION RECURSIVAS --------------------------------------------------
+>>alumnos random que va ganar compi
+>> A :
+>>   47   ,   30970101   ,   201701029   ,   A   ,   Edson Armando Guix Manhel   ,   edsonguix@gmail.com   ,   0   
+>> B- :
+>>   12   ,   789012   ,   201212945   ,   B-   ,   Elmer Edgardo Alay Yupe   ,   alayelmer1993@gmail.com   ,   0   
+>> B+ :
+>>   28   ,   25720101   ,   201318664   ,   B+   ,   Jenny Sharai Montenegro Contreras   ,   jennysharai14@gmail.com   ,   0   
+>> C :
+>>   3   ,   2448401   ,   199811002   ,   C   ,   Arnaldo Patricio Paxtor García   ,   arnaldo.paxtor@gmail.com   ,   0   
+>>J# IS COMING <3
+>>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-FIN-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 *#
 #201314164
 #201701048

@@ -485,12 +485,17 @@ print("")
 print("")
 print("")
 
+print("---------------------------------- EVALUANDO ESTRUCTURAS --------------------------------------------------")
+
+print("---------------------------------- EVALUANDO ESTRUCTURAS: VECTORES ----------------------------------------")
 vectorPrueba = 3;
 vectorPrueba[199] = "hola"
 print(vectorPrueba)
 
-mattrizPRueba = matrix(c(2,3,4,5,90,12,5,565,6,565,8,0,34,1,3,4,5,0), 29,9);
-mattrizPRueba = mattrizPRueba ^ mattrizPRueba * mattrizPRueba - mattrizPRueba + 2 * mattrizPRueba;
+print("---------------------------------- EVALUANDO ESTRUCTURAS: MATRICES ----------------------------------------")
+
+mattrizPRueba = matrix(c(2,3,4,5,9,12,5,5,6,6,8,0,4,1,3,4,5,0), 30,9);
+mattrizPRueba = mattrizPRueba ^ (mattrizPRueba/2) * mattrizPRueba ^ mattrizPRueba + 2 * mattrizPRueba;
 for(mm in mattrizPRueba){
     print(mm)
 }
@@ -498,7 +503,7 @@ for(mm in mattrizPRueba){
 print(mattrizPRueba[20,])
 print(mattrizPRueba[,4])
 print(mattrizPRueba[34])
-print(mattrizPRueba[29,9])
+print(mattrizPRueba[30,9])
 
 mattrizPRueba = mattrizPRueba + 1.1
 print(mattrizPRueba)
@@ -506,6 +511,7 @@ print(mattrizPRueba)
 mattrizPRueba = mattrizPRueba + "J#"
 print(mattrizPRueba)
 
+print("---------------------------------- EVALUANDO ESTRUCTURAS: ARREGLOS -----------------------------------------")
 arregloPruebaVector = array(c(true,false), c(4,4,4,4))
 print(arregloPruebaVector)
 arregloPruebaVector[1][1][1][3] = 12
@@ -525,6 +531,16 @@ arregloPruebaLista[4][2][4][1] = 839.4093
 print(arregloPruebaLista)
 arregloPruebaLista[2][3][1][1] = list(c("J#","<3"))
 print(arregloPruebaLista)
+
+print("---------------------------------- FIN EVALUACION ESTRUCTURAS --------------------------------------------------")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+
+print("---------------------------------- EVALUANDO ARCHIVO DE ALBA --------------------------------------------------")
 # Archivo de alba :D
 var1 = 1;
 punteo = 0;
@@ -982,7 +998,7 @@ Inicio();
 }
 
 # fin
-
+print("---------------------------------- EVALUANDO RECURSIVAS --------------------------------------------------")
 # recursivas
 
 factorial = function(n) {
@@ -1122,7 +1138,7 @@ main();
 # FIN DE FUNCIONES
 
 # fin recursivaas
-
+print("---------------------------------- FIN EVALUACION RECURSIVAS --------------------------------------------------")
 
 print("alumnos random que va ganar compi")
 print("seccion A");
@@ -1138,11 +1154,10 @@ print(seccionC[3])
 print("J# IS COMING <3")
 print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-FIN-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
 
-print("##############-SALIDA ESPERADA-#######################################################################")
-#*
+#*##############-SALIDA ESPERADA-#######################################################################
 >>---------------------------------- EVALUANDO VECTORES --------------------------------------------------
 >>TEST 1 - EZ
->>Error Semántico: Multiplicacion de tipos no permitida: 11(STRING) * 2(INTEGER) en Expresion en la línea: 21 y columna: 9
+>>Error Semántico: Multiplicacion de tipos no permitida: 11(STRING) * 2(INTEGER) en Expresion en la línea: 27 y columna: 5
 >>TEST 2 - EZ
 >>ya me aburri
 >>TEST 3 - PASS
@@ -1157,15 +1172,935 @@ print("##############-SALIDA ESPERADA-##########################################
 >>
 >>
 >>---------------------------------- EVALUANDO LISTAS --------------------------------------------------
-(TIENE QUE SALIR LA SIGUIENTE LINEA 1841 VECES. LOL)
->> 0   ,   789012   ,   201503611   ,   B-   ,   Pavel Alexander Vasquez Flores   ,   alexanderpavelv32@gmail.com   ,   13527   ,   1   ,   789012   ,   200310165   ,   B-   ,   José Abraham Navarro De León   ,   joseabrahamnavarro@gmail.com   ,   11004   ,   2   ,   789012   ,   200313243   ,   B-   ,   Randy Mauricio Orozco Reyes   ,   mauricioor@hotmail.com   ,   9864   ,   3   ,   789012   ,   200511819   ,   B-   ,   Pablo Gerardo García Perusina   ,   200511819@ingenieria.usac.edu.gt   ,   12225   ,   4   ,   789012   ,   200915147   ,   B-   ,   Rene Adrian Ramos Guzman   ,   xdrixnrxmos@gmail.com   ,   6934   ,   5   ,   789012   ,   201010425   ,   B-   ,   Andrés Ricardo Ismael Guzmán   ,   a.ricardoguzman@gmail.com   ,   11001   ,   6   ,   789012   ,   201020331   ,   B-   ,   Cristian Alexander Azurdia Ajú   ,   1983964490101@ingenieria.usac.edu.gt   ,   13535   ,   7   ,   789012   ,   201020831   ,   B-   ,   Marco Antonio Fidencio Chávez Fuentes   ,   catalantt@gmail.com   ,   25347   ,   8   ,   789012   ,   201020917   ,   B-   ,   Luis Carlos Mendez Rodas   ,   luiiscmr@gmail.com   ,   6932   ,   9   ,   789012   ,   201021245   ,   B-   ,   Erin Leonel Flores   ,   erikfl.01@gmail.com   ,   2936   ,   10   ,   789012   ,   201113875   ,   B-   ,   Peter Alexander Samuels   ,   Franco peterinho14@gmail.com   ,   6111   ,   11   ,   789012   ,   201114573   ,   B-   ,   Diego Javier Tejeda Wannam   ,   diegotejeda93@gmail.com   ,   8811   ,   12   ,   789012   ,   201212945   ,   B-   ,   Elmer Edgardo Alay Yupe   ,   alayelmer1993@gmail.com   ,   6107   ,   13   ,   789012   ,   201213059   ,   B-   ,   Kevin Ariel Cruz Ortiz   ,   kevincoma555@gmail.com   ,   5347   ,   14   ,   789012   ,   201213123   ,   B-   ,   Kevin Madriel Juarez Cetino   ,   kevinm.3316@gmail.com   ,   9864   ,   15   ,   789012   ,   201213177   ,   B-   ,   Marvin José Calderón García   ,   marvin93.0@gmail.com   ,   9862   ,   16   ,   789012   ,   201313713   ,   B-   ,   Daniel Alejandro Herrera Hernández   ,   usac.daniel@gmail.com   ,   19674   ,   17   ,   789012   ,   201313889   ,   B-   ,   Hilbert Josué Perucho Ramírez   ,   hilbert.perucho@gmail.com   ,   12220   ,   18   ,   789012   ,   201313997   ,   B-   ,   Luis Noe Martinez Rivera   ,   luis56009@gmail.com   ,   6932   ,   19   ,   789012   ,   201314059   ,   B-   ,   Salvador de Jesus López Bautista   ,   lobje17@gmail.com   ,   16402   ,   20   ,   789012   ,   201314177   ,   B-   ,   Roberto Eduardo Caseros Reynoso   ,   robert.caseros@gmail.com   ,   14920   ,   21   ,   789012   ,   201314241   ,   B-   ,   Andrea Lissette Flores Aguilar   ,   andreaflores2501@gmail.com   ,   13526   ,   22   ,   789012   ,   201314571   ,   B-   ,   Wilson Yuviny Guerra Díaz   ,   yuvinygd@gmail.com   ,   7832   ,   23   ,   789012   ,   201314697   ,   B-   ,   Katherine Mishelle Serrano del Cid   ,   michikatrins@gmail.com   ,   19675   ,   24   ,   789012   ,   201325559   ,   B-   ,   Luis Alfonso Mencos Salazar   ,   lams0211@gmail.com   ,   9861   ,   25   ,   789012   ,   201325657   ,   B-   ,   Selvin Estuardo Icu Son   ,   estuardo.icu@gmail.com   ,   6106   ,   26   ,   789012   ,   201403767   ,   B-   ,   Pablo David Ramirez Fernandez   ,   pabloramirez.11294@gmail.com   ,   12222   ,   27   ,   789012   ,   201403793   ,   B-   ,   Kevin Nicolas Garcia Martinez   ,   kg49954@gmail.com   ,   12213   ,   28   ,   789012   ,   201403819   ,   B-   ,   Yoselin Annelice Lemus López   ,   annelice119@gmail.com   ,   10998   ,   29   ,   789012   ,   201403841   ,   B-   ,   Huriel Uvaldo Gómez Gómez   ,   hurieluv2g2d93@gmail.com   ,   7837   ,   30   ,   789012   ,   201403997   ,   B-   ,   Gary Stephen Giron Molina   ,   gsteph393@gmail.com   ,   7833   ,   31   ,   789012   ,   201404215   ,   B-   ,   Jorge Luis Salazar Peralta   ,   jorsala01@gmail.com   ,   8808   ,   32   ,   789012   ,   201404387   ,   B-   ,   Kevin Eduardo Estrada Martínez   ,   pex089@gmail.com   ,   13518   ,   33   ,   789012   ,   201404423   ,   B-   ,   Jairo Pablo Hernandez Guzman   ,   Jairophg.lalala2014@gmail.com   ,   11004   ,   34   ,   789012   ,   201408489   ,   B-   ,   Paul Steve Contreras Herrera   ,   stevcont96@gmail.com   ,   10997   ,   35   ,   789012   ,   201408549   ,   B-   ,   Elba María Alvarez Domínguez   ,   elba1995@gmail.com   ,   10996   ,   36   ,   789012   ,   201408603   ,   B-   ,   Berny Andree Cardona Ramos   ,   andreecr96@gmail.com   ,   8809   ,   37   ,   789012   ,   201442819   ,   B-   ,   Jerson Eduardo Villatoro Nova   ,   jerduar.usac@gmail.com   ,   12217   ,   38   ,   789012   ,   201503577   ,   B-   ,   Henry Francisco León Hernández   ,   henriscoh1995@gmail.com   ,   13523   ,   39   ,   789012   ,   201503595   ,   B-   ,   Claudia Paola Casiano Sipac   ,   p.casiano33@gmail.com   ,   9864   ,   40   ,   789012   ,   201503793   ,   B-   ,   Diana Maribel Jimenez Alonzo   ,   dianajimalon@gmail.com   ,   10999   ,   41   ,   789012   ,   201503893   ,   B-   ,   Brandon Javier Soto Castañeda   ,   sotobrandon198@gmail.com   ,   12219   ,   42   ,   789012   ,   201503911   ,   B-   ,   Juan Pablo Osuna De Leon   ,   juanpabloosuna1997@gmail.com   ,   6940   ,   43   ,   789012   ,   201503925   ,   B-   ,   Sergio Geovany Guoz Tubac   ,   sergioguoz1@gmail.com   ,   7835   ,   44   ,   789012   ,   201503935   ,   B-   ,   Douglas Daniel Aguilar Cuque   ,   ddaguilar017@gmail.com   ,   10999   ,   45   ,   789012   ,   201503953   ,   B-   ,   Sergio Geovany Leal Cardona   ,   sgleal97@gmail.com   ,   9861   ,   46   ,   789012   ,   201504231   ,   B-   ,   Jose Carlos Bautista Mazariegos   ,   jcbautista95@gmail.com   ,   14918   ,   47   ,   789012   ,   201504427   ,   B-   ,   Carlos Eduardo Cordón Hernández   ,   carlos.edu.cordon@gmail.com   ,   14923   ,   48   ,   789012   ,   201504475   ,   B-   ,   Luis Felipe González Orellana   ,   luisfe.go.03@gmail.com   ,   12217   ,   49   ,   789012   ,   201602421   ,   B-   ,   Diego Alejandro Vásquez   ,   totodiego1897@gmail.com   ,   6107   ,   50   ,   789012   ,   201602517   ,   B-   ,   Marvin Saúl Guzmán García   ,   marvin_saul@hotmail.com   ,   7836   ,   51   ,   789012   ,   201602909   ,   B-   ,   Edward Danilo Gómez Hernández   ,   edgomher95@gmail.com   ,   12215   ,   52   ,   789012   ,   201612113   ,   B-   ,   Raul Alexander Xiloj Lopez   ,   raulxiloj98@gmail.com   ,   8810   ,   53   ,   789012   ,   201612139   ,   B-   ,   Jeralmy Alejandra De León Samayoa   ,   jeralmy0598@gmail.com   ,   17991   ,   54   ,   789012   ,   201612383   ,   B-   ,   Javier Antonio Alvarez Gonzalez   ,   javier3448.ja@gmail.com   ,   14919   ,   55   ,   789012   ,   201612419   ,   B-   ,   Edvin Miguel Castro Ajiatas   ,   emca9610@gmail.com   ,   9861   ,   56   ,   789012   ,   201700327   ,   B-   ,   Marco Antonio López Grajeda   ,   juniorlograjeda@gmail.com   ,   9867   ,   57   ,   789012   ,   201700345   ,   B-   ,   Luis Gerardo Chay Grijalva   ,   gerardo15.chay97@gmail.com   ,   8814   ,   58   ,   789012   ,   201700465   ,   B-   ,   Max Leonel Florian Curtidor   ,   maxgt734@gmail.com   ,   9861   ,   59   ,   789012   ,   201700473   ,   B-   ,   Javier Alejandro Golon Lopez   ,   javiagl98@gmail.com   ,   10996   ,   60   ,   789012   ,   201700727   ,   B-   ,   Alberto Kanec Ixchop Ordoñez   ,   albertokanecixchop@gmail.com   ,   11004   ,   61   ,   789012   ,   201700801   ,   B-   ,   Erwin Alejandro Garcia Barrera   ,   alejandro76.gb@gmail.com   ,   13525   ,   0   ,   789012   ,   202000000   ,   B+   ,   Rainman Sian   ,   sian@gmail.com   ,   875   ,   1   ,   15812201   ,   200313430   ,   B+   ,   Edwin Antonio López Ordóñez   ,   cobolatrix@gmail.com   ,   265737   ,   2   ,   20440101   ,   200511896   ,   B+   ,   Darwin Dodany Girón Reyes   ,   dodanygiron@gmail.com   ,   195330   ,   3   ,   28480101   ,   200517708   ,   B+   ,   José Eduardo Morales García   ,   edushowy@gmail.com   ,   265736   ,   4   ,   25860101   ,   200715274   ,   B+   ,   Sergio Mynor David Felipe Zapeta   ,   sergio.zapeta@gmail.com   ,   524307   ,   5   ,   12300101   ,   200915168   ,   B+   ,   Christian Levi González Rodríguez   ,   clevi.gonzalez@gmail.com   ,   592981   ,   6   ,   25670101   ,   200915464   ,   B+   ,   Luis Fernnando Solares Arcon   ,   luisoler16@gmail.com   ,   307344   ,   7   ,   17010101   ,   201020136   ,   B+   ,   David Eduardo Garcia Garcia   ,   david.ed.g2@gmail.com   ,   265738   ,   8   ,   12030101   ,   201020260   ,   B+   ,   Victor Augusto López Hernández   ,   viktor1106@gmail.com   ,   405016   ,   9   ,   26310101   ,   201020578   ,   B+   ,   Georgina Abigail Estrada García   ,   georgina.estrada78@gmail.com   ,   461784   ,   10   ,   21880101   ,   201021164   ,   B+   ,   Rafael Alejandro Juárez Yantuche   ,   rafalejy@gmail.com   ,   524303   ,   11   ,   20190101   ,   201114292   ,   B+   ,   Luis Carlos Alejos Avila   ,   siulsolrac1@gmail.com   ,   165906   ,   12   ,   26020101   ,   201114566   ,   B+   ,   Brayan Ezequiel Santiago Brito   ,   ebritobryan@gmail.com   ,   405018   ,   13   ,   26650101   ,   201122846   ,   B+   ,   Oscar René Jordán Orellana   ,   oscar.jordan.21091@gmail.com   ,   228511   ,   14   ,   25700101   ,   201122998   ,   B+   ,   Pablo Roberto Roche Palacios   ,   pablorrp1@gmail.com   ,   307344   ,   15   ,   23060115   ,   201212734   ,   B+   ,   Orlando Gofredo Batres Chinchilla   ,   batres.93@gmail.com   ,   592976   ,   16   ,   23320101   ,   201212752   ,   B+   ,   Javier Alexander Chacón Samol   ,   shavichacon@gmail.com   ,   353658   ,   17   ,   21860101   ,   201212822   ,   B+   ,   Luis Fernando Pérez Moran   ,   luispma14@gmail.com   ,   195328   ,   18   ,   21740101   ,   201213132   ,   B+   ,   Carlos David Ramírez Altan   ,   racarlosdavid@gmail.com   ,   228507   ,   19   ,   24790101   ,   201313872   ,   B+   ,   Esteban David Alvarez Bor   ,   davix93a@gmail.com   ,   195328   ,   20   ,   21620301   ,   201314160   ,   B+   ,   Luis Manuel Morales López   ,   soy.lmml@gmail.com   ,   195328   ,   21   ,   20300101   ,   201314164   ,   B+   ,   Oswaldo Giovanni Caceres Samayoa   ,   gios2911@gmail.com   ,   524303   ,   22   ,   25670101   ,   201314412   ,   B+   ,   Juan De Dios Molina Herrera   ,   juandem95@gmail.com   ,   265736   ,   23   ,   36010101   ,   201314642   ,   B+   ,   Glen Abra-Ham Calel Robledo   ,   gl3ncal3l@gmail.com   ,   265736   ,   24   ,   21820101   ,   201314716   ,   B+   ,   James Allan Hansen Melgar Morales    ,   2811874520101@ingenieria.usac.edu   ,   668196   ,   25   ,   26180101   ,   201314778   ,   B+   ,   Duglas Francisco Avila Torres   ,   avilatorresics@gmail.com   ,   353661   ,   26   ,   25340101   ,   201314810   ,   B+   ,   Luis Daniel Morales Aguirre   ,   201314810@ingenieria.usac.edu.gt   ,   265747   ,   27   ,   29070101   ,   201314886   ,   B+   ,   Henry Edmar Lopez Cardona   ,   henrylopezkre@gmail.com   ,   195331   ,   28   ,   25720101   ,   201318664   ,   B+   ,   Jenny Sharai Montenegro Contreras   ,   jennysharai14@gmail.com   ,   592979   ,   29   ,   22450101   ,   201403552   ,   B+   ,   Juan Carlos Aragón Bámaca   ,   juank1316@gmail.com   ,   195328   ,   30   ,   26070101   ,   201408470   ,   B+   ,   Sandra Eunice Jiménez Rodas   ,   sandraeujim@gmail.com   ,   265738   ,   31   ,   27610101   ,   201443726   ,   B+   ,   Tanya Beatriz Muhun Recinos   ,   tanyarecinos911@gmail.com   ,   265741   ,   32   ,   29292007   ,   201503368   ,   B+   ,   Fredy Jose Ramirez Sandoval   ,   fredyramirezsando@gmail.com   ,   265743   ,   33   ,   37750101   ,   201503392   ,   B+   ,   Mynor Joel Lombardo Molina Guevara   ,   mynormolina1@gmail.com   ,   668186   ,   34   ,   30800101   ,   201503422   ,   B+   ,   Susel Eugenia Retana Arriola   ,   sretanausac@gmail.com   ,   307346   ,   35   ,   25110113   ,   201503440   ,   B+   ,   Cesar Dionicio Sazo Mayen   ,   csazo171@gmail.com   ,   195328   ,   36   ,   26450101   ,   201503442   ,   B+   ,   Yadira Yasmin Ferrer Morales   ,   yyfm.95@gmail.com   ,   307342   ,   37   ,   27390101   ,   201503738   ,   B+   ,   Juan José Lima Ramírez   ,   jjlima.jjl@gmail.com   ,   117144   ,   38   ,   36421202   ,   201503774   ,   B+   ,   Esbin Daniel Gonzalez Orozco   ,   danielgo8646@gmail.com   ,   307346   ,   39   ,   28580101   ,   201503918   ,   B+   ,   Brayan Mauricio Aroche Boror   ,   aroche.brayan@gmail.com   ,   307347   ,   40   ,   22180101   ,   201504002   ,   B+   ,   Inti Andrés Samayoa Ortíz   ,   intirocks888@gmail.com   ,   195331   ,   41   ,   31540101   ,   201504028   ,   B+   ,   Rodney Estuardo López Marroquín   ,   rodx1497@gmail.com   ,   461776   ,   42   ,   30820101   ,   201504242   ,   B+   ,   Pablo Javier Blanco Calderón   ,   pablo6a@gmail.com   ,   307342   ,   43   ,   28080101   ,   201504290   ,   B+   ,   Bryan Eduardo Chacón López   ,   bryaned44@gmail.com   ,   228504   ,   44   ,   27440101   ,   201504420   ,   B+   ,   Ronald Neftali Berdúo Morales   ,   ronaldnef1996@gmail.com   ,   353659   ,   45   ,   25770101   ,   201504444   ,   B+   ,   Christian Enrique Ramos Alvarez   ,   christian7.gt@gmail.com   ,   461779   ,   46   ,   30800101   ,   201504468   ,   B+   ,   Guillermo Alfredo Peitzner Estrada   ,   guillermopeitzner@gmail.com   ,   668191   ,   47   ,   37360301   ,   201602420   ,   B+   ,   Ingrid Rossana Pérez Mena   ,   ingrita.rpm@gmail.com   ,   195330   ,   48   ,   31460101   ,   201602434   ,   B+   ,   Jeannira Del Rosario Sic Menéndez   ,   jeannirasic@gmail.com   ,   592978   ,   49   ,   33370101   ,   201602744   ,   B+   ,   David Omar Enriquez Reyes   ,   davidomarenriquezreyes@gmail.com   ,   195339   ,   50   ,   31130101   ,   201602754   ,   B+   ,   José Andrés Morales Calderón   ,   hp.ecene@gmail.com   ,   307343   ,   51   ,   37250101   ,   201602870   ,   B+   ,   Nery Eduardo Herrera Cottom   ,   tesco.herrera.edu@gmail.com   ,   265743   ,   52   ,   28030101   ,   201603102   ,   B+   ,   Willians Alberto Lemus López   ,   willialberto.125@gmail.com   ,   307349   ,   53   ,   23920101   ,   201610648   ,   B+   ,   David Jonathan González Gámez   ,   davidgmz79@gmail.com   ,   353657   ,   54   ,   23850101   ,   201612114   ,   B+   ,   Herbert Rafael Reyes Portillo   ,   herbertreyes13@gmail.com   ,   353661   ,   55   ,   34900101   ,   201612272   ,   B+   ,   Andrés Esteban Carvajal Morales   ,   andyecarvajal@gmail.com   ,   461779   ,   56   ,   31130108   ,   201612304   ,   B+   ,   Mindi Guisela Ajpop Aguilar   ,   mindi.ajpop@gmail.com   ,   265738   ,   57   ,   31290920   ,   201612326   ,   B+   ,   Eddy Arnoldo Reyes Hernández   ,   eddyarnoldo06@gmail.com   ,   307347   ,   58   ,   34460101   ,   201700314   ,   B+   ,   Carlos Rodrigo Estrada Najarro   ,   carlos.r.estrada.n@gmail.com   ,   405023   ,   59   ,   30430101   ,   201700342   ,   B+   ,   José Francisco Puac Ixcamparic   ,   puac235@gmail.com   ,   405014   ,   60   ,   35560101   ,   201700378   ,   B+   ,   Alison Cristina Leiva Paredes   ,   alisonleiva24@gmail.com   ,   353659   ,   61   ,   36020101   ,   201700886   ,   B+   ,   Andhy Lizandro Solís Osorio   ,   andhysolis99@gmail.com   ,   265739   ,   62   ,   36120101   ,   201701048   ,   B+   ,   Ronald Gabriel Romero González   ,   baco420151@gmail.com   ,   405016   ,   0   ,   3789012   ,   202000001   ,   C   ,   Juanca Maeda   ,   maeda@gmail.com   ,   877   ,   2   ,   1619403   ,   199516264   ,   C   ,   Sergio Fernando Giovani Morales Diaz   ,   envidiom@gmail.com   ,   23343   ,   3   ,   2448401   ,   199811002   ,   C   ,   Arnaldo Patricio Paxtor García   ,   arnaldo.paxtor@gmail.com   ,   13520   ,   1   ,   1777901   ,   961670932   ,   C   ,   Mynor Wotzbely Hidalgo Letona   ,   mynhidwotz@gmail.com   ,   12211   ,   4   ,   2605901   ,   200011652   ,   C   ,   Oscar Humberto Morales Oviedo   ,   icellguatemala@gmail.com   ,   12215   ,   5   ,   2902501   ,   200117439   ,   C   ,   José David Castro Bámaca   ,   josdivad@gmail.com   ,   6927   ,   6   ,   2007501   ,   200412956   ,   C   ,   Nelson Jair González Pérez   ,   njgp86@gmail.com   ,   8801   ,   7   ,   2876501   ,   200614911   ,   C   ,   Pedro Carlos Dávila Martinez   ,   slipcs6@gmail.com   ,   10990   ,   8   ,   2430601   ,   200714175   ,   C   ,   Jennifer Lorena Rodriguez Lopez   ,   jenny7127@gmail.com   ,   14911   ,   9   ,   2141004   ,   200714327   ,   C   ,   Victor Arturo Cochoy Tzunun   ,   vcochoy@gmail.com   ,   9855   ,   10   ,   2914606   ,   200714473   ,   C   ,   Pablo Jonathán Yeguech Sanic   ,   pablogp8@gmail.com   ,   10991   ,   11   ,   1996301   ,   200818841   ,   C   ,   Carlos Eduardo Monzón Duarte   ,   cmd12398@gmail.com   ,   10991   ,   12   ,   2899601   ,   200819214   ,   C   ,   Carlos Esteban Godinez Delgado   ,   car5night@gmail.com   ,   13516   ,   13   ,   2701101   ,   200915078   ,   C   ,   José Remberto Morejón Morales   ,   jose.usac.edu@gmail.com   ,   12213   ,   14   ,   2601711   ,   200915080   ,   C   ,   Julio Roberto Vasquez Santiago   ,   otreborjjj@gmail.com   ,   13516   ,   15   ,   2612001   ,   200915347   ,   C   ,   Erick Fernando Reyes Mancilla   ,   fernandoreyes182@gmail.com   ,   12216   ,   16   ,   2307301   ,   200915390   ,   C   ,   Jose Carlos Toj Ajuchan   ,   chino1230@gmail.com   ,   6099   ,   17   ,   2188801   ,   200915423   ,   C   ,   Gabriela Marilyn Orellana Solorzano   ,   gaba.ra91o@gmail.com   ,   21454   ,   18   ,   2191701   ,   200915466   ,   C   ,   Oliver Alexander Rodas Mendoza   ,   oliver.rodas@popoyan.com.gt   ,   13523   ,   19   ,   2431101   ,   200920081   ,   C   ,   Andrea Virginia Chavarria Guzmán   ,   andychava@gmail.com   ,   16400   ,   20   ,   2983305   ,   201020975   ,   C   ,   Ottoniel Guarchaj   ,   otttoguitar@gmail.com   ,   2474   ,   21   ,   2757201   ,   201114124   ,   C   ,   Jorge Antonio Rompiche Herrera   ,   2247557220101@ingenieria.usac.edu.gt    ,   13531   ,   22   ,   2853401   ,   201114336   ,   C   ,   Kevin Alejandro Sánchez Samayoa   ,   ka_sanchezsamayoa@outlook.com   ,   14919   ,   23   ,   2098101   ,   201114527   ,   C   ,   Cristian Esteban Moino Rodriguez   ,   moino.cristian@gmail.com   ,   16404   ,   24   ,   2918901   ,   201114726   ,   C   ,   Migdalia Iveth Mateo Pérez   ,   mivethp@gmail.com   ,   8802   ,   25   ,   2472901   ,   201122864   ,   C   ,   Luis Carlos Valiente Salazar   ,   luiskr1993@gmail.com   ,   10992   ,   26   ,   1042404   ,   201122934   ,   C   ,   Marco Antonio Xocop Roquel   ,   marcstu2007@gmail.com   ,   8806   ,   27   ,   2441301   ,   201212623   ,   C   ,   Kenia Marisol Zepeda López   ,   kenia.apk@gmail.com   ,   8804   ,   28   ,   2894801   ,   201212808   ,   C   ,   Denis Francisco Vasquez Flores   ,   vasquezdennisan@gmail.com   ,   13521   ,   29   ,   2874201   ,   201212854   ,   C   ,   Freddy Alejandro Monterroso   ,   freddy.a.monterroso@gmail.com   ,   9865   ,   30   ,   2760317   ,   201213194   ,   C   ,   Carlos Omar Aquino Escobar   ,   carlos.aquino093@gmail.com   ,   8809   ,   31   ,   2252201   ,   201213255   ,   C   ,   Leonel Eduardo Avila Calvillo   ,   leo.avilac8@gmail.com   ,   12212   ,   32   ,   2279201   ,   201213282   ,   C   ,   Sergio Fernando De Los Rios Roque   ,   sergiofernando23234@gmail.com   ,   17992   ,   33   ,   3915701   ,   201213619   ,   C   ,   José Javier Barreda Mancilla   ,   javier.barreda94@gmail.com   ,   10997   ,   34   ,   2244801   ,   201220165   ,   C   ,   Oscar Rolando Bernard Peralta   ,   oscarol14394@gmail.com   ,   12213   ,   35   ,   2161001   ,   201222595   ,   C   ,   Ana Lucrecia Villatoro Rodriguez   ,   lukycrazy@gmail.com   ,   16400   ,   36   ,   2517501   ,   201246079   ,   C   ,   Axel Smaylie López Xum   ,   2635017521001@ingenieria.usac.edu.gt   ,   5354   ,   37   ,   2415602   ,   201313663   ,   C   ,   Daniel Alberto Juárez Back   ,   d.juarez1094@gmail.com   ,   8806   ,   38   ,   2322701   ,   201313688   ,   C   ,   Marellyn Lisbeth Trejo Castro    ,   mlis.trejo@gmail.com   ,   13516   ,   39   ,   2398101   ,   201313819   ,   C   ,   César Javier Solares Orozco   ,   checha.db63@gmail.com   ,   9859   ,   40   ,   2416601   ,   201313898   ,   C   ,   Eduardo Javier Hevia Calderón   ,   javierhc22@gmail.com   ,   12211   ,   41   ,   2989106   ,   201314291   ,   C   ,   Luis Miguel Tun Garcia   ,   502luismiguel@gmail.com   ,   5343   ,   42   ,   2445814   ,   201314359   ,   C   ,   Mario Roberto Cojolon Shoc   ,   mario69series24@gmail.com   ,   8809   ,   43   ,   2041601   ,   201314408   ,   C   ,   Erick Fernando Hernandez Arroyo   ,   erickhernandez1710@gmail.com   ,   14919   ,   44   ,   2988101   ,   201314474   ,   C   ,   Bayron Romeo Axpuac Yoc   ,   misinicialesbray@gmail.com   ,   6105   ,   45   ,   2819214   ,   201314556   ,   C   ,   Carlos Gabriel Peralta Cambrán   ,   carlospecam@gmail.com   ,   13518   ,   46   ,   2305601   ,   201314565   ,   C   ,   Danilo Urias Coc   ,   d14urias@gmail.com   ,   2063   ,   47   ,   2738401   ,   201314713   ,   C   ,   Fernando Andrés Mérida Antón   ,   fer.merida94@gmail.com   ,   10994   ,   48   ,   2430601   ,   201314808   ,   C   ,   Leslie Fabiola Morales González   ,   les.mg.usac@gmail.com   ,   14913   ,   49   ,   2189302   ,   201314891   ,   C   ,   Luis Javier Yela Quijada   ,   javyela@gmail.com   ,   6926   ,   50   ,   3912801   ,   201325533   ,   C   ,   Erick Fernando Elias Díaz   ,   elias25533@gmail.com   ,   7829   ,   51   ,   2660711   ,   201346084   ,   C   ,   José Alberto Alarcón Chigua   ,   jalbertochigua@gmail.com   ,   9862   ,   52   ,   2757001   ,   201403703   ,   C   ,   Rubén Emilio Osorio Sotorro   ,   rubenosorio88@gmail.com   ,   9860   ,   53   ,   2433601   ,   201404104   ,   C   ,   Andrea Nicte Vicente Campos   ,   andreanicte02@gmail.com   ,   9860   ,   54   ,   2103201   ,   201503378   ,   C   ,   Escarleth Andrea Velasco Campos   ,   velandreas@gmail.com   ,   14912   ,   55   ,   3498403   ,   201503385   ,   C   ,   Brandon Antony Chitay Coutiño   ,   antonchitay@gmail.com   ,   12212   ,   56   ,   3262914   ,   201503464   ,   C   ,   Roberto Adrián Cux Bran   ,   roberto.cux@gmail.com   ,   6101   ,   57   ,   2695901   ,   201503470   ,   C   ,   Yimmi Daniel Ruano Pernillo   ,   yimmiss305@gmail.com   ,   9858   ,   58   ,   3664301   ,   201503692   ,   C   ,   Diego Ernesto Sebastian Osorio Garcia   ,   diegoesog11@gmail.com   ,   25344   ,   59   ,   2916901   ,   201503699   ,   C   ,   Eddy Javier Sirin Hernandez   ,   eddjavs@gmail.com   ,   9855   ,   60   ,   2135901   ,   201503702   ,   C   ,   Edgar Humberto Borrayo Bartolón   ,   95.b.edgar@gmail.com   ,   14912   ,   61   ,   3851401   ,   201503712   ,   C   ,   Oscar Rene Cuellar Mancilla   ,   oscarrenecuellarmancilla@gmail.com   ,   0   ,   62   ,   3195901   ,   201503750   ,   C   ,   Carlos Eduardo Carías Salan   ,   carloscariasingenieria@gmail.com   ,   9868   ,   63   ,   3096501   ,   201503984   ,   C   ,   Fernando Vidal Ruiz Piox   ,   feruiz.12000@gmail.com   ,   6930   ,   64   ,   3321101   ,   201504100   ,   C   ,   Christopher Alexander Lopez Orellana   ,   crhalfa09@gmail.com   ,   23344   ,   65   ,   3333102   ,   201504448   ,   C   ,   Jefferson José Carlos Linares Cerón   ,   karlosceron15@gmail.com   ,   21456   ,   66   ,   3878301   ,   201513760   ,   C   ,   Marco Pablo Mazariegos Macario   ,   marcomazariegos18@gmail.com   ,   13523   ,   67   ,   2120501   ,   201602520   ,   C   ,   Marvin Ronaldo Martinez Marroquin   ,   marvin1ronal@gmail.com   ,   17987   ,   68   ,   3935801   ,   201602723   ,   C   ,   Diego Alejandro Caballeros Melchor   ,   ultimaster22@gmail.com   ,   19670   ,   69   ,   3134501   ,   201602743   ,   C   ,   Fernando Arturo Pensamiento Calderon   ,   fernanpensa@gmail.com   ,   23346   ,   70   ,   3106801   ,   201602797   ,   C   ,   Edgar Arnoldo Aldana Arriola   ,   arnolso201@gmail.com   ,   10992   ,   71   ,   3273201   ,   201602929   ,   C   ,   Sebastián Gómez Lavarreda   ,   santi.lavarreda@gmail.com   ,   7833   ,   72   ,   3353701   ,   201602986   ,   C   ,   Nery Antonio Alvizures Sologaistoa   ,   nery016s@gmail.com   ,   19667   ,   73   ,   3181801   ,   201603029   ,   C   ,   Luis Leonel Aguilar Sánchez   ,   leoaguilarsanchez97@gmail.com   ,   9865   ,   74   ,   2270813   ,   201603189   ,   C   ,   Jose Ramiro Mateo Pu   ,   ramiromateo88@gmail.com   ,   4019   ,   75   ,   3553901   ,   201610657   ,   C   ,   Sergio Alejandro Silva Roldán   ,   18sergiosilva@gmail.com   ,   12213   ,   76   ,   3615801   ,   201612097   ,   C   ,   Erick Alexander Lemus Morales   ,   erick.lemus1998@gmail.com   ,   12215   ,   77   ,   3928301   ,   201612204   ,   C   ,   Marylin Irenia Hernández Muñoz   ,   maryirenia@gmail.com   ,   13516   ,   78   ,   3427109   ,   201612219   ,   C   ,   Herlindo René Corona Arenales   ,   uhcorona@gmail.com   ,   12210   ,   79   ,   3944015   ,   201612408   ,   C   ,   Katherine Lisseth Sánchez Girón   ,   sanchezkathy29@gmail.com   ,   14916   ,   80   ,   3843201   ,   201612499   ,   C   ,   Henry Adolfo Galvez   ,   soulofhenry@gmail.com   ,   3447   ,   81   ,   3514001   ,   201700392   ,   C   ,   César Josué Reyes Díaz   ,   chechajosue@gmail.com   ,   5342   ,   82   ,   3624601   ,   201700507   ,   C   ,   Kimberly Mireya Elias Diaz   ,   kim.eliasdiaz@gmail.com   ,   8807   ,   83   ,   2809701   ,   201700675   ,   C   ,   David Rolando Elias Montufar   ,   davideliaspc@gmail.com   ,   10994   ,   84   ,   3364014   ,   201700944   ,   C   ,   Alan Joel Morataya Escobar   ,   alanmorataya19@gmail.com   ,   8808   ,   85   ,   3658201   ,   201709155   ,   C   ,   Kevin Alexander Garcia Jachac   ,   kevinalexandergarcia1999@gmail.com   ,   12223   ,   86   ,   3818601   ,   201709362   ,   C   ,   Bruno Marco Jose Coronado Morales   ,   bcoronado.morales@gmail.com   ,   17991   ,   0   ,   789012   ,   201602656   ,   A   ,   Luis Lizama   ,   lizama@gmail.com   ,   679   ,   1   ,   23970101   ,   200412765   ,   A   ,   Jorge Enrique Archer Rosales   ,   jearbasp@gmail.com   ,   307343   ,   2   ,   22020101   ,   200517803   ,   A   ,   Johnny Mike Bravo Zamora   ,   jbravozam@gmail.com   ,   165904   ,   3   ,   26110110   ,   200611517   ,   A   ,   Jose Domingo Tubac Chocon   ,   jhosdimax@gmail.com   ,   195328   ,   4   ,   23981401   ,   200915609   ,   A   ,   Gary Joan Ortiz Lopez   ,   gortiz1490@gmail.com   ,   97257   ,   5   ,   20250101   ,   201020209   ,   A   ,   José Daniel Carías Juarroz   ,   jdcarias01@gmail.com   ,   228504   ,   6   ,   20140114   ,   201020247   ,   A   ,   Haroldo Pablo Arias Molina   ,   ihpam25@gmail.com   ,   228502   ,   7   ,   16290101   ,   201114496   ,   A   ,   German Mazariegos Salguero   ,   trapavoided22@gmail.com   ,   228507   ,   8   ,   20660101   ,   201114502   ,   A   ,   Rodolfo Orantes Orellana   ,   rochofo@gmail.com   ,   165902   ,   9   ,   20370101   ,   201123848   ,   A   ,   Mario Josué Alvarado Lima   ,   oiramalli@gmail.com   ,   195328   ,   10   ,   23520101   ,   201212956   ,   A   ,   Jose David Axpuac Velasquez   ,   jose.axpuac@gmail.com   ,   265738   ,   11   ,   24800101   ,   201213233   ,   A   ,   Guillermo Rene Medinilla Hernandez   ,   medinilla.guillermo@gmail.com   ,   668192   ,   12   ,   22850101   ,   201216022   ,   A   ,   Ramon Osvaldo Patzan Caballeros   ,   christsoldier92@gmail.com   ,   461781   ,   13   ,   26300401   ,   201220159   ,   A   ,   Diego Ahtohil Noj Armira   ,   diego28shil@gmail.com   ,   165906   ,   14   ,   21181503   ,   201313875   ,   A   ,   Hayrton Omar Ixpatá Coloch   ,   hayrtonixpata@gmail.com   ,   228507   ,   15   ,   25140101   ,   201314112   ,   A   ,   Randolph Estuardo Muy Chanchavac   ,   randolph.estuardo.2012@gmail.com   ,   524314   ,   16   ,   23700101   ,   201403532   ,   A   ,   Ever Eduardo Chicas Prado   ,   everchicasp@gmail.com   ,   195330   ,   17   ,   23550101   ,   201403632   ,   A   ,   Jorge David Espina Molina   ,   canchemolinas@gmail.com   ,   195331   ,   18   ,   24810101   ,   201403862   ,   A   ,   Brandon Bredly Alvarez López   ,   brandonbbal1994@gmail.com   ,   307349   ,   19   ,   29080101   ,   201403905   ,   A   ,   Javier Alberto Cabrera Puente   ,   j.a.cabrerapuente@gmail.com   ,   353663   ,   20   ,   34280101   ,   201404367   ,   A   ,   Jose Andrés Ruiz Peer   ,   jruizpeer@gmail.com   ,   97256   ,   21   ,   32570509   ,   201408486   ,   A   ,   Sharolin Guadalupe Lacunza González   ,   sharolin33@gmail.com   ,   750329   ,   22   ,   30150301   ,   201503651   ,   A   ,   Jose Fernando Valdez Perez   ,   valdezpjose@gmail.com   ,   228506   ,   23   ,   29151010   ,   201503746   ,   A   ,   Raymundo Alexander Ixvalan Pacheco   ,   alexixva@gmail.com   ,   668183   ,   24   ,   29110101   ,   201503869   ,   A   ,   Juan Pablo Juárez López   ,   juarezjuanpa@gmail.com   ,   139939   ,   25   ,   28250301   ,   201503910   ,   A   ,   Ariel Alejandro Bautista Méndez   ,   arielbm46@gmail.com   ,   461776   ,   26   ,   35660101   ,   201504042   ,   A   ,   Julio Estuardo Gómez Alonzo   ,   esthuardo12@gmail.com   ,   265738   ,   27   ,   29940101   ,   201504143   ,   A   ,   Carlos Roberto Jiménez Pérez   ,   carlosjimenez2286@gmail.com   ,   307351   ,   28   ,   30530101   ,   201504192   ,   A   ,   Maynor David Salguero Guillén   ,   mada.salgui@gmail.com   ,   353658   ,   29   ,   30740110   ,   201504381   ,   A   ,   Julio Antonio Chaicoj Cotzojay   ,   juliocotzo11@gmail.com   ,   405018   ,   30   ,   34270101   ,   201504497   ,   A   ,   Carlos Luis Pablo Hernandez Gramajo   ,   wichos11.ch@gmail.com   ,   750330   ,   31   ,   30180401   ,   201513699   ,   A   ,   Esdras Jonatan Noj Larios   ,   esdrasjnl@gmail.com   ,   195328   ,   32   ,   30700101   ,   201602412   ,   A   ,   William Adolfo Corado Cabrera   ,   coradowilly@gmail.com   ,   353658   ,   33   ,   29160101   ,   201602569   ,   A   ,   Christopher Jhoanis Soto Cifuentes   ,   christophersoto97@gmail.com   ,   668191   ,   34   ,   36780901   ,   201602811   ,   A   ,   Oscar Ariel Corleto Soto   ,   oscarcorleto000@gmail.com   ,   165909   ,   35   ,   30700101   ,   201602820   ,   A   ,   Luis Alfonso Melgar Arizpe   ,   alfonso.melgar97@gmail.com   ,   228509   ,   36   ,   29330101   ,   201602916   ,   A   ,   Ricardo Antonio Menéndez Tobías   ,   richimenen@gmail.com   ,   461777   ,   37   ,   30450101   ,   201602975   ,   A   ,   Ruth Nohemy Ardón Lechuga   ,   ruthlechuga.1997@gmail.com   ,   195334   ,   38   ,   29960101   ,   201602988   ,   A   ,   Ozmar René Escobar Avila   ,   superspeed52@gmail.com   ,   165906   ,   39   ,   30520101   ,   201603067   ,   A   ,   Carlos Giovani Gil Chacón   ,   carlos_gil1997@yahoo.com   ,   195333   ,   40   ,   35470101   ,   201603095   ,   A   ,   Abner Fernando Cardona Ramirez    ,   abner.cardona1997@gmail.com   ,   461783   ,   41   ,   30090101   ,   201603174   ,   A   ,   Daniel Alejandro Castellon Schaad   ,   danielschaad2020@gmail.com   ,   592982   ,   42   ,   36830108   ,   201603191   ,   A   ,   Pablo Andrés Hernández Rivera   ,   hpablo677@gmail.com   ,   353656   ,   43   ,   29540101   ,   201610673   ,   A   ,   Yaiza Estefanía Pineda González   ,   ypineda2014ig@gmail.com   ,   461779   ,   44   ,   30550108   ,   201612274   ,   A   ,   Carlos Antonio Campaneros Benito   ,   carloscampaneros@gmail.com   ,   524309   ,   45   ,   27570116   ,   201700995   ,   A   ,   Luis Pedro Pineda González   ,   luispinedagonzalez33@gmail.com   ,   228513   ,   46   ,   35330403   ,   201701020   ,   A   ,   Angel Marcelo Rama Marroquín García   ,   anmaramaga@gmail.com   ,   750329   ,   47   ,   30970101   ,   201701029   ,   A   ,   Edson Armando Guix Manhel   ,   edsonguix@gmail.com   ,   195328   ,   48   ,   32951014   ,   201709177   ,   A   ,   Cristian Manuel Castellanos Ajtún   ,   cristian6cas@hotmail.es   ,   592979   ,   49   ,   30870101   ,   201713894   ,   A   ,   Brayan Alberto Chinchilla Ramos   ,   brayanch1297@gmail.com   ,   461779   ,   50   ,   30920108   ,   201730555   ,   A   ,   Francisco Javier Bran Fuentes   ,   javierbran73@gmail.com   ,   353659  
+(TIENE QUE SALIR LA SIGUIENTE LISTA 263 VECES. LOL)
+>><LIST>
+       [[ 1 ]]    0   ,   789012   ,   201503611   ,   B-   ,   Pavel Alexander Vasquez Flores   ,   alexanderpavelv32@gmail.com   ,   70   
+       [[ 2 ]]    1   ,   789012   ,   200310165   ,   B-   ,   José Abraham Navarro De León   ,   joseabrahamnavarro@gmail.com   ,   60   
+       [[ 3 ]]    2   ,   789012   ,   200313243   ,   B-   ,   Randy Mauricio Orozco Reyes   ,   mauricioor@hotmail.com   ,   90   
+       [[ 4 ]]    3   ,   789012   ,   200511819   ,   B-   ,   Pablo Gerardo García Perusina   ,   200511819@ingenieria.usac.edu.gt   ,   67   
+       [[ 5 ]]    4   ,   789012   ,   200915147   ,   B-   ,   Rene Adrian Ramos Guzman   ,   xdrixnrxmos@gmail.com   ,   68   
+       [[ 6 ]]    5   ,   789012   ,   201010425   ,   B-   ,   Andrés Ricardo Ismael Guzmán   ,   a.ricardoguzman@gmail.com   ,   58   
+       [[ 7 ]]    6   ,   789012   ,   201020331   ,   B-   ,   Cristian Alexander Azurdia Ajú   ,   1983964490101@ingenieria.usac.edu.gt   ,   76   
+       [[ 8 ]]    7   ,   789012   ,   201020831   ,   B-   ,   Marco Antonio Fidencio Chávez Fuentes   ,   catalantt@gmail.com   ,   61   
+       [[ 9 ]]    8   ,   789012   ,   201020917   ,   B-   ,   Luis Carlos Mendez Rodas   ,   luiiscmr@gmail.com   ,   66   
+       [[ 10 ]]    9   ,   789012   ,   201021245   ,   B-   ,   Erin Leonel Flores   ,   erikfl.01@gmail.com   ,   57   
+       [[ 11 ]]    10   ,   789012   ,   201113875   ,   B-   ,   Peter Alexander Samuels   ,   Franco    peterinho14@gmail.com   ,   65   
+       [[ 12 ]]    11   ,   789012   ,   201114573   ,   B-   ,   Diego Javier Tejeda Wannam   ,   diegotejeda93@gmail.com   ,   82   
+       [[ 13 ]]    12   ,   789012   ,   201212945   ,   B-   ,   Elmer Edgardo Alay Yupe   ,   alayelmer1993@gmail.com   ,   61   
+       [[ 14 ]]    13   ,   789012   ,   201213059   ,   B-   ,   Kevin Ariel Cruz Ortiz   ,   kevincoma555@gmail.com   ,   97   
+       [[ 15 ]]    14   ,   789012   ,   201213123   ,   B-   ,   Kevin Madriel Juarez Cetino   ,   kevinm.3316@gmail.com   ,   90   
+       [[ 16 ]]    15   ,   789012   ,   201213177   ,   B-   ,   Marvin José Calderón García   ,   marvin93.0@gmail.com   ,   88   
+       [[ 17 ]]    16   ,   789012   ,   201313713   ,   B-   ,   Daniel Alejandro Herrera Hernández   ,   usac.daniel@gmail.com   ,   90   
+       [[ 18 ]]    17   ,   789012   ,   201313889   ,   B-   ,   Hilbert Josué Perucho Ramírez   ,   hilbert.perucho@gmail.com   ,   63   
+       [[ 19 ]]    18   ,   789012   ,   201313997   ,   B-   ,   Luis Noe Martinez Rivera   ,   luis56009@gmail.com   ,   66   
+       [[ 20 ]]    19   ,   789012   ,   201314059   ,   B-   ,   Salvador de Jesus López Bautista   ,   lobje17@gmail.com   ,   74   
+       [[ 21 ]]    20   ,   789012   ,   201314177   ,   B-   ,   Roberto Eduardo Caseros Reynoso   ,   robert.caseros@gmail.com   ,   74   
+       [[ 22 ]]    21   ,   789012   ,   201314241   ,   B-   ,   Andrea Lissette Flores Aguilar   ,   andreaflores2501@gmail.com   ,   68   
+       [[ 23 ]]    22   ,   789012   ,   201314571   ,   B-   ,   Wilson Yuviny Guerra Díaz   ,   yuvinygd@gmail.com   ,   73   
+       [[ 24 ]]    23   ,   789012   ,   201314697   ,   B-   ,   Katherine Mishelle Serrano del Cid   ,   michikatrins@gmail.com   ,   90   
+       [[ 25 ]]    24   ,   789012   ,   201325559   ,   B-   ,   Luis Alfonso Mencos Salazar   ,   lams0211@gmail.com   ,   88   
+       [[ 26 ]]    25   ,   789012   ,   201325657   ,   B-   ,   Selvin Estuardo Icu Son   ,   estuardo.icu@gmail.com   ,   61   
+       [[ 27 ]]    26   ,   789012   ,   201403767   ,   B-   ,   Pablo David Ramirez Fernandez   ,   pabloramirez.11294@gmail.com   ,   65   
+       [[ 28 ]]    27   ,   789012   ,   201403793   ,   B-   ,   Kevin Nicolas Garcia Martinez   ,   kg49954@gmail.com   ,   57   
+       [[ 29 ]]    28   ,   789012   ,   201403819   ,   B-   ,   Yoselin Annelice Lemus López   ,   annelice119@gmail.com   ,   99   
+       [[ 30 ]]    29   ,   789012   ,   201403841   ,   B-   ,   Huriel Uvaldo Gómez Gómez   ,   hurieluv2g2d93@gmail.com   ,   77   
+       [[ 31 ]]    30   ,   789012   ,   201403997   ,   B-   ,   Gary Stephen Giron Molina   ,   gsteph393@gmail.com   ,   73   
+       [[ 32 ]]    31   ,   789012   ,   201404215   ,   B-   ,   Jorge Luis Salazar Peralta   ,   jorsala01@gmail.com   ,   80   
+       [[ 33 ]]    32   ,   789012   ,   201404387   ,   B-   ,   Kevin Eduardo Estrada Martínez   ,   pex089@gmail.com   ,   62   
+       [[ 34 ]]    33   ,   789012   ,   201404423   ,   B-   ,   Jairo Pablo Hernandez Guzman   ,   Jairophg.lalala2014@gmail.com   ,   60   
+       [[ 35 ]]    34   ,   789012   ,   201408489   ,   B-   ,   Paul Steve Contreras Herrera   ,   stevcont96@gmail.com   ,   97   
+       [[ 36 ]]    35   ,   789012   ,   201408549   ,   B-   ,   Elba María Alvarez Domínguez   ,   elba1995@gmail.com   ,   97   
+       [[ 37 ]]    36   ,   789012   ,   201408603   ,   B-   ,   Berny Andree Cardona Ramos   ,   andreecr96@gmail.com   ,   80   
+       [[ 38 ]]    37   ,   789012   ,   201442819   ,   B-   ,   Jerson Eduardo Villatoro Nova   ,   jerduar.usac@gmail.com   ,   61   
+       [[ 39 ]]    38   ,   789012   ,   201503577   ,   B-   ,   Henry Francisco León Hernández   ,   henriscoh1995@gmail.com   ,   66   
+       [[ 40 ]]    39   ,   789012   ,   201503595   ,   B-   ,   Claudia Paola Casiano Sipac   ,   p.casiano33@gmail.com   ,   90   
+       [[ 41 ]]    40   ,   789012   ,   201503793   ,   B-   ,   Diana Maribel Jimenez Alonzo   ,   dianajimalon@gmail.com   ,   99   
+       [[ 42 ]]    41   ,   789012   ,   201503893   ,   B-   ,   Brandon Javier Soto Castañeda   ,   sotobrandon198@gmail.com   ,   63   
+       [[ 43 ]]    42   ,   789012   ,   201503911   ,   B-   ,   Juan Pablo Osuna De Leon   ,   juanpabloosuna1997@gmail.com   ,   72   
+       [[ 44 ]]    43   ,   789012   ,   201503925   ,   B-   ,   Sergio Geovany Guoz Tubac   ,   sergioguoz1@gmail.com   ,   75   
+       [[ 45 ]]    44   ,   789012   ,   201503935   ,   B-   ,   Douglas Daniel Aguilar Cuque   ,   ddaguilar017@gmail.com   ,   99   
+       [[ 46 ]]    45   ,   789012   ,   201503953   ,   B-   ,   Sergio Geovany Leal Cardona   ,   sgleal97@gmail.com   ,   88   
+       [[ 47 ]]    46   ,   789012   ,   201504231   ,   B-   ,   Jose Carlos Bautista Mazariegos   ,   jcbautista95@gmail.com   ,   72   
+       [[ 48 ]]    47   ,   789012   ,   201504427   ,   B-   ,   Carlos Eduardo Cordón Hernández   ,   carlos.edu.cordon@gmail.com   ,   76   
+       [[ 49 ]]    48   ,   789012   ,   201504475   ,   B-   ,   Luis Felipe González Orellana   ,   luisfe.go.03@gmail.com   ,   61   
+       [[ 50 ]]    49   ,   789012   ,   201602421   ,   B-   ,   Diego Alejandro Vásquez   ,   totodiego1897@gmail.com   ,   61   
+       [[ 51 ]]    50   ,   789012   ,   201602517   ,   B-   ,   Marvin Saúl Guzmán García   ,   marvin_saul@hotmail.com   ,   75   
+       [[ 52 ]]    51   ,   789012   ,   201602909   ,   B-   ,   Edward Danilo Gómez Hernández   ,   edgomher95@gmail.com   ,   59   
+       [[ 53 ]]    52   ,   789012   ,   201612113   ,   B-   ,   Raul Alexander Xiloj Lopez   ,   raulxiloj98@gmail.com   ,   82   
+       [[ 54 ]]    53   ,   789012   ,   201612139   ,   B-   ,   Jeralmy Alejandra De León Samayoa   ,   jeralmy0598@gmail.com   ,   84   
+       [[ 55 ]]    54   ,   789012   ,   201612383   ,   B-   ,   Javier Antonio Alvarez Gonzalez   ,   javier3448.ja@gmail.com   ,   72   
+       [[ 56 ]]    55   ,   789012   ,   201612419   ,   B-   ,   Edvin Miguel Castro Ajiatas   ,   emca9610@gmail.com   ,   88   
+       [[ 57 ]]    56   ,   789012   ,   201700327   ,   B-   ,   Marco Antonio López Grajeda   ,   juniorlograjeda@gmail.com   ,   92   
+       [[ 58 ]]    57   ,   789012   ,   201700345   ,   B-   ,   Luis Gerardo Chay Grijalva   ,   gerardo15.chay97@gmail.com   ,   84   
+       [[ 59 ]]    58   ,   789012   ,   201700465   ,   B-   ,   Max Leonel Florian Curtidor   ,   maxgt734@gmail.com   ,   88   
+       [[ 60 ]]    59   ,   789012   ,   201700473   ,   B-   ,   Javier Alejandro Golon Lopez   ,   javiagl98@gmail.com   ,   97   
+       [[ 61 ]]    60   ,   789012   ,   201700727   ,   B-   ,   Alberto Kanec Ixchop Ordoñez   ,   albertokanecixchop@gmail.com   ,   60   
+       [[ 62 ]]    61   ,   789012   ,   201700801   ,   B-   ,   Erwin Alejandro Garcia Barrera   ,   alejandro76.gb@gmail.com   ,   68   
+       [[ 63 ]]    0   ,   789012   ,   202000000   ,   B+   ,   Rainman Sian   ,   sian@gmail.com   ,   62   
+       [[ 64 ]]    1   ,   15812201   ,   200313430   ,   B+   ,   Edwin Antonio López Ordóñez   ,   cobolatrix@gmail.com   ,   76   
+       [[ 65 ]]    2   ,   20440101   ,   200511896   ,   B+   ,   Darwin Dodany Girón Reyes   ,   dodanygiron@gmail.com   ,   61   
+       [[ 66 ]]    3   ,   28480101   ,   200517708   ,   B+   ,   José Eduardo Morales García   ,   edushowy@gmail.com   ,   76   
+       [[ 67 ]]    4   ,   25860101   ,   200715274   ,   B+   ,   Sergio Mynor David Felipe Zapeta   ,   sergio.zapeta@gmail.com   ,   78   
+       [[ 68 ]]    5   ,   12300101   ,   200915168   ,   B+   ,   Christian Levi González Rodríguez   ,   clevi.gonzalez@gmail.com   ,   88   
+       [[ 69 ]]    6   ,   25670101   ,   200915464   ,   B+   ,   Luis Fernnando Solares Arcon   ,   luisoler16@gmail.com   ,   87   
+       [[ 70 ]]    7   ,   17010101   ,   201020136   ,   B+   ,   David Eduardo Garcia Garcia   ,   david.ed.g2@gmail.com   ,   78   
+       [[ 71 ]]    8   ,   12030101   ,   201020260   ,   B+   ,   Victor Augusto López Hernández   ,   viktor1106@gmail.com   ,   61   
+       [[ 72 ]]    9   ,   26310101   ,   201020578   ,   B+   ,   Georgina Abigail Estrada García   ,   georgina.estrada78@gmail.com   ,   74   
+       [[ 73 ]]    10   ,   21880101   ,   201021164   ,   B+   ,   Rafael Alejandro Juárez Yantuche   ,   rafalejy@gmail.com   ,   76   
+       [[ 74 ]]    11   ,   20190101   ,   201114292   ,   B+   ,   Luis Carlos Alejos Avila   ,   siulsolrac1@gmail.com   ,   95   
+       [[ 75 ]]    12   ,   26020101   ,   201114566   ,   B+   ,   Brayan Ezequiel Santiago Brito   ,   ebritobryan@gmail.com   ,   63   
+       [[ 76 ]]    13   ,   26650101   ,   201122846   ,   B+   ,   Oscar René Jordán Orellana   ,   oscar.jordan.21091@gmail.com   ,   73   
+       [[ 77 ]]    14   ,   25700101   ,   201122998   ,   B+   ,   Pablo Roberto Roche Palacios   ,   pablorrp1@gmail.com   ,   87   
+       [[ 78 ]]    15   ,   23060115   ,   201212734   ,   B+   ,   Orlando Gofredo Batres Chinchilla   ,   batres.93@gmail.com   ,   84   
+       [[ 79 ]]    16   ,   23320101   ,   201212752   ,   B+   ,   Javier Alexander Chacón Samol   ,   shavichacon@gmail.com   ,   100   
+       [[ 80 ]]    17   ,   21860101   ,   201212822   ,   B+   ,   Luis Fernando Pérez Moran   ,   luispma14@gmail.com   ,   59   
+       [[ 81 ]]    18   ,   21740101   ,   201213132   ,   B+   ,   Carlos David Ramírez Altan   ,   racarlosdavid@gmail.com   ,   69   
+       [[ 82 ]]    19   ,   24790101   ,   201313872   ,   B+   ,   Esteban David Alvarez Bor   ,   davix93a@gmail.com   ,   59   
+       [[ 83 ]]    20   ,   21620301   ,   201314160   ,   B+   ,   Luis Manuel Morales López   ,   soy.lmml@gmail.com   ,   59   
+       [[ 84 ]]    21   ,   20300101   ,   201314164   ,   B+   ,   Oswaldo Giovanni Caceres Samayoa   ,   gios2911@gmail.com   ,   76   
+       [[ 85 ]]    22   ,   25670101   ,   201314412   ,   B+   ,   Juan De Dios Molina Herrera   ,   juandem95@gmail.com   ,   76   
+       [[ 86 ]]    23   ,   36010101   ,   201314642   ,   B+   ,   Glen Abra-Ham Calel Robledo   ,   gl3ncal3l@gmail.com   ,   76   
+       [[ 87 ]]    24   ,   21820101   ,   201314716   ,   B+   ,   James Allan Hansen Melgar Morales    ,   2811874520101@ingenieria.usac.edu   ,   62   
+       [[ 88 ]]    25   ,   26180101   ,   201314778   ,   B+   ,   Duglas Francisco Avila Torres   ,   avilatorresics@gmail.com   ,   59   
+       [[ 89 ]]    26   ,   25340101   ,   201314810   ,   B+   ,   Luis Daniel Morales Aguirre   ,   201314810@ingenieria.usac.edu.gt   ,   84   
+       [[ 90 ]]    27   ,   29070101   ,   201314886   ,   B+   ,   Henry Edmar Lopez Cardona   ,   henrylopezkre@gmail.com   ,   61   
+       [[ 91 ]]    28   ,   25720101   ,   201318664   ,   B+   ,   Jenny Sharai Montenegro Contreras   ,   jennysharai14@gmail.com   ,   86   
+       [[ 92 ]]    29   ,   22450101   ,   201403552   ,   B+   ,   Juan Carlos Aragón Bámaca   ,   juank1316@gmail.com   ,   59   
+       [[ 93 ]]    30   ,   26070101   ,   201408470   ,   B+   ,   Sandra Eunice Jiménez Rodas   ,   sandraeujim@gmail.com   ,   78   
+       [[ 94 ]]    31   ,   27610101   ,   201443726   ,   B+   ,   Tanya Beatriz Muhun Recinos   ,   tanyarecinos911@gmail.com   ,   80   
+       [[ 95 ]]    32   ,   29292007   ,   201503368   ,   B+   ,   Fredy Jose Ramirez Sandoval   ,   fredyramirezsando@gmail.com   ,   82   
+       [[ 96 ]]    33   ,   37750101   ,   201503392   ,   B+   ,   Mynor Joel Lombardo Molina Guevara   ,   mynormolina1@gmail.com   ,   95   
+       [[ 97 ]]    34   ,   30800101   ,   201503422   ,   B+   ,   Susel Eugenia Retana Arriola   ,   sretanausac@gmail.com   ,   89   
+       [[ 98 ]]    35   ,   25110113   ,   201503440   ,   B+   ,   Cesar Dionicio Sazo Mayen   ,   csazo171@gmail.com   ,   59   
+       [[ 99 ]]    36   ,   26450101   ,   201503442   ,   B+   ,   Yadira Yasmin Ferrer Morales   ,   yyfm.95@gmail.com   ,   85   
+       [[ 100 ]]    37   ,   27390101   ,   201503738   ,   B+   ,   Juan José Lima Ramírez   ,   jjlima.jjl@gmail.com   ,   69   
+       [[ 101 ]]    38   ,   36421202   ,   201503774   ,   B+   ,   Esbin Daniel Gonzalez Orozco   ,   danielgo8646@gmail.com   ,   89   
+       [[ 102 ]]    39   ,   28580101   ,   201503918   ,   B+   ,   Brayan Mauricio Aroche Boror   ,   aroche.brayan@gmail.com   ,   89   
+       [[ 103 ]]    40   ,   22180101   ,   201504002   ,   B+   ,   Inti Andrés Samayoa Ortíz   ,   intirocks888@gmail.com   ,   61   
+       [[ 104 ]]    41   ,   31540101   ,   201504028   ,   B+   ,   Rodney Estuardo López Marroquín   ,   rodx1497@gmail.com   ,   68   
+       [[ 105 ]]    42   ,   30820101   ,   201504242   ,   B+   ,   Pablo Javier Blanco Calderón   ,   pablo6a@gmail.com   ,   85   
+       [[ 106 ]]    43   ,   28080101   ,   201504290   ,   B+   ,   Bryan Eduardo Chacón López   ,   bryaned44@gmail.com   ,   67   
+       [[ 107 ]]    44   ,   27440101   ,   201504420   ,   B+   ,   Ronald Neftali Berdúo Morales   ,   ronaldnef1996@gmail.com   ,   100   
+       [[ 108 ]]    45   ,   25770101   ,   201504444   ,   B+   ,   Christian Enrique Ramos Alvarez   ,   christian7.gt@gmail.com   ,   70   
+       [[ 109 ]]    46   ,   30800101   ,   201504468   ,   B+   ,   Guillermo Alfredo Peitzner Estrada   ,   guillermopeitzner@gmail.com   ,   99   
+       [[ 110 ]]    47   ,   37360301   ,   201602420   ,   B+   ,   Ingrid Rossana Pérez Mena   ,   ingrita.rpm@gmail.com   ,   61   
+       [[ 111 ]]    48   ,   31460101   ,   201602434   ,   B+   ,   Jeannira Del Rosario Sic Menéndez   ,   jeannirasic@gmail.com   ,   86   
+       [[ 112 ]]    49   ,   33370101   ,   201602744   ,   B+   ,   David Omar Enriquez Reyes   ,   davidomarenriquezreyes@gmail.com   ,   67   
+       [[ 113 ]]    50   ,   31130101   ,   201602754   ,   B+   ,   José Andrés Morales Calderón   ,   hp.ecene@gmail.com   ,   87   
+       [[ 114 ]]    51   ,   37250101   ,   201602870   ,   B+   ,   Nery Eduardo Herrera Cottom   ,   tesco.herrera.edu@gmail.com   ,   82   
+       [[ 115 ]]    52   ,   28030101   ,   201603102   ,   B+   ,   Willians Alberto Lemus López   ,   willialberto.125@gmail.com   ,   91   
+       [[ 116 ]]    53   ,   23920101   ,   201610648   ,   B+   ,   David Jonathan González Gámez   ,   davidgmz79@gmail.com   ,   98   
+       [[ 117 ]]    54   ,   23850101   ,   201612114   ,   B+   ,   Herbert Rafael Reyes Portillo   ,   herbertreyes13@gmail.com   ,   59   
+       [[ 118 ]]    55   ,   34900101   ,   201612272   ,   B+   ,   Andrés Esteban Carvajal Morales   ,   andyecarvajal@gmail.com   ,   70   
+       [[ 119 ]]    56   ,   31130108   ,   201612304   ,   B+   ,   Mindi Guisela Ajpop Aguilar   ,   mindi.ajpop@gmail.com   ,   78   
+       [[ 120 ]]    57   ,   31290920   ,   201612326   ,   B+   ,   Eddy Arnoldo Reyes Hernández   ,   eddyarnoldo06@gmail.com   ,   89   
+       [[ 121 ]]    58   ,   34460101   ,   201700314   ,   B+   ,   Carlos Rodrigo Estrada Najarro   ,   carlos.r.estrada.n@gmail.com   ,   67   
+       [[ 122 ]]    59   ,   30430101   ,   201700342   ,   B+   ,   José Francisco Puac Ixcamparic   ,   puac235@gmail.com   ,   59   
+       [[ 123 ]]    60   ,   35560101   ,   201700378   ,   B+   ,   Alison Cristina Leiva Paredes   ,   alisonleiva24@gmail.com   ,   100   
+       [[ 124 ]]    61   ,   36020101   ,   201700886   ,   B+   ,   Andhy Lizandro Solís Osorio   ,   andhysolis99@gmail.com   ,   78   
+       [[ 125 ]]    62   ,   36120101   ,   201701048   ,   B+   ,   Ronald Gabriel Romero González   ,   baco420151@gmail.com   ,   61   
+       [[ 126 ]]    0   ,   3789012   ,   202000001   ,   C   ,   Juanca Maeda   ,   maeda@gmail.com   ,   64   
+       [[ 127 ]]    2   ,   1619403   ,   199516264   ,   C   ,   Sergio Fernando Giovani Morales Diaz   ,   envidiom@gmail.com   ,   57   
+       [[ 128 ]]    3   ,   2448401   ,   199811002   ,   C   ,   Arnaldo Patricio Paxtor García   ,   arnaldo.paxtor@gmail.com   ,   68   
+       [[ 129 ]]    1   ,   1777901   ,   961670932   ,   C   ,   Mynor Wotzbely Hidalgo Letona   ,   mynhidwotz@gmail.com   ,   59   
+       [[ 130 ]]    4   ,   2605901   ,   200011652   ,   C   ,   Oscar Humberto Morales Oviedo   ,   icellguatemala@gmail.com   ,   63   
+       [[ 131 ]]    5   ,   2902501   ,   200117439   ,   C   ,   José David Castro Bámaca   ,   josdivad@gmail.com   ,   66   
+       [[ 132 ]]    6   ,   2007501   ,   200412956   ,   C   ,   Nelson Jair González Pérez   ,   njgp86@gmail.com   ,   78   
+       [[ 133 ]]    7   ,   2876501   ,   200614911   ,   C   ,   Pedro Carlos Dávila Martinez   ,   slipcs6@gmail.com   ,   95   
+       [[ 134 ]]    8   ,   2430601   ,   200714175   ,   C   ,   Jennifer Lorena Rodriguez Lopez   ,   jenny7127@gmail.com   ,   70   
+       [[ 135 ]]    9   ,   2141004   ,   200714327   ,   C   ,   Victor Arturo Cochoy Tzunun   ,   vcochoy@gmail.com   ,   86   
+       [[ 136 ]]    10   ,   2914606   ,   200714473   ,   C   ,   Pablo Jonathán Yeguech Sanic   ,   pablogp8@gmail.com   ,   97   
+       [[ 137 ]]    11   ,   1996301   ,   200818841   ,   C   ,   Carlos Eduardo Monzón Duarte   ,   cmd12398@gmail.com   ,   97   
+       [[ 138 ]]    12   ,   2899601   ,   200819214   ,   C   ,   Carlos Esteban Godinez Delgado   ,   car5night@gmail.com   ,   64   
+       [[ 139 ]]    13   ,   2701101   ,   200915078   ,   C   ,   José Remberto Morejón Morales   ,   jose.usac.edu@gmail.com   ,   61   
+       [[ 140 ]]    14   ,   2601711   ,   200915080   ,   C   ,   Julio Roberto Vasquez Santiago   ,   otreborjjj@gmail.com   ,   64   
+       [[ 141 ]]    15   ,   2612001   ,   200915347   ,   C   ,   Erick Fernando Reyes Mancilla   ,   fernandoreyes182@gmail.com   ,   63   
+       [[ 142 ]]    16   ,   2307301   ,   200915390   ,   C   ,   Jose Carlos Toj Ajuchan   ,   chino1230@gmail.com   ,   59   
+       [[ 143 ]]    17   ,   2188801   ,   200915423   ,   C   ,   Gabriela Marilyn Orellana Solorzano   ,   gaba.ra91o@gmail.com   ,   95   
+       [[ 144 ]]    18   ,   2191701   ,   200915466   ,   C   ,   Oliver Alexander Rodas Mendoza   ,   oliver.rodas@popoyan.com.gt   ,   70   
+       [[ 145 ]]    19   ,   2431101   ,   200920081   ,   C   ,   Andrea Virginia Chavarria Guzmán   ,   andychava@gmail.com   ,   76   
+       [[ 146 ]]    20   ,   2983305   ,   201020975   ,   C   ,   Ottoniel Guarchaj   ,   otttoguitar@gmail.com   ,   90   
+       [[ 147 ]]    21   ,   2757201   ,   201114124   ,   C   ,   Jorge Antonio Rompiche Herrera   ,   2247557220101@ingenieria.usac.edu.gt    ,   76   
+       [[ 148 ]]    22   ,   2853401   ,   201114336   ,   C   ,   Kevin Alejandro Sánchez Samayoa   ,   ka_sanchezsamayoa@outlook.com   ,   76   
+       [[ 149 ]]    23   ,   2098101   ,   201114527   ,   C   ,   Cristian Esteban Moino Rodriguez   ,   moino.cristian@gmail.com   ,   80   
+       [[ 150 ]]    24   ,   2918901   ,   201114726   ,   C   ,   Migdalia Iveth Mateo Pérez   ,   mivethp@gmail.com   ,   78   
+       [[ 151 ]]    25   ,   2472901   ,   201122864   ,   C   ,   Luis Carlos Valiente Salazar   ,   luiskr1993@gmail.com   ,   97   
+       [[ 152 ]]    26   ,   1042404   ,   201122934   ,   C   ,   Marco Antonio Xocop Roquel   ,   marcstu2007@gmail.com   ,   82   
+       [[ 153 ]]    27   ,   2441301   ,   201212623   ,   C   ,   Kenia Marisol Zepeda López   ,   kenia.apk@gmail.com   ,   80   
+       [[ 154 ]]    28   ,   2894801   ,   201212808   ,   C   ,   Denis Francisco Vasquez Flores   ,   vasquezdennisan@gmail.com   ,   68   
+       [[ 155 ]]    29   ,   2874201   ,   201212854   ,   C   ,   Freddy Alejandro Monterroso   ,   freddy.a.monterroso@gmail.com   ,   94   
+       [[ 156 ]]    30   ,   2760317   ,   201213194   ,   C   ,   Carlos Omar Aquino Escobar   ,   carlos.aquino093@gmail.com   ,   84   
+       [[ 157 ]]    31   ,   2252201   ,   201213255   ,   C   ,   Leonel Eduardo Avila Calvillo   ,   leo.avilac8@gmail.com   ,   61   
+       [[ 158 ]]    32   ,   2279201   ,   201213282   ,   C   ,   Sergio Fernando De Los Rios Roque   ,   sergiofernando23234@gmail.com   ,   88   
+       [[ 159 ]]    33   ,   3915701   ,   201213619   ,   C   ,   José Javier Barreda Mancilla   ,   javier.barreda94@gmail.com   ,   58   
+       [[ 160 ]]    34   ,   2244801   ,   201220165   ,   C   ,   Oscar Rolando Bernard Peralta   ,   oscarol14394@gmail.com   ,   61   
+       [[ 161 ]]    35   ,   2161001   ,   201222595   ,   C   ,   Ana Lucrecia Villatoro Rodriguez   ,   lukycrazy@gmail.com   ,   76   
+       [[ 162 ]]    36   ,   2517501   ,   201246079   ,   C   ,   Axel Smaylie López Xum   ,   2635017521001@ingenieria.usac.edu.gt   ,   65   
+       [[ 163 ]]    37   ,   2415602   ,   201313663   ,   C   ,   Daniel Alberto Juárez Back   ,   d.juarez1094@gmail.com   ,   82   
+       [[ 164 ]]    38   ,   2322701   ,   201313688   ,   C   ,   Marellyn Lisbeth Trejo Castro    ,   mlis.trejo@gmail.com   ,   64   
+       [[ 165 ]]    39   ,   2398101   ,   201313819   ,   C   ,   César Javier Solares Orozco   ,   checha.db63@gmail.com   ,   90   
+       [[ 166 ]]    40   ,   2416601   ,   201313898   ,   C   ,   Eduardo Javier Hevia Calderón   ,   javierhc22@gmail.com   ,   59   
+       [[ 167 ]]    41   ,   2989106   ,   201314291   ,   C   ,   Luis Miguel Tun Garcia   ,   502luismiguel@gmail.com   ,   97   
+       [[ 168 ]]    42   ,   2445814   ,   201314359   ,   C   ,   Mario Roberto Cojolon Shoc   ,   mario69series24@gmail.com   ,   84   
+       [[ 169 ]]    43   ,   2041601   ,   201314408   ,   C   ,   Erick Fernando Hernandez Arroyo   ,   erickhernandez1710@gmail.com   ,   76   
+       [[ 170 ]]    44   ,   2988101   ,   201314474   ,   C   ,   Bayron Romeo Axpuac Yoc   ,   misinicialesbray@gmail.com   ,   63   
+       [[ 171 ]]    45   ,   2819214   ,   201314556   ,   C   ,   Carlos Gabriel Peralta Cambrán   ,   carlospecam@gmail.com   ,   66   
+       [[ 172 ]]    46   ,   2305601   ,   201314565   ,   C   ,   Danilo Urias Coc   ,   d14urias@gmail.com   ,   76   
+       [[ 173 ]]    47   ,   2738401   ,   201314713   ,   C   ,   Fernando Andrés Mérida Antón   ,   fer.merida94@gmail.com   ,   99   
+       [[ 174 ]]    48   ,   2430601   ,   201314808   ,   C   ,   Leslie Fabiola Morales González   ,   les.mg.usac@gmail.com   ,   72   
+       [[ 175 ]]    49   ,   2189302   ,   201314891   ,   C   ,   Luis Javier Yela Quijada   ,   javyela@gmail.com   ,   64   
+       [[ 176 ]]    50   ,   3912801   ,   201325533   ,   C   ,   Erick Fernando Elias Díaz   ,   elias25533@gmail.com   ,   73   
+       [[ 177 ]]    51   ,   2660711   ,   201346084   ,   C   ,   José Alberto Alarcón Chigua   ,   jalbertochigua@gmail.com   ,   92   
+       [[ 178 ]]    52   ,   2757001   ,   201403703   ,   C   ,   Rubén Emilio Osorio Sotorro   ,   rubenosorio88@gmail.com   ,   90   
+       [[ 179 ]]    53   ,   2433601   ,   201404104   ,   C   ,   Andrea Nicte Vicente Campos   ,   andreanicte02@gmail.com   ,   90   
+       [[ 180 ]]    54   ,   2103201   ,   201503378   ,   C   ,   Escarleth Andrea Velasco Campos   ,   velandreas@gmail.com   ,   70   
+       [[ 181 ]]    55   ,   3498403   ,   201503385   ,   C   ,   Brandon Antony Chitay Coutiño   ,   antonchitay@gmail.com   ,   61   
+       [[ 182 ]]    56   ,   3262914   ,   201503464   ,   C   ,   Roberto Adrián Cux Bran   ,   roberto.cux@gmail.com   ,   61   
+       [[ 183 ]]    57   ,   2695901   ,   201503470   ,   C   ,   Yimmi Daniel Ruano Pernillo   ,   yimmiss305@gmail.com   ,   88   
+       [[ 184 ]]    58   ,   3664301   ,   201503692   ,   C   ,   Diego Ernesto Sebastian Osorio Garcia   ,   diegoesog11@gmail.com   ,   63   
+       [[ 185 ]]    59   ,   2916901   ,   201503699   ,   C   ,   Eddy Javier Sirin Hernandez   ,   eddjavs@gmail.com   ,   86   
+       [[ 186 ]]    60   ,   2135901   ,   201503702   ,   C   ,   Edgar Humberto Borrayo Bartolón   ,   95.b.edgar@gmail.com   ,   70   
+       [[ 187 ]]    61   ,   3851401   ,   201503712   ,   C   ,   Oscar Rene Cuellar Mancilla   ,   oscarrenecuellarmancilla@gmail.com   ,   0   
+       [[ 188 ]]    62   ,   3195901   ,   201503750   ,   C   ,   Carlos Eduardo Carías Salan   ,   carloscariasingenieria@gmail.com   ,   96   
+       [[ 189 ]]    63   ,   3096501   ,   201503984   ,   C   ,   Fernando Vidal Ruiz Piox   ,   feruiz.12000@gmail.com   ,   68   
+       [[ 190 ]]    64   ,   3321101   ,   201504100   ,   C   ,   Christopher Alexander Lopez Orellana   ,   crhalfa09@gmail.com   ,   57   
+       [[ 191 ]]    65   ,   3333102   ,   201504448   ,   C   ,   Jefferson José Carlos Linares Cerón   ,   karlosceron15@gmail.com   ,   97   
+       [[ 192 ]]    66   ,   3878301   ,   201513760   ,   C   ,   Marco Pablo Mazariegos Macario   ,   marcomazariegos18@gmail.com   ,   70   
+       [[ 193 ]]    67   ,   2120501   ,   201602520   ,   C   ,   Marvin Ronaldo Martinez Marroquin   ,   marvin1ronal@gmail.com   ,   84   
+       [[ 194 ]]    68   ,   3935801   ,   201602723   ,   C   ,   Diego Alejandro Caballeros Melchor   ,   ultimaster22@gmail.com   ,   90   
+       [[ 195 ]]    69   ,   3134501   ,   201602743   ,   C   ,   Fernando Arturo Pensamiento Calderon   ,   fernanpensa@gmail.com   ,   59   
+       [[ 196 ]]    70   ,   3106801   ,   201602797   ,   C   ,   Edgar Arnoldo Aldana Arriola   ,   arnolso201@gmail.com   ,   97   
+       [[ 197 ]]    71   ,   3273201   ,   201602929   ,   C   ,   Sebastián Gómez Lavarreda   ,   santi.lavarreda@gmail.com   ,   77   
+       [[ 198 ]]    72   ,   3353701   ,   201602986   ,   C   ,   Nery Antonio Alvizures Sologaistoa   ,   nery016s@gmail.com   ,   88   
+       [[ 199 ]]    73   ,   3181801   ,   201603029   ,   C   ,   Luis Leonel Aguilar Sánchez   ,   leoaguilarsanchez97@gmail.com   ,   94   
+       [[ 200 ]]    74   ,   2270813   ,   201603189   ,   C   ,   Jose Ramiro Mateo Pu   ,   ramiromateo88@gmail.com   ,   76   
+       [[ 201 ]]    75   ,   3553901   ,   201610657   ,   C   ,   Sergio Alejandro Silva Roldán   ,   18sergiosilva@gmail.com   ,   61   
+       [[ 202 ]]    76   ,   3615801   ,   201612097   ,   C   ,   Erick Alexander Lemus Morales   ,   erick.lemus1998@gmail.com   ,   63   
+       [[ 203 ]]    77   ,   3928301   ,   201612204   ,   C   ,   Marylin Irenia Hernández Muñoz   ,   maryirenia@gmail.com   ,   64   
+       [[ 204 ]]    78   ,   3427109   ,   201612219   ,   C   ,   Herlindo René Corona Arenales   ,   uhcorona@gmail.com   ,   59   
+       [[ 205 ]]    79   ,   3944015   ,   201612408   ,   C   ,   Katherine Lisseth Sánchez Girón   ,   sanchezkathy29@gmail.com   ,   74   
+       [[ 206 ]]    80   ,   3843201   ,   201612499   ,   C   ,   Henry Adolfo Galvez   ,   soulofhenry@gmail.com   ,   67   
+       [[ 207 ]]    81   ,   3514001   ,   201700392   ,   C   ,   César Josué Reyes Díaz   ,   chechajosue@gmail.com   ,   97   
+       [[ 208 ]]    82   ,   3624601   ,   201700507   ,   C   ,   Kimberly Mireya Elias Diaz   ,   kim.eliasdiaz@gmail.com   ,   82   
+       [[ 209 ]]    83   ,   2809701   ,   201700675   ,   C   ,   David Rolando Elias Montufar   ,   davideliaspc@gmail.com   ,   99   
+       [[ 210 ]]    84   ,   3364014   ,   201700944   ,   C   ,   Alan Joel Morataya Escobar   ,   alanmorataya19@gmail.com   ,   84   
+       [[ 211 ]]    85   ,   3658201   ,   201709155   ,   C   ,   Kevin Alexander Garcia Jachac   ,   kevinalexandergarcia1999@gmail.com   ,   69   
+       [[ 212 ]]    86   ,   3818601   ,   201709362   ,   C   ,   Bruno Marco Jose Coronado Morales   ,   bcoronado.morales@gmail.com   ,   88   
+       [[ 213 ]]    0   ,   789012   ,   201602656   ,   A   ,   Luis Lizama   ,   lizama@gmail.com   ,   93   
+       [[ 214 ]]    1   ,   23970101   ,   200412765   ,   A   ,   Jorge Enrique Archer Rosales   ,   jearbasp@gmail.com   ,   87   
+       [[ 215 ]]    2   ,   22020101   ,   200517803   ,   A   ,   Johnny Mike Bravo Zamora   ,   jbravozam@gmail.com   ,   93   
+       [[ 216 ]]    3   ,   26110110   ,   200611517   ,   A   ,   Jose Domingo Tubac Chocon   ,   jhosdimax@gmail.com   ,   59   
+       [[ 217 ]]    4   ,   23981401   ,   200915609   ,   A   ,   Gary Joan Ortiz Lopez   ,   gortiz1490@gmail.com   ,   59   
+       [[ 218 ]]    5   ,   20250101   ,   201020209   ,   A   ,   José Daniel Carías Juarroz   ,   jdcarias01@gmail.com   ,   67   
+       [[ 219 ]]    6   ,   20140114   ,   201020247   ,   A   ,   Haroldo Pablo Arias Molina   ,   ihpam25@gmail.com   ,   65   
+       [[ 220 ]]    7   ,   16290101   ,   201114496   ,   A   ,   German Mazariegos Salguero   ,   trapavoided22@gmail.com   ,   69   
+       [[ 221 ]]    8   ,   20660101   ,   201114502   ,   A   ,   Rodolfo Orantes Orellana   ,   rochofo@gmail.com   ,   91   
+       [[ 222 ]]    9   ,   20370101   ,   201123848   ,   A   ,   Mario Josué Alvarado Lima   ,   oiramalli@gmail.com   ,   59   
+       [[ 223 ]]    10   ,   23520101   ,   201212956   ,   A   ,   Jose David Axpuac Velasquez   ,   jose.axpuac@gmail.com   ,   78   
+       [[ 224 ]]    11   ,   24800101   ,   201213233   ,   A   ,   Guillermo Rene Medinilla Hernandez   ,   medinilla.guillermo@gmail.com   ,   99   
+       [[ 225 ]]    12   ,   22850101   ,   201216022   ,   A   ,   Ramon Osvaldo Patzan Caballeros   ,   christsoldier92@gmail.com   ,   72   
+       [[ 226 ]]    13   ,   26300401   ,   201220159   ,   A   ,   Diego Ahtohil Noj Armira   ,   diego28shil@gmail.com   ,   95   
+       [[ 227 ]]    14   ,   21181503   ,   201313875   ,   A   ,   Hayrton Omar Ixpatá Coloch   ,   hayrtonixpata@gmail.com   ,   69   
+       [[ 228 ]]    15   ,   25140101   ,   201314112   ,   A   ,   Randolph Estuardo Muy Chanchavac   ,   randolph.estuardo.2012@gmail.com   ,   84   
+       [[ 229 ]]    16   ,   23700101   ,   201403532   ,   A   ,   Ever Eduardo Chicas Prado   ,   everchicasp@gmail.com   ,   61   
+       [[ 230 ]]    17   ,   23550101   ,   201403632   ,   A   ,   Jorge David Espina Molina   ,   canchemolinas@gmail.com   ,   61   
+       [[ 231 ]]    18   ,   24810101   ,   201403862   ,   A   ,   Brandon Bredly Alvarez López   ,   brandonbbal1994@gmail.com   ,   91   
+       [[ 232 ]]    19   ,   29080101   ,   201403905   ,   A   ,   Javier Alberto Cabrera Puente   ,   j.a.cabrerapuente@gmail.com   ,   61   
+       [[ 233 ]]    20   ,   34280101   ,   201404367   ,   A   ,   Jose Andrés Ruiz Peer   ,   jruizpeer@gmail.com   ,   59   
+       [[ 234 ]]    21   ,   32570509   ,   201408486   ,   A   ,   Sharolin Guadalupe Lacunza González   ,   sharolin33@gmail.com   ,   57   
+       [[ 235 ]]    22   ,   30150301   ,   201503651   ,   A   ,   Jose Fernando Valdez Perez   ,   valdezpjose@gmail.com   ,   69   
+       [[ 236 ]]    23   ,   29151010   ,   201503746   ,   A   ,   Raymundo Alexander Ixvalan Pacheco   ,   alexixva@gmail.com   ,   93   
+       [[ 237 ]]    24   ,   29110101   ,   201503869   ,   A   ,   Juan Pablo Juárez López   ,   juarezjuanpa@gmail.com   ,   82   
+       [[ 238 ]]    25   ,   28250301   ,   201503910   ,   A   ,   Ariel Alejandro Bautista Méndez   ,   arielbm46@gmail.com   ,   68   
+       [[ 239 ]]    26   ,   35660101   ,   201504042   ,   A   ,   Julio Estuardo Gómez Alonzo   ,   esthuardo12@gmail.com   ,   78   
+       [[ 240 ]]    27   ,   29940101   ,   201504143   ,   A   ,   Carlos Roberto Jiménez Pérez   ,   carlosjimenez2286@gmail.com   ,   93   
+       [[ 241 ]]    28   ,   30530101   ,   201504192   ,   A   ,   Maynor David Salguero Guillén   ,   mada.salgui@gmail.com   ,   100   
+       [[ 242 ]]    29   ,   30740110   ,   201504381   ,   A   ,   Julio Antonio Chaicoj Cotzojay   ,   juliocotzo11@gmail.com   ,   63   
+       [[ 243 ]]    30   ,   34270101   ,   201504497   ,   A   ,   Carlos Luis Pablo Hernandez Gramajo   ,   wichos11.ch@gmail.com   ,   59   
+       [[ 244 ]]    31   ,   30180401   ,   201513699   ,   A   ,   Esdras Jonatan Noj Larios   ,   esdrasjnl@gmail.com   ,   59   
+       [[ 245 ]]    32   ,   30700101   ,   201602412   ,   A   ,   William Adolfo Corado Cabrera   ,   coradowilly@gmail.com   ,   100   
+       [[ 246 ]]    33   ,   29160101   ,   201602569   ,   A   ,   Christopher Jhoanis Soto Cifuentes   ,   christophersoto97@gmail.com   ,   99   
+       [[ 247 ]]    34   ,   36780901   ,   201602811   ,   A   ,   Oscar Ariel Corleto Soto   ,   oscarcorleto000@gmail.com   ,   97   
+       [[ 248 ]]    35   ,   30700101   ,   201602820   ,   A   ,   Luis Alfonso Melgar Arizpe   ,   alfonso.melgar97@gmail.com   ,   71   
+       [[ 249 ]]    36   ,   29330101   ,   201602916   ,   A   ,   Ricardo Antonio Menéndez Tobías   ,   richimenen@gmail.com   ,   68   
+       [[ 250 ]]    37   ,   30450101   ,   201602975   ,   A   ,   Ruth Nohemy Ardón Lechuga   ,   ruthlechuga.1997@gmail.com   ,   63   
+       [[ 251 ]]    38   ,   29960101   ,   201602988   ,   A   ,   Ozmar René Escobar Avila   ,   superspeed52@gmail.com   ,   95   
+       [[ 252 ]]    39   ,   30520101   ,   201603067   ,   A   ,   Carlos Giovani Gil Chacón   ,   carlos_gil1997@yahoo.com   ,   63   
+       [[ 253 ]]    40   ,   35470101   ,   201603095   ,   A   ,   Abner Fernando Cardona Ramirez    ,   abner.cardona1997@gmail.com   ,   74   
+       [[ 254 ]]    41   ,   30090101   ,   201603174   ,   A   ,   Daniel Alejandro Castellon Schaad   ,   danielschaad2020@gmail.com   ,   88   
+       [[ 255 ]]    42   ,   36830108   ,   201603191   ,   A   ,   Pablo Andrés Hernández Rivera   ,   hpablo677@gmail.com   ,   98   
+       [[ 256 ]]    43   ,   29540101   ,   201610673   ,   A   ,   Yaiza Estefanía Pineda González   ,   ypineda2014ig@gmail.com   ,   70   
+       [[ 257 ]]    44   ,   30550108   ,   201612274   ,   A   ,   Carlos Antonio Campaneros Benito   ,   carloscampaneros@gmail.com   ,   80   
+       [[ 258 ]]    45   ,   27570116   ,   201700995   ,   A   ,   Luis Pedro Pineda González   ,   luispinedagonzalez33@gmail.com   ,   75   
+       [[ 259 ]]    46   ,   35330403   ,   201701020   ,   A   ,   Angel Marcelo Rama Marroquín García   ,   anmaramaga@gmail.com   ,   57   
+       [[ 260 ]]    47   ,   30970101   ,   201701029   ,   A   ,   Edson Armando Guix Manhel   ,   edsonguix@gmail.com   ,   59   
+       [[ 261 ]]    48   ,   32951014   ,   201709177   ,   A   ,   Cristian Manuel Castellanos Ajtún   ,   cristian6cas@hotmail.es   ,   86   
+       [[ 262 ]]    49   ,   30870101   ,   201713894   ,   A   ,   Brayan Alberto Chinchilla Ramos   ,   brayanch1297@gmail.com   ,   70   
+       [[ 263 ]]    50   ,   30920108   ,   201730555   ,   A   ,   Francisco Javier Bran Fuentes   ,   javierbran73@gmail.com   ,   100   
+     </LIST>
 >>---------------------------------- FIN EVALUACION LISTAS --------------------------------------------------
 >>
 >>
 >>
 >>
 >>
+>>---------------------------------- EVALUANDO ESTRUCTURAS --------------------------------------------------
+>>---------------------------------- EVALUANDO ESTRUCTURAS: VECTORES ----------------------------------------
+(DEPENDE DE COMO LO TRABAJARON)
+>>  3   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   hola  
+>>---------------------------------- EVALUANDO ESTRUCTURAS: MATRICES ----------------------------------------
+(TIENE QUE SALIR EL SIGUIENTE GRUPO ~14.5 VECES)
+>>10.0
+>>84.0
+>>1028.0
+>>15630.0
+>>3.48678441E9
+>>1.06993205379084E14
+>>15630.0
+>>15630.0
+>>279942.0
+>>279942.0
+>>1.34217736E8
+>>0.0
+>>1028.0
+>>2.0
+>>84.0
+>>1028.0
+>>15630.0
+>>0.0
+(HASTA ACA)
+>>   84.0   ,   1028.0   ,   1.06993205379084E14   ,   15630.0   ,   279942.0   ,   1028.0   ,   2.0   ,   15630.0   ,   0.0   
+>>   1028.0   ,   15630.0   ,   0.0   ,   10.0   ,   84.0   ,   1028.0   ,   15630.0   ,   3.48678441E9   ,   1.06993205379084E14   ,   15630.0   ,   15630.0   ,   279942.0   ,   279942.0   ,   1.34217736E8   ,   0.0   ,   1028.0   ,   2.0   ,   84.0   ,   1028.0   ,   15630.0   ,   0.0   ,   10.0   ,   84.0   ,   1028.0   ,   15630.0   ,   3.48678441E9   ,   1.06993205379084E14   ,   15630.0   ,   15630.0   
+>>   1028.0   
+>>   279942.0     
+>>                  [[ 1 ]]                     [[ 2 ]]                     [[ 3 ]]                     [[ 4 ]]                     [[ 5 ]]                     [[ 6 ]]                     [[ 7 ]]                     [[ 8 ]]                     [[ 9 ]]
+       [[ 1 ]]      11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1    
+       [[ 2 ]]      85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1    
+       [[ 3 ]]      1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1    
+       [[ 4 ]]      15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1    
+       [[ 5 ]]      3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1    
+       [[ 6 ]]      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1    
+       [[ 7 ]]      15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9    
+       [[ 8 ]]      15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14    
+       [[ 9 ]]      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1    
+       [[ 10 ]]     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1    
+       [[ 11 ]]     1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1    
+       [[ 12 ]]     1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1    
+       [[ 13 ]]     1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8    
+       [[ 14 ]]     3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1    
+       [[ 15 ]]     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1    
+       [[ 16 ]]     1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1    
+       [[ 17 ]]     15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1    
+       [[ 18 ]]     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1    
+       [[ 19 ]]     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1    
+       [[ 20 ]]     85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1    
+       [[ 21 ]]     1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1    
+       [[ 22 ]]     15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1    
+       [[ 23 ]]     3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1    
+       [[ 24 ]]     1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1    
+       [[ 25 ]]     15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9    
+       [[ 26 ]]     15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1                    85.1                        1029.1                      1.069932053790851E14    
+       [[ 27 ]]     279943.1                    85.1                        1029.1                      1.069932053790851E14        15631.1                     279943.1                    1029.1                      3.1                         15631.1    
+       [[ 28 ]]     279943.1                    1029.1                      3.1                         15631.1                     1.1                         1.342177371E8               15631.1                     85.1                        15631.1    
+       [[ 29 ]]     1.342177371E8               15631.1                     85.1                        15631.1                     11.1                        1.1                         3.4867844111E9              1029.1                      279943.1 
+
+>>                  [[ 1 ]]                       [[ 2 ]]                       [[ 3 ]]                       [[ 4 ]]                       [[ 5 ]]                       [[ 6 ]]                       [[ 7 ]]                       [[ 8 ]]                       [[ 9 ]]
+       [[ 1 ]]      11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#    
+       [[ 2 ]]      85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#    
+       [[ 3 ]]      1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#    
+       [[ 4 ]]      15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#    
+       [[ 5 ]]      3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#    
+       [[ 6 ]]      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#    
+       [[ 7 ]]      15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#    
+       [[ 8 ]]      15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#    
+       [[ 9 ]]      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#    
+       [[ 10 ]]     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#    
+       [[ 11 ]]     1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#    
+       [[ 12 ]]     1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#    
+       [[ 13 ]]     1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#    
+       [[ 14 ]]     3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#    
+       [[ 15 ]]     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#    
+       [[ 16 ]]     1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#    
+       [[ 17 ]]     15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#    
+       [[ 18 ]]     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#    
+       [[ 19 ]]     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#    
+       [[ 20 ]]     85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#    
+       [[ 21 ]]     1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#    
+       [[ 22 ]]     15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#    
+       [[ 23 ]]     3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#    
+       [[ 24 ]]     1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#    
+       [[ 25 ]]     15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#    
+       [[ 26 ]]     15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#    
+       [[ 27 ]]     279943.1J#                    85.1J#                        1029.1J#                      1.069932053790851E14J#        15631.1J#                     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#    
+       [[ 28 ]]     279943.1J#                    1029.1J#                      3.1J#                         15631.1J#                     1.1J#                         1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#    
+       [[ 29 ]]     1.342177371E8J#               15631.1J#                     85.1J#                        15631.1J#                     11.1J#                        1.1J#                         3.4867844111E9J#              1029.1J#                      279943.1J# 
+>>---------------------------------- EVALUANDO ESTRUCTURAS: ARREGLOS ----------------------------------------
+>>[[ , ,1 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,2 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,3 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,4 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,1 ,2]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,2 ,2]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,3 ,2]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,4 ,2]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,1 ,3]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,2 ,3]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,3 ,3]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,4 ,3]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,1 ,4]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,2 ,4]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,3 ,4]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+[[ , ,4 ,4]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false       
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,1 ,3]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         12                true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false    
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,4 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             false             false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             839.4093          false             false  
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,1 ,1]]
+                     [[ 1 ]]            [[ 2 ]]           [[ 3 ]]           [[ 4 ]]
+       [[ 1 ]]         true              true              true              true       
+       [[ 2 ]]         false             false             J#                false       
+       [[ 3 ]]         true              true              true              true       
+       [[ 4 ]]         false             false             false             false   
+
+(IMPRIME EL MISMO ARREGLO PERO CON TODO DENTRO DE LISTAS)
+>>[[ , ,1 ,1]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   J#   ]        List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,2 ,1]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,3 ,1]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   12   ]        List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,4 ,1]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,1 ,2]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,2 ,2]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,3 ,2]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,4 ,2]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,1 ,3]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,2 ,3]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,3 ,3]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,4 ,3]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,1 ,4]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   839.4093   ]      List[   false   ]     List[   false   ]    
+
+[[ , ,2 ,4]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,3 ,4]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+
+[[ , ,4 ,4]]
+                    [[ 1 ]]               [[ 2 ]]               [[ 3 ]]               [[ 4 ]]
+       [[ 1 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 2 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ]    
+       [[ 3 ]]      List[   true   ]      List[   true   ]      List[   true   ]      List[   true   ]    
+       [[ 4 ]]      List[   false   ]     List[   false   ]     List[   false   ]     List[   false   ] 
+
+
+
+>>[[ , ,1 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,2 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,3 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,4 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,1 ,2]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,2 ,2]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,3 ,2]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,4 ,2]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,1 ,3]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,2 ,3]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,3 ,3]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,4 ,3]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,1 ,4]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,2 ,4]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+[[ , ,3 ,4]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+[[ , ,4 ,4]]
+                    [[ 1 ]]                              [[ 2 ]]                               [[ 3 ]]                              [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,1 ,3]]
+                    [[ 1 ]]                              [[ 2 ]]                              [[ 3 ]]                               [[ 4 ]]
+       [[ 1 ]]      List[   12   ]                    List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,4 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                              [[ 3 ]]                               [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   839.4093   ]              List[   true   ,   false   ]      List[   true   ,   false   ]    
+
+(IMPRIME EL MISMO ARREGLO PERO CON UN CAMBIO EN ESTA POSICION)
+[[ , ,1 ,1]]
+                    [[ 1 ]]                              [[ 2 ]]                              [[ 3 ]]                               [[ 4 ]]
+       [[ 1 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 2 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[    J#   ,   <3   ]          List[   true   ,   false   ]    
+       [[ 3 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+       [[ 4 ]]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]      List[   true   ,   false   ]    
+>>---------------------------------- FIN EVALUACION ESTRUCTURAS --------------------------------------------------
 >>
+>>
+>>
+>>
+>>
+---------------------------------- EVALUANDO ARCHIVO DE ALBA --------------------------------------------------
+>>-----------------CALIFICACION-----------------
+>>========= Metodo Declaracion =========
+>>   Voy a ganar Compiladores 2 :D   
+>>======================================
+>>========= Error Ambitos ==============
+>>Error Semántico: La variable amb1 no esixte en este ámbito. en Expresion en la línea: 612 y columna: 36.
+>>======================================
+>>================ Nice ================
+>>   Sin error: Desde ambito2   
+>>======================================
+>>==============Aritmeticas=============
+>>   Hola COMPI   
+>>   El valor de  n1 = 52.1   
+>>   El valor de n3 = 70.0   
+>>Operaciones Aritmeticas 1: valor esperado:  
+a)62   
+b)0   
+c)-19   
+d)256   
+resultados>
+>>   a) 62   
+>>   b) 0   
+>>   c) -19   
+>>   d) 256.0   
+>>Operaciones aritmeticas 1 bien :D
+>>Operaciones Aritmeticas 2: valor esperado> -20  41, resultado>
+>>   -20   
+>>   41.0   
+>>Operaciones aritmeticas 2 bien :D
+>>======================================
+>>==============Logicas1=============
+>>Bien primera condicion :)
+>>Bien segunda condicion:)
+>>======================================
+>>==============Logicas2=============
+>>Not y Ands Correctos
+>>Nots y Ors correectos
+>>======================================
+>>==============relacionales1=============
+>>salida Correcta Relacionales 1!
+>>======================================
+>>vas bien, animo :D
+>>============Relacionales2=============
+>>salida CORRECTA en relacionales2!!
+>>======================================
+>>    1   
+>>    1 2   
+>>    1 2 3   
+>>    1 2 3 4   
+>>    1 2 3 4 5   
+>>    1 2 3 4 5 6   
+>>    1 2 3 4 5 6 7   
+>>    1 2 3 4 5 6 7 8   
+>>   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    
+>>   . . . . . . . . . * * * . . . . . . . * * * . . . . . . . . .    
+>>   . . . . . . . * * * * * * * . . . * * * * * * * . . . . . . .    
+>>   . . . . . * * * * * * * * * * * * * * * * * * * * * . . . . .    
+>>   . . . . . * * * * * * * * * * * * * * * * * * * * * . . . . .    
+>>   . . . . * * * * * * * * * * * * * * * * * * * * * * * . . . .    
+>>   . . . . * * * * * * * * * * * * * * * * * * * * * * * . . . .    
+>>   . . . * * * * * * * * * * * * * * * * * * * * * * * * * . . .    
+>>   . . . * * * * * * * * * * * * * * * * * * * * * * * * * . . .    
+>>   . . . * * * * * * * * * * * * * * * * * * * * * * * * * . . .    
+>>   . . . . * * * * * * * * * * * * * * * * * * * * * * * . . . .    
+>>   . . . . * * * * * * * * * * * * * * * * * * * * * * * . . . .    
+>>   . . . . . * * * * * * * * * * * * * * * * * * * * * . . . . .    
+>>   . . . . . * * * * * * * * * * * * * * * * * * * * * . . . . .    
+>>   . . . . . . . * * * * * * * * * * * * * * * * * . . . . . . .    
+>>   . . . . . . . . * * * * * * * * * * * * * * * . . . . . . . .    
+>>   . . . . . . . . . * * * * * * * * * * * * * . . . . . . . . .    
+>>   . . . . . . . . . . * * * * * * * * * * * . . . . . . . . . .    
+>>   . . . . . . . . . . . * * * * * * * * * . . . . . . . . . . .    
+>>   . . . . . . . . . . . . * * * * * * * . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . * * * * * . . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . . * * * . . . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . . . * . . . . . . . . . . . . . . .    
+>>   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    
+>>if la figura es un corazon +10 <3
+>>                       *    
+>>                     * * *    
+>>                   * * * * *    
+>>                 * * * * * * *    
+>>               * * * * * * * * *    
+>>             * * * * * * * * * * *    
+>>           * * * * * * * * * * * * *    
+>>         * * * * * * * * * * * * * * *    
+>>                   * * * * *    
+>>                   * * * * *    
+>>if la figura es un Arbol +10 <3
+>>Esto se va a print 2 veces :3
+>>Esto se va a print 2 veces :3
+>>   punteo Final: 54  
+
+>>---------------------------------- EVALUANDO RECURSIVAS --------------------------------------------------
+>>
+======================= FACTORIAL ======================
+
+>>   El factorial del numero 5 es: 120   
+>>
+======================= POTENCIA =======================
+
+>>   El numero 2 elevado a la 5 potencia es: 32   
+>>
+================= RECURSIVIDAD MULTIPLE =================
+
+>>
+============ HANOI ============
+
+>>   Solucion al problema de torres de Hanoi para n = 3   
+>>   mover disco de 1 a3   
+>>   mover disco de 1 a 2   
+>>   mover disco de 3 a2   
+>>   mover disco de 1 a 3   
+>>   mover disco de 2 a1   
+>>   mover disco de 2 a 3   
+>>   mover disco de 1 a3   
+>>
+================= RECURSIVIDAD CRUZADA
+>>
+===== Generar funciones Hoftadter
+
+>>
+== Femenina: 
+
+>>   1
+>>   0   
+>>   2   
+>>   1   
+>>   3   
+>>   2   
+>>   4   
+>>   3   
+>>   5   
+>>   4   
+>>
+== Masculina: 
+
+>>   0
+>>   1   
+>>   1   
+>>   2   
+>>   2   
+>>   3   
+>>   3   
+>>   4   
+>>   4   
+>>   5   
+>>
+===== Determinar la paridad de dos numeros
+
+>>   == El numero 17 es:    
+>>impar
+>>   == El numero 68 es:    
+>>par
+>>
+========== RECURSIVIDAD ANIDADA ==========
+
+>>   Funcion de Ackermann (3, 4) = 125    
+
+>>---------------------------------- FIN EVALUACION RECURSIVAS --------------------------------------------------
+>>alumnos random que va ganar compi
+>> A :
+>>   47   ,   30970101   ,   201701029   ,   A   ,   Edson Armando Guix Manhel   ,   edsonguix@gmail.com   ,   0   
+>> B- :
+>>   12   ,   789012   ,   201212945   ,   B-   ,   Elmer Edgardo Alay Yupe   ,   alayelmer1993@gmail.com   ,   0   
+>> B+ :
+>>   28   ,   25720101   ,   201318664   ,   B+   ,   Jenny Sharai Montenegro Contreras   ,   jennysharai14@gmail.com   ,   0   
+>> C :
+>>   3   ,   2448401   ,   199811002   ,   C   ,   Arnaldo Patricio Paxtor García   ,   arnaldo.paxtor@gmail.com   ,   0   
+>>J# IS COMING <3
+>>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-FIN-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 *#
 #201314164
 #201701048
+#201612114

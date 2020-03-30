@@ -423,8 +423,8 @@ calcularNota = (est) => {
         .notaFinal = 0;
     }
 
-    while(.notaFinal > 100){
-        .notaFinal = trunk((.notaFinal / 2.0))+trunk(.mailSize/3.0);
+    if(.notaFinal > 100){
+        .notaFinal = trunk((.notaFinal / 2))+trunk(.mailSize/3);
     }
 
     return(.notaFinal);
@@ -475,7 +475,7 @@ barplot(top10Notas, "Estudiante", "Nota", "Top 10 mejores notas", top10Nombres);
 
 iterador = 1
 while(iterador <= length(todos)){ # HAHA
-print(todos)
+#print(todos)
 iterador = iterador + 1;
 }
 
@@ -1120,10 +1120,10 @@ main();
 
 
 print("alumnos random que va ganar compi")
-print("A"+seccionA[48])
-print("B-"+seccionBMenos[13])
-print("B+"+seccionBMas[29])
-print("C"+seccionC[3])
+print(c("A",seccionA[48]))
+print(c("B-",seccionBMenos[13]))
+print(c("B+",seccionBMas[29]))
+print(c("C",seccionC[3]))
 
 
 print("J# IS COMING <3")

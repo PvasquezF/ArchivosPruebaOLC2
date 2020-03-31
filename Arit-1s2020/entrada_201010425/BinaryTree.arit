@@ -1,0 +1,86 @@
+str = "";
+str[10] = ""
+
+print(str)
+print("\n");
+
+
+set_Left = (key, root) =>
+{
+    t = root - 1
+    t = (t * 2) + 1;
+
+    #print("\nleft: "+str[root])
+    if (str[root] == "" | str[root] == null) {
+        print("Can't set child at " +t+", no parent found\n");
+    }
+    else {
+        str[t] = key;
+    }
+}
+
+createRoot = (key) =>
+{
+    str[1] = key;
+}
+
+set_Right = (key, root)=>
+{
+    t = root - 1
+    t = (t * 2) + 2;
+
+    print("\nright: "+str[root])
+    if (str[root] == "" | str[root] == null) {
+        print("Can't set child at " + t + ", no parent found\n");
+    }
+    else {
+        str[t] = key;
+    }
+}
+
+print_Tree = ()=>
+{
+    cx = 1
+    for (var in str) {
+        if (var != "" & var != null){
+            print(cx +"."+ var+"\n");
+        }else{
+            print(cx + ". - \n");
+        }
+	    cx = cx + 1
+    }
+}
+
+
+println = (a)=>{
+   print(a);
+   print("\n");
+}
+
+createRoot("A"); 
+set_Right("C", 1); 
+set_Left("D", 2); 
+set_Right("E", 2); 
+set_Left("F", 3); 
+print("\n------------ Impresion ------------\n");
+print_Tree(); 
+
+#*
+
+,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  
+
+right: A
+right: C
+------------ Impresion ------------
+1.A
+2.C
+3.D
+4.E
+5.F
+6. - 
+7. - 
+8. - 
+9. - 
+10. - 
+
+*#

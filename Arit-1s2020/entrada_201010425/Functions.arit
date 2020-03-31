@@ -1,0 +1,164 @@
+
+factorial = (  n ) => {
+    return ( n == 0 ? 1 : (n * factorial(n-1)) )
+}
+
+fibonacci = function( n ){
+    if (n == 0){
+	    return ( 0 )
+    } else if (n == 1){
+        return (1)
+    }else{
+        return (fibonacci(n-1) + fibonacci(n-2))
+    }
+}
+
+ackermann = function ( m,  n) {
+    if (m == 0){
+        return ( n + 1);
+    }else if ( m > 0 & n == 0){
+        return (ackermann(m - 1, 1))
+    }else{
+        return (ackermann(m - 1, ackermann(m,n - 1)))
+    }
+}
+
+potencia = ( base = 0, exp = 5 )=>
+{
+    r = 8;
+    if( exp == 0 ){
+        return (1)
+    }else{
+        return (base * potencia( base, exp-1))
+    }
+
+}
+
+
+modulo = function(n = 0, p)
+{
+    return ((n<p)? n: modulo(n-p,p));
+}
+
+
+mcd = function( a,  b )
+{
+    return ((b==0)?a:mcd(b,modulo(a,b)));
+}
+
+
+hofstaderFemenina = (n) =>
+{
+    if (n < 0){
+        return (0);
+    }else if (n == 0){
+        return (1);
+    }else{
+        return (n - hofstaderFemenina(n - 1));
+    }
+}
+
+hofstaderMasculino = (n) =>
+{
+    if (n <= 0){
+        return (0);
+    }else{
+        return (n - hofstaderMasculino(n - 1))
+    }
+}
+
+ par = ( nump)=>
+{
+    if (nump == 0){
+        return (true)
+    }
+
+    return (impar(nump - 1))
+}
+
+ impar = (numi)=>
+{
+    if (numi == 0){
+        return (true);
+    }
+
+    return (par(numi - 1))
+}
+
+ exp = function(x, n)
+{
+    if ( n == 0 ){
+        return (1);
+    }else
+    {
+        if ( n %% 2 == 0 ){
+            return (exp(x, n / 2) * exp(x, n / 2))
+        }else{
+            return (x * exp(x, n-1))
+        }
+    }
+
+}
+
+ tetration = ( x,  n) =>
+{
+    return ((n==0)?1:exp(x, tetration(x, n - 1)))
+}
+
+llamadas = ()=>{
+
+    print("1) Potencia con operador ternario: " + potencia(5,5)+"\n");
+    print("2) ObtenerMCD: " + mcd(53667,25527)+"\n");
+    print("3) Factorial: "+factorial(10)+"\n");
+    print("4) Fibonacci: "+fibonacci(10)+"\n");
+    print("5) Hoftater Femenino y Masculino:");
+    for ( t in c(1,2,3,4,5,6,7,8,9,10) )
+    {
+        print("\n\tHofstater Femenino  de " + t + " es " + hofstaderFemenina(t));
+        print("\n\tHofstater Masculino de " + t + " es " + hofstaderMasculino(t));
+    }
+    print("\n6) Paridad Par e Impar:\n\tpar (26) : " + par(26));
+    print("\n\timpar (27): " + impar(27));
+    print("\n7) Ackermann 3,4:"+ackermann(3,4));
+    print("\n8) Ackermann 3,9:"+ackermann(3,9));
+
+
+}
+
+llamadas();
+
+#*
+
+1) Potencia con operador ternario: 3125
+2) ObtenerMCD: 201
+3) Factorial: 3628800
+4) Fibonacci: 55
+5) Hoftater Femenino y Masculino:
+	Hofstater Femenino  de 1 es 0
+	Hofstater Masculino de 1 es 1
+	Hofstater Femenino  de 2 es 2
+	Hofstater Masculino de 2 es 1
+	Hofstater Femenino  de 3 es 1
+	Hofstater Masculino de 3 es 2
+	Hofstater Femenino  de 4 es 3
+	Hofstater Masculino de 4 es 2
+	Hofstater Femenino  de 5 es 2
+	Hofstater Masculino de 5 es 3
+	Hofstater Femenino  de 6 es 4
+	Hofstater Masculino de 6 es 3
+	Hofstater Femenino  de 7 es 3
+	Hofstater Masculino de 7 es 4
+	Hofstater Femenino  de 8 es 5
+	Hofstater Masculino de 8 es 4
+	Hofstater Femenino  de 9 es 4
+	Hofstater Masculino de 9 es 5
+	Hofstater Femenino  de 10 es 6
+	Hofstater Masculino de 10 es 5
+6) Paridad Par e Impar:
+	par (26) : true
+	impar (27): true
+7) Ackermann 3,4:125
+8) Ackermann 3,9:4093
+
+
+*#

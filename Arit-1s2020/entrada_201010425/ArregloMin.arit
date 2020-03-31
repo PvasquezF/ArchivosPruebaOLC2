@@ -1,0 +1,333 @@
+size = 8
+random_seed = 10;
+
+rand = function()
+{
+        random_seed = (random_seed * 32719 + 3) %% 32749;
+        return ((random_seed %% 44) + 1);
+}
+
+System.out.println = (d)=>{
+    print(d);
+    print("\n")
+}
+
+System.out.print = (d)=>{
+    print(d);
+}
+
+range = (min, max) =>{
+
+    if(max < min){ return (null); }
+
+    i = min
+    vec = null;
+    while(i <= max){
+        if(vec == null){
+            vec = i;
+	} else{
+            vec = c(vec,i)
+	}
+        
+	i = i + 1;
+    }
+
+    return (vec);
+}
+
+a = matrix(1,size,size);
+b = matrix(1,size,size);
+c = matrix(1,size,size);
+
+multiply = (a,b)=>
+{
+
+    c = matrix(0,nrow(a),nrow(b))
+    i = 1;
+    j = 1;
+
+    while(i <= nrow(a))
+    {
+        j = 1;
+        while(j <= nrow(a))
+        {
+            c[i,j] = 0;
+            k = 1;
+            while( k <= nrow(a) )
+            {
+                c[i,j] = c[i,j] + a[i,k] * b[k,j];
+                k = k + 1;
+            }
+            j = j + 1;
+        }
+        i = i + 1;
+    }
+
+    System.out.println("Matrix multiplication by regular method : ");
+    i = 1
+    while(i <= nrow(a))
+    {
+        j = 1;
+        while(j <= nrow(a))
+        {
+            System.out.print(c[i,j] + "\t");
+            j = j + 1
+        }
+        System.out.println("");
+        i = i + 1;
+    }
+
+    return (c);
+}
+
+strassen = (a, b)=>
+{
+    n = nrow(a);
+    result = matrix(1,n,n);
+
+    if((n%%2 != 0 ) & (n != 1))
+    {
+        a1 = null;
+        b1 = null;
+        c1 = null;
+        n1 = n + 1;
+        a1 = matrix(0,n1,n1);
+        b1 = matrix(0,n1,n1);
+        c1 = matrix(0,n1,n1);
+
+        i = 1;
+        while( i <= n){
+
+            j = 1;
+            while(j <= n)
+            {
+                a1[i,j] =a[i,j];
+                b1[i,j] =b[i,j];
+                j = j + 1;
+            }
+            i = i + 1
+        }
+
+        c1 = strassen(a1, b1);
+        i = 1;
+        while(i <= n){
+            j = 1;
+            while(j <= n){
+                result[i,j] = c1[i,j];
+		j = j + 1
+            }
+            i = i + 1;
+        }
+        return (result);
+    }
+
+    if(n == 1)
+    {
+	result[1,1] = a[1,1] * b[1,1];
+    }
+    else
+    {
+	A11 = matrix(0,n/2,n/2);
+        A12 = matrix(0,n/2,n/2);
+        A21 = matrix(0,n/2,n/2);
+        A22 = matrix(0,n/2,n/2);
+
+        B11 = matrix(0,n/2,n/2);
+        B12 = matrix(0,n/2,n/2);
+        B21 = matrix(0,n/2,n/2);
+        B22 = matrix(0,n/2,n/2);
+
+        divide(a, A11, 0 , 0);
+        divide(a, A12, 0 , n/2 );
+        divide(a, A21, n/2, 0);
+        divide(a, A22, n/2, n/2);
+
+        divide(b, B11, 0 , 0);
+        divide(b, B12, 0 , n/2);
+        divide(b, B21, n/2, 0);
+        divide(b, B22, n/2, n/2);
+
+        P1 = strassen(add(A11, A22), add(B11, B22));
+        P2 = strassen(add(A21, A22), B11);
+        P3 = strassen(A11, sub(B12, B22));
+        P4 = strassen(A22, sub(B21, B11));
+        P5 = strassen(add(A11, A12), B22);
+        P6 = strassen(sub(A21, A11), add(B11, B12));
+        P7 = strassen(sub(A12, A22), add(B21, B22));
+
+        C11 = add(sub(add(P1, P4), P5), P7);
+        C12 = add(P3, P5);
+        C21 = add(P2, P4);
+        C22 = add(sub(add(P1, P3), P2), P6);
+
+        copy(C11, result, 0 , 0);
+        copy(C12, result, 0 , n/2);
+        copy(C21, result, n/2, 0);
+        copy(C22, result, n/2, n/2);
+    }
+
+   ## printM(result);
+
+    return (result);
+}
+
+add = function(A,B)
+{
+    n = nrow(A);
+
+    result = matrix(0,n,n);
+
+    i = 1;
+    while(i <= n){
+        j = 1;
+        while( j <= n){
+            result[i,j] = A[i,j] + B[i,j];
+            j = j + 1
+        }
+         i = i + 1
+    }
+
+    return (result);
+}
+
+sub = function(A,B)
+{
+    n = nrow(A);
+
+    result = matrix(0,n,n);
+
+    i = 1;
+    while(i <= n){
+        j = 1;
+        while(j <= n){
+            result[i,j] = A[i,j] - B[i,j];
+            j = j + 1;
+        }
+        i = i + 1
+    }
+    return (result);
+}
+
+divide = (p1, c1, iB, jB)=>
+{
+    n = nrow(c1)
+    i1 = 1
+    i2 = iB + 1 
+
+
+    while(i1 <= n){
+        j1 = 1;
+        j2 = jB + 1
+        while ( j1 <= n)
+        {
+            c1[i1,j1] = p1[i2,j2];
+	    j1 = j1 + 1;
+            j2 = j2 + 1
+        }
+        i1 = i1 + 1;
+        i2 = i2 + 1
+    }
+}
+
+copy = function(c1, p1, iB, jB)
+{
+    n = nrow(c1)
+    i1 = 1;
+    i2 = iB + 1;
+    while( i1 <= n ){
+        j1 = 1;
+        j2 = jB + 1;
+        while(j1 <= n)
+        {
+            p1[i2,j2] = c1[i1,j1];
+            j1 = j1 + 1;
+            j2 = j2 + 1;
+        }
+        i1 = i1 + 1;
+        i2 = i2 + 1;
+    }
+}
+
+
+printM = function(array)
+{
+    n = nrow(array);
+
+    System.out.println("\n");
+    for(i in range(1,n))
+    {
+        for(j in range(1,n))
+        {
+            System.out.print(array[i,j] + "\t");
+        }
+        System.out.println("");
+    }
+    System.out.println("");
+}
+
+main = function() {
+
+    arr = matrix(0,size,size);
+
+    for( i in range(1,size))
+    {
+        for(j in range(1,size))
+        {
+            a[i,j] = rand();
+            b[i,j] = rand();
+        }
+    }
+   
+#*
+print("MATRIZ B \n")
+   print(b)
+   print("MATRIZ A \n")
+   print(a)
+*#
+   #*printM(a)
+   printM(b)*#
+   print("Strassen");
+   arr = strassen(a,b);
+   printM(arr)
+   arr2 = multiply(a,b);
+   System.out.println("-------- TAUTOLOGIA? ----------");
+   print("\n")
+   print(arr == arr2)
+}
+
+main()
+
+#*
+Strassen
+
+6796	5959	5429	5252	4476	5473	6879	6638	
+4154	4778	4955	4187	3990	4659	5337	4169	
+3982	3326	3831	3595	3102	4291	3665	3433	
+6620	5485	4835	4902	3541	5903	6173	6367	
+5266	4402	4868	4712	2742	4034	5147	4574	
+5483	5289	4419	4061	4112	4872	5430	5936	
+4622	2927	2905	3427	2032	3900	3647	3807	
+5585	3122	4283	4627	3019	4001	5309	3761	
+
+Matrix multiplication by regular method : 
+6796	5959	5429	5252	4476	5473	6879	6638	
+4154	4778	4955	4187	3990	4659	5337	4169	
+3982	3326	3831	3595	3102	4291	3665	3433	
+6620	5485	4835	4902	3541	5903	6173	6367	
+5266	4402	4868	4712	2742	4034	5147	4574	
+5483	5289	4419	4061	4112	4872	5430	5936	
+4622	2927	2905	3427	2032	3900	3647	3807	
+5585	3122	4283	4627	3019	4001	5309	3761	
+-------- TAUTOLOGIA? ----------
+
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]      
+      [1,]            true            true            true            true            true            true            true            true      
+      [2,]            true            true            true            true            true            true            true            true      
+      [3,]            true            true            true            true            true            true            true            true      
+      [4,]            true            true            true            true            true            true            true            true      
+      [5,]            true            true            true            true            true            true            true            true      
+      [6,]            true            true            true            true            true            true            true            true      
+      [7,]            true            true            true            true            true            true            true            true      
+      [8,]            true            true            true            true            true            true            true            true      
+
+*#

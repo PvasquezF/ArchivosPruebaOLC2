@@ -1,0 +1,237 @@
+#*
+    1 -> key
+	2 -> height
+
+	3 -> left
+	4 -> right;
+
+}
+*#
+index = 0;
+
+System.out.println = (d)=>{
+    print("\n");
+    print(d);
+}
+
+createNode = (d)=>{
+    return (list(d,1, null, null));
+}
+
+root = null;
+
+
+## A utility function to get the height of the tree
+height = function(N) {
+    if (N == null){
+        return (0);
+    }
+
+    return (N[[2]]);
+}
+
+##A utility function to get maximum of two integers
+max = function(a,b) {
+    return ((a > b) ? a : b);
+}
+
+## A utility function to right rotate subtree rooted with y
+## returns a list
+rightRotate = function(y) {
+    ## System.out.println("right rotate")	
+    ## System.out.println(y)
+    x = y[[3]];
+    T2 = x[[4]];
+
+
+    x[4] = y;
+    y[3] = T2;
+
+    ## Update heights
+    y[2] = max(height(y[[3]]), height(y[[4]])) + 1;
+    x[2] = max(height(x[[3]]), height(x[[3]])) + 1;
+
+    ## Return new root
+    return (x);
+}
+
+## A utility function to left rotate subtree rooted with x
+## See the diagram given above.
+
+leftRotate = function(x) {
+    ## System.out.println("left rotate")
+    y = x[[4]];
+    T2 = y[[3]];
+
+    ## Perform rotation
+    y[3] = x;
+    x[4] = T2;
+
+    ## Update heights
+    x[[2]] = max(height(x[[3]]), height(x[[4]])) + 1;
+    y[[2]] = max(height(y[[3]]), height(y[[4]])) + 1;
+
+    ## Return new root
+    return (y);
+}
+
+## Get Balance factor of node N
+getBalance = function(N) {
+    if (N == null){
+        return (0);
+    }
+
+    return (height(N[[3]]) - height(N[[4]]));
+}
+
+insert = function(node, key) {
+
+    if (node == null){
+        return (createNode(key));
+    }
+
+    if (key < node[[1]]){
+        node[[3]]= insert(node[[3]], key);
+    }
+    else if (key > node[[1]]){
+        node[[4]] = insert(node[[4]], key);
+    }
+    else{ ## Duplicate keys not allowed
+        return (node);
+    }
+    #* 2. Update height of this ancestor node *#
+    node[[2]] = 1 + max(height(node[[3]]),
+                        height(node[[4]]));
+
+    #* 3. Get the balance factor of this ancestor
+        node to check whether this node became
+        unbalanced *#
+    balance = getBalance(node);
+
+    ## If this node becomes unbalanced, then there
+    ## are 4 cases Left Left Case
+    if (balance > 1 & key < node[[3]][[1]]){}
+        return (rightRotate(node));
+    }
+
+    ## Right Right Case
+    if (balance < -1 & key > node[[4]][[1]]){
+        return (leftRotate(node));
+    }
+
+    ## Left Right Case
+    if (balance > 1 & key > node[[3]][[1]]) {
+        node[[3]] = leftRotate(node[[3]]);
+        return (rightRotate(node));
+    }
+
+    ## Right Left Case
+    if (balance < -1 & key < node[[4]][[1]]) {
+        node[[4]] = rightRotate(node[[4]]);
+        return (leftRotate(node));
+    }
+
+    #* return the (unchanged) node pointer *#
+    return (node);
+}
+
+#*
+    A utility function to print preorder traversal
+    of the tree.
+    The function also prints height of every node
+*#
+preOrder = function(node){
+
+    if (node != null) {
+	    print(node[[1]] + " ");
+        preOrder(node[[3]]);
+        preOrder(node[[4]]);
+    }
+}
+
+indexnodes = function(node){
+   
+    if(node == null) return;
+
+    node[5] = index;
+    index = index + 1;
+   
+    if(node[[3]] != null){
+        indexnodes(node[[3]]);
+    }
+    if(node[[4]] != null){
+        indexnodes(node[[4]]);
+    }
+  
+}
+
+graphviz = function(node){
+
+    index = 0;
+    indexnodes(node);
+
+    graph = "digraph{\n";
+    graph = graph + graphnode(node)
+    graph = graph + "}";
+    
+    return (graph);
+}
+
+graphnode = function(node){
+  
+    if(node == null) { return (""); }
+
+    str = "node" + node[[5]] + "[label=\"" + node[[1]] + "\"];\n";
+    
+    if(node[[3]] != null){
+	    str = str + graphnode(node[[3]]);
+	    str = str + "node"+node[[5]]+" -> "+"node"+node[[3]][[5]]+";\n"
+    }
+    if(node[[4]] != null){
+	    str = str + graphnode(node[[4]]);
+	    str = str + "node"+node[[5]]+" -> "+"node"+node[[4]][[5]]+";\n"
+    }
+
+    return (str);
+}
+
+main = function(){
+    root = insert(root, 10);
+    root = insert(root, 20);
+    root = insert(root, 30);
+    root = insert(root, 40);
+    root = insert(root, 50);
+    root = insert(root, 25);
+
+    #* The constructed AVL Tree would be
+     30
+     / \
+    20 40
+    / \	 \
+   10 25 50
+    *#
+    System.out.println("Preorder traversal of constructed tree is : ");
+    preOrder(root);
+    System.out.println("Graphviz");
+    System.out.println(graphviz(root));
+}
+
+main();
+
+#*
+Preorder traversal of constructed tree is : 30 20 10 25 40 50 
+Graphviz
+digraph{
+node0[label="30"];
+node1[label="20"];
+node2[label="10"];
+node1 -> node2;
+node3[label="25"];
+node1 -> node3;
+node0 -> node1;
+node4[label="40"];
+node5[label="50"];
+node4 -> node5;
+node0 -> node4;
+}
+*#

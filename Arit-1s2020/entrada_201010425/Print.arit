@@ -1,0 +1,520 @@
+carr = 0
+
+println = (val = "")=>{
+    print("\n");
+    print(carr+"\t")
+    carr = carr + 1
+    print(val);
+}
+
+test = (m)=>{
+    return (8+m)
+}
+
+vectorchange = (vector)=>{
+    vector = vector + 8
+    vector = c(9,8,10,vector)
+    println("INSIDE FUNCTION:\t");
+    print(vector);
+}
+
+main = (k = 55) => {
+    divider = "++++++++++++++++++++++++++++++++++++";
+    divider2 = "---------------------------------------------------------------------------------";
+    println(divider);
+    println(divider);
+    print("\n\t\tMEAN / MODE / MEDIAN");
+    println(divider);
+    println(divider);
+    iVector = c(1,2,3,4,5,6,7,8,9,10,11,12,30,30,30,30)
+    dVector = c(1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,12.0,12.0,12.0)
+    println("Mean para entero y double\n");
+    println(divider2);
+    println("Mean iVector sin trim:\t"+mean(iVector));
+    println("Mean dVector sin trim:\t"+mean(dVector));
+    println("Mean iVector con trim:\t"+mean(iVector, 8.0));
+    println("Mean dVector con trim:\t"+mean(dVector, 8.0));
+    println(divider);
+    println("Median para entero, double, string, boolean");
+    println(divider2);
+    sVector = c("a","b","c","d","e","f","g","e","e");
+    bVector = c(true,true,true,false,true,true,true,false);
+    println("Median iVector sin trim:\t"+median(iVector));
+    println("Median dVector sin trim:\t"+median(dVector));
+    println("Median sVector sin trim:\t"+median(sVector));
+    println("Median bVector sin trim:\t"+median(bVector));
+    println(divider2);
+    println("Median iVector con trim:\t"+median(iVector,9));
+    println("Median dVector con trim:\t"+median(dVector,9));
+    println("Median sVector con trim:\t"+median(sVector,"e"));
+    println("Median bVector con trim:\t"+median(bVector,true));
+    println(divider)    
+    println("Mode para entero, double, string, boolean");
+    println(divider2)    
+    println("Mode iVector sin trim:\t"+mode(iVector));
+    println("Mode dVector sin trim:\t"+mode(dVector));
+    println("Mode sVector sin trim:\t"+mode(sVector));
+    println("Mode bVector sin trim:\t"+mode(bVector));
+    println(divider2)    
+    println("Mode iVector con trim:\t"+mode(iVector,9));
+    println("Mode dVector con trim:\t"+mode(dVector,9));
+    println("Mode sVector con trim:\t"+mode(sVector,"e"));
+    println("Median bVector con trim:\t"+mode(bVector,true));
+    println(divider);
+    println(divider);
+    nummatrix0 = matrix(true, 3,9);
+    nummatrix1 = matrix(c(1,2,3,4,5,6,7,8,9),3,9)
+    nummatrix2 = matrix(c(11,12,13,14,15,16,17,18,19),3,9)
+    nummatrix3 = matrix(c(0.1),3,9)
+    nummatrix4 = matrix("taco",3,9)
+    println("Todas las matrices\n")
+    print(nummatrix0)
+    print(nummatrix1)
+    print(nummatrix2)
+    print(nummatrix3)
+    print(nummatrix4)
+    print("\nPrueba de aritmeticas matrices\n");
+    print("############ SUMA ############");
+    println("Boolean + Entero\n")
+    print(nummatrix1 + nummatrix0);
+    println("nummatrix1 no debio cambiar\n");
+    print(nummatrix1);
+    println("Numeros\nEntero + Entero\n");
+    print(nummatrix1 + nummatrix2)
+    println("nummatrix1 no debio cambiar\n");
+    print(nummatrix1);
+    println("Entero + Double\n");
+    print(nummatrix2 + nummatrix3)
+    print("\nnummatrix2 no debio cambiar\n");
+    print(nummatrix2);
+    print("\nnummatrix2 no debio cambiar de tipo:\t"+typeof(nummatrix2[1]));
+    print("\nString + Entero\n");
+    print(nummatrix1 + nummatrix4);
+    print("\nnummatrix1 no debio cambiar\n");
+    print(nummatrix1)
+    print("\nnummatrix1 no debio cambiar de tipo:\t" + typeof(nummatrix1[1]));
+    print("\nString + Double\n");
+    print(nummatrix2 + nummatrix4)
+    print("\nnummatrix2 no debio cambiar\n");
+    print(nummatrix2)
+    print("\nnummatrix2 no debio cambiar de tipo:\t" + typeof(nummatrix2[1]));
+    print("\n\n\n$$$$$$$$$$$$$$$$ RESTA $$$$$$$$$$$$$$$$$$$\n\n")
+    print("\n Double - Double\n")
+    print(nummatrix3 - nummatrix3)
+    print("\nnummatrix3 no debio cambiar\n");
+    print(nummatrix3)
+    print("\n\n\n================ NATIVAS ================\n\n")
+    print("\ntrunk: " + trunk(5.5));
+    print("\nround: " + round(5.49899));
+    print("\nstringlength: " + stringlength("Hesoyam123*"));
+    print("\nremove: " + remove("Hesoyam123*","Heso"));
+    print("\ntoupper: " + touppercase("Hesoyam123*"));
+    print("\ntolower: " + tolowercase(touppercase("Hesoyam123*")));
+    valor = matrix(c(5,8,9,30),3,9)
+    print("\nValor de columnas matriz: "+ncol(valor)+"\n")
+    print("Valor de filas matriz: "+nrow(valor)+"\n")
+    print(valor)
+    print("\nfilas:\n")
+    print(valor[3,])
+    print("\ncolumnas:\n")
+    print(valor[,3])
+    print("\nvalor individual:" + valor[2,8] + "\n")
+    print("\nvalor acceso tipo 4: " + valor[10] + "\n")
+    print("\nvalor acceso tipo 4: " + valor[27] + "\n")
+    print("\nvalor acceso tipo 4: " + valor[28] + "\n")
+    print("################## BOOLEAN ################\n")
+    boolmatrix = matrix(true,3,4)
+    print(boolmatrix)
+    print("\n################ INTEGER ###################\n")
+    boolmatrix[3,] = 3
+    print(boolmatrix)
+    print("\n################ BOOLEAN ###################\n")
+    boolmatrix[,3] = 88.0
+    print(boolmatrix) 
+    print("\n############# STRING ######################\n")
+    boolmatrix[1,2] = "hola"
+    boolmatrix[10] = "prueba"
+    print(boolmatrix) 
+    print("\n---------------------------- fin de asignacion 1 ----------------------------")
+    boolmatrix[1,] = c(5,9,8)
+    print("\nvalor por defecto " + k + "\n");
+    rr = list(5,8,true,"lul", c(9,8,7,0.0))
+    print(rr)
+    rr[40] = "hi"
+    rr[2] = list(8,9,9);
+    rr[[4]] = c(9,15,16)
+    print("\n");
+    print(rr)
+    print("\n");
+    zz = c(c(4,8),c(9), c(40,30))
+    print(zz[4][1][1][1][1][1]+ 9 +"z")
+    print(zz[2][2][1][1][1][1])
+    . = 65
+    print("\n"+.)
+    a = 5
+    b = c("hola", "mundo")
+    b[9] = "queso"
+    print(a[1][1][1][1][1]+"\n")
+    print(b[9][1][1][1][1]);
+    d = c(5,9,8,7)
+    d = d + d 
+    d = d + 5.0
+    print("\n");
+    print(d)
+    d = d + d
+    print("\n")
+    print(d)
+    d = d - 30
+    print("\n")
+    print(d)
+    d = d * d
+    print("\n")
+    print(d)
+    println("--------------------- RESULTADO DEL SWITCH --------------------- ")	
+    switch(rr[[1]]){
+	case 1:
+		print("si a caso 1");
+		break;
+	default:
+		print("\ndefecto");
+	case 2:
+		print("\nsi a caso 2");
+		break;
+	case 3:
+		print("si a caso 3");
+		break;
+	case 4:
+		print("si a caso 4");
+		break;
+    }
+   
+
+
+    println(divider)
+    println(divider)
+    println(divider)
+    println(divider)
+    println(divider)
+
+    t = c(1,2,6)
+    println("ANTES DEL CAMBIO!")
+    println(t);
+    vectorchange(t);
+    vectorchange(t);
+    vectorchange(t);
+    vectorchange(t);
+    vectorchange(t);
+    vectorchange(t);
+    println(divider2);	
+    println("DESPUES DEL CAMBIO!")
+    println(t)
+
+    relacionales()
+
+}
+
+
+relacionales = ()=>{
+    println("#################################")
+    println("#################################")
+    println("Probando relacionales de vectores");
+    cc = c(5,9,7,8,9,1,2,5,30)
+    cc2 = c(5,9,7,8,9,1,2,5,30)
+    cc2 = cc2 + 0.0;
+    println(cc)
+    println("El vector debe cambiar a booleano");
+    println("Comparar <")
+    println("int - int")
+    println(cc < 25)
+    println(typeof(cc))
+    println(cc[1])
+    println("double - int")
+    println(cc2 < 25)
+    graficas();
+}
+
+
+graficas = ()=>{
+    println("#################################");
+    println("#################################");
+    println("generando graficas");  
+    println("#################################");
+    println("#################################");
+    pie(c(20,20,20,20,20),c("carro 1", "carro 2", "carro 3", "carro 4", "carro 5"),"carros");
+    println("graficando pie...");  
+    barplot(c(50,70,10,5,900),"marcas","ventas","Venta de carros 2020",c("carro 1", "carro 2", "carro 3", "carro 4", "carro 5"));
+    println("graficando barplot...");  
+    plot(c(10,20,50,5,100,2,3), "o","Alumnos", "Nota acumulada", "Series de datos");
+    println("graficando plot con todo...");  
+    plot(c(10,20,50,5,100,2,3), "p","Alumnos", "Nota acumulada", "Series de datos");
+    println("graficando plot sin lineas...");  
+    plot(c(10,20,50,5,100,2,3), "i","Alumnos", "Nota acumulada", "Series de datos");
+    println("graficando plot sin puntos...");  
+    hist(c(10,20,50,5,100,2,3), "Alumnos", "Series de datos");
+    println("graficando plot sin puntos...");  
+}
+
+main(88)
+
+#*
+
+
+0	++++++++++++++++++++++++++++++++++++
+1	++++++++++++++++++++++++++++++++++++
+		MEAN / MODE / MEDIAN
+2	++++++++++++++++++++++++++++++++++++
+3	++++++++++++++++++++++++++++++++++++
+4	Mean para entero y double
+
+5	---------------------------------------------------------------------------------
+6	Mean iVector sin trim:	12
+7	Mean dVector sin trim:	7.6
+8	Mean iVector con trim:	10
+9	Mean dVector con trim:	5.2
+10	++++++++++++++++++++++++++++++++++++
+11	Median para entero, double, string, boolean
+12	---------------------------------------------------------------------------------
+13	Median iVector sin trim:	8
+14	Median dVector sin trim:	8.0
+15	Median sVector sin trim:	e
+16	Median bVector sin trim:	false
+17	---------------------------------------------------------------------------------
+18	Median iVector con trim:	30
+19	Median dVector con trim:	12.0
+20	Median sVector con trim:	f
+21	Median bVector con trim:	false
+22	++++++++++++++++++++++++++++++++++++
+23	Mode para entero, double, string, boolean
+24	---------------------------------------------------------------------------------
+25	Mode iVector sin trim:	30
+26	Mode dVector sin trim:	12.0
+27	Mode sVector sin trim:	e
+28	Mode bVector sin trim:	true
+29	---------------------------------------------------------------------------------
+30	Mode iVector con trim:	30
+31	Mode dVector con trim:	12.0
+32	Mode sVector con trim:	f
+33	Median bVector con trim:	false
+34	++++++++++++++++++++++++++++++++++++
+35	++++++++++++++++++++++++++++++++++++
+36	Todas las matrices
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]            true            true            true            true            true            true            true            true            true      
+      [2,]            true            true            true            true            true            true            true            true            true      
+      [3,]            true            true            true            true            true            true            true            true            true      
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]              1                1                1                1                1                1                1                1                1        
+      [2,]              2                2                2                2                2                2                2                2                2        
+      [3,]              3                3                3                3                3                3                3                3                3        
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]              11                11                11                11                11                11                11                11                11        
+      [2,]              12                12                12                12                12                12                12                12                12        
+      [3,]              13                13                13                13                13                13                13                13                13        
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
+      [2,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
+      [3,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
+                                                                                            [,1]                                                        [,2]                                                        [,3]                                                        [,4]                                                        [,5]                                                        [,6]                                                        [,7]                                                        [,8]                                                        [,9]                            
+                            [1,]                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                            
+                            [2,]                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                            
+                            [3,]                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                            
+
+Prueba de aritmeticas matrices
+############ SUMA ############
+37	Boolean + Entero
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]              2                2                2                2                2                2                2                2                2        
+      [2,]              3                3                3                3                3                3                3                3                3        
+      [3,]              4                4                4                4                4                4                4                4                4        
+
+38	nummatrix1 no debio cambiar
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]              1                1                1                1                1                1                1                1                1        
+      [2,]              2                2                2                2                2                2                2                2                2        
+      [3,]              3                3                3                3                3                3                3                3                3        
+
+39	Numeros
+Entero + Entero
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]              12                12                12                12                12                12                12                12                12        
+      [2,]              14                14                14                14                14                14                14                14                14        
+      [3,]              16                16                16                16                16                16                16                16                16        
+
+40	nummatrix1 no debio cambiar
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]              1                1                1                1                1                1                1                1                1        
+      [2,]              2                2                2                2                2                2                2                2                2        
+      [3,]              3                3                3                3                3                3                3                3                3        
+
+41	Entero + Double
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]            11.1            11.1            11.1            11.1            11.1            11.1            11.1            11.1            11.1      
+      [2,]            12.1            12.1            12.1            12.1            12.1            12.1            12.1            12.1            12.1      
+      [3,]            13.1            13.1            13.1            13.1            13.1            13.1            13.1            13.1            13.1      
+
+nummatrix2 no debio cambiar
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]              11                11                11                11                11                11                11                11                11        
+      [2,]              12                12                12                12                12                12                12                12                12        
+      [3,]              13                13                13                13                13                13                13                13                13        
+
+nummatrix2 no debio cambiar de tipo:	integer
+String + Entero
+                                                                                            [,1]                                                        [,2]                                                        [,3]                                                        [,4]                                                        [,5]                                                        [,6]                                                        [,7]                                                        [,8]                                                        [,9]                            
+                            [1,]                                                      1taco                                                    1taco                                                    1taco                                                    1taco                                                    1taco                                                    1taco                                                    1taco                                                    1taco                                                    1taco                          
+                            [2,]                                                      2taco                                                    2taco                                                    2taco                                                    2taco                                                    2taco                                                    2taco                                                    2taco                                                    2taco                                                    2taco                          
+                            [3,]                                                      3taco                                                    3taco                                                    3taco                                                    3taco                                                    3taco                                                    3taco                                                    3taco                                                    3taco                                                    3taco                          
+
+nummatrix1 no debio cambiar
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]              1                1                1                1                1                1                1                1                1        
+      [2,]              2                2                2                2                2                2                2                2                2        
+      [3,]              3                3                3                3                3                3                3                3                3        
+
+nummatrix1 no debio cambiar de tipo:	integer
+String + Double
+                                                                                            [,1]                                                        [,2]                                                        [,3]                                                        [,4]                                                        [,5]                                                        [,6]                                                        [,7]                                                        [,8]                                                        [,9]                            
+                            [1,]                                                      11taco                                                    11taco                                                    11taco                                                    11taco                                                    11taco                                                    11taco                                                    11taco                                                    11taco                                                    11taco                          
+                            [2,]                                                      12taco                                                    12taco                                                    12taco                                                    12taco                                                    12taco                                                    12taco                                                    12taco                                                    12taco                                                    12taco                          
+                            [3,]                                                      13taco                                                    13taco                                                    13taco                                                    13taco                                                    13taco                                                    13taco                                                    13taco                                                    13taco                                                    13taco                          
+
+nummatrix2 no debio cambiar
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]              11                11                11                11                11                11                11                11                11        
+      [2,]              12                12                12                12                12                12                12                12                12        
+      [3,]              13                13                13                13                13                13                13                13                13        
+
+nummatrix2 no debio cambiar de tipo:	integer
+
+
+$$$$$$$$$$$$$$$$ RESTA $$$$$$$$$$$$$$$$$$$
+
+
+ Double - Double
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0      
+      [2,]            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0      
+      [3,]            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0      
+
+nummatrix3 no debio cambiar
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
+      [2,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
+      [3,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
+
+
+
+================ NATIVAS ================
+
+
+trunk: 5
+round: 5
+stringlength: 11
+remove: yam123*
+toupper: HESOYAM123*
+tolower: hesoyam123*
+Valor de columnas matriz: 9
+Valor de filas matriz: 3
+                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
+      [1,]              5                5                5                5                5                5                5                5                5        
+      [2,]              8                8                8                8                8                8                8                8                8        
+      [3,]              9                9                9                9                9                9                9                9                9        
+
+filas:
+9,  9,  9,  9,  9,  9,  9,  9,  9
+columnas:
+5,  8,  9
+valor individual:8
+
+valor acceso tipo 4: 8
+
+valor acceso tipo 4: 9
+################## BOOLEAN ################
+                          [,1]            [,2]            [,3]            [,4]      
+      [1,]            true            true            true            true      
+      [2,]            true            true            true            true      
+      [3,]            true            true            true            true      
+
+################ INTEGER ###################
+                          [,1]            [,2]            [,3]            [,4]      
+      [1,]              1                1                1                1        
+      [2,]              1                1                1                1        
+      [3,]              3                3                3                3        
+
+################ BOOLEAN ###################
+                          [,1]            [,2]            [,3]            [,4]      
+      [1,]            1.0            1.0            88.0            1.0      
+      [2,]            1.0            1.0            88.0            1.0      
+      [3,]            3.0            3.0            88.0            3.0      
+
+############# STRING ######################
+                                                                                            [,1]                                                        [,2]                                                        [,3]                                                        [,4]                            
+                            [1,]                                                        1.0                                                        hola                                                        88.0                                                        1.0                            
+                            [2,]                                                        1.0                                                        1.0                                                        88.0                                                        1.0                            
+                            [3,]                                                        3.0                                                        3.0                                                        88.0                                                      prueba                          
+
+---------------------------- fin de asignacion 1 ----------------------------
+valor por defecto 88
+[ 5,  8,  true,  lul,  (9.0,  8.0,  7.0,  0.0) ]
+[ 5,  8,  true,  (9,  15,  16),  (9.0,  8.0,  7.0,  0.0),  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  hi ]
+49z
+655
+queso
+15.0,  23.0,  21.0,  19.0
+30.0,  46.0,  42.0,  38.0
+0.0,  16.0,  12.0,  8.0
+0.0,  256.0,  144.0,  64.0
+42	--------------------- RESULTADO DEL SWITCH --------------------- 
+defecto
+si a caso 2
+43	++++++++++++++++++++++++++++++++++++
+44	++++++++++++++++++++++++++++++++++++
+45	++++++++++++++++++++++++++++++++++++
+46	++++++++++++++++++++++++++++++++++++
+47	++++++++++++++++++++++++++++++++++++
+48	ANTES DEL CAMBIO!
+49	1,  2,  6
+50	INSIDE FUNCTION:	9,  10,  14,  9,  8,  10
+51	INSIDE FUNCTION:	17,  18,  22,  17,  16,  18,  9,  8,  10
+52	INSIDE FUNCTION:	25,  26,  30,  25,  24,  26,  17,  16,  18,  9,  8,  10
+53	INSIDE FUNCTION:	33,  34,  38,  33,  32,  34,  25,  24,  26,  17,  16,  18,  9,  8,  10
+54	INSIDE FUNCTION:	41,  42,  46,  41,  40,  42,  33,  32,  34,  25,  24,  26,  17,  16,  18,  9,  8,  10
+55	INSIDE FUNCTION:	49,  50,  54,  49,  48,  50,  41,  40,  42,  33,  32,  34,  25,  24,  26,  17,  16,  18,  9,  8,  10
+56	---------------------------------------------------------------------------------
+57	DESPUES DEL CAMBIO!
+58	49,  50,  54,  49,  48,  50,  41,  40,  42,  33,  32,  34,  25,  24,  26,  17,  16,  18,  9,  8,  10
+59	#################################
+60	#################################
+61	Probando relacionales de vectores
+62	5,  9,  7,  8,  9,  1,  2,  5,  30
+63	El vector debe cambiar a booleano
+64	Comparar <
+65	int - int
+66	true,  true,  true,  true,  true,  true,  true,  true,  false
+67	integer
+68	5
+69	double - int
+70	true,  true,  true,  true,  true,  true,  true,  true,  false
+71	#################################
+72	#################################
+73	generando graficas
+74	#################################
+75	#################################
+76	graficando pie...
+77	graficando barplot...
+78	graficando plot con todo...
+79	graficando plot sin lineas...
+80	graficando plot sin puntos...
+81	graficando plot sin puntos...
+
+*#
+
+#*
+ERRORES 
+TIPO        MSN                                                         LINEA   COLUMNA
+SEMANTICO INDEX OUT OF BOUNDS FOR MATRIX, MAX SIZE 27                   124        39
+SEMANTICO MATRIX COLUMNS AND VECTOR SIZE ARE NOT THE SAME               139         5
+SEMANTICO UNABLE TO USE TYPE 1 ACCESS ASSIGN WITH LIST AND 3 PARAMS     144         5
+SEMANTICO INDEX OUT OF BOUNDS 2                                         151         17
+
+*#

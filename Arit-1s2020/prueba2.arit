@@ -100,7 +100,7 @@ addNode = function(list, est) {
 printList = function(list){
     counter = 0;
     for(i in list){
-        if(i[[1]] == 0){
+        if(i[[1]] == "0"){ ##se comparaba anterior mente con INT por lo tanto era un error de casteo
             counter = counter + 1;
         } else{
             print(i)
@@ -471,11 +471,16 @@ getVectorRango = function(inicio, fin){
 
 barplot(top10Notas, "Estudiante", "Nota", "Top 10 mejores notas", top10Nombres);
 
+##en esta parte se manda a imprimir todos la cantidad de estudiantes que posee
 iterador = 1
 while(iterador <= length(todos)){ # HAHA
-print(todos)
+    print(todos)
 iterador = iterador + 1;
 }
+
+##se manda a imprimir usando un ciclo FOR de la funcion printList
+print("Usando La funcion printList")
+print(printList(todos))
 
 print("---------------------------------- FIN EVALUACION LISTAS --------------------------------------------------")
 print("")

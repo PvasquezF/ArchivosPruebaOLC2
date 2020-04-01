@@ -36,7 +36,7 @@ fillVector = function(list){
 	}
 	if(existe == false)
         {
-	     Votos[contador] = list(list(i[[2]],i[[7]],i[[6]]*i[[7]]/100))
+	     Votos[contador] = list(i[[2]],i[[7]],i[[6]]*i[[7]]/100)
 	     contador = contador + 1;
 	}
 

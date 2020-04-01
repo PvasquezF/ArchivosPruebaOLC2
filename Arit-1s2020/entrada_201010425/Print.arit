@@ -298,214 +298,302 @@ main(88)
 34	++++++++++++++++++++++++++++++++++++
 35	++++++++++++++++++++++++++++++++++++
 36	Todas las matrices
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]            true            true            true            true            true            true            true            true            true      
-      [2,]            true            true            true            true            true            true            true            true            true      
-      [3,]            true            true            true            true            true            true            true            true            true      
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]              1                1                1                1                1                1                1                1                1        
-      [2,]              2                2                2                2                2                2                2                2                2        
-      [3,]              3                3                3                3                3                3                3                3                3        
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]              11                11                11                11                11                11                11                11                11        
-      [2,]              12                12                12                12                12                12                12                12                12        
-      [3,]              13                13                13                13                13                13                13                13                13        
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
-      [2,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
-      [3,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
-                                                                                            [,1]                                                        [,2]                                                        [,3]                                                        [,4]                                                        [,5]                                                        [,6]                                                        [,7]                                                        [,8]                                                        [,9]                            
-                            [1,]                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                            
-                            [2,]                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                            
-                            [3,]                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                                                        taco                            
 
-Prueba de aritmeticas matrices
-############ SUMA ############
-37	Boolean + Entero
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]              2                2                2                2                2                2                2                2                2        
-      [2,]              3                3                3                3                3                3                3                3                3        
-      [3,]              4                4                4                4                4                4                4                4                4        
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  1      4      7      1      4      7      1      4      7     
+[2]  2      5      8      2      5      8      2      5      8     
+[3]  3      6      9      3      6      9      3      6      9     
 
-38	nummatrix1 no debio cambiar
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]              1                1                1                1                1                1                1                1                1        
-      [2,]              2                2                2                2                2                2                2                2                2        
-      [3,]              3                3                3                3                3                3                3                3                3        
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  11      14      17      11      14      17      11      14      17     
+[2]  12      15      18      12      15      18      12      15      18     
+[3]  13      16      19      13      16      19      13      16      19     
 
-39	Numeros
-Entero + Entero
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]              12                12                12                12                12                12                12                12                12        
-      [2,]              14                14                14                14                14                14                14                14                14        
-      [3,]              16                16                16                16                16                16                16                16                16        
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1     
+[2]  0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1     
+[3]  0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1     
+    [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  taco      taco      taco      taco      taco      taco      taco      taco      taco     
+[2]  taco      taco      taco      taco      taco      taco      taco      taco      taco     
+[3]  taco      taco      taco      taco      taco      taco      taco      taco      taco     
 
-40	nummatrix1 no debio cambiar
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]              1                1                1                1                1                1                1                1                1        
-      [2,]              2                2                2                2                2                2                2                2                2        
-      [3,]              3                3                3                3                3                3                3                3                3        
+\nPrueba de aritmeticas matrices\n 
+############ SUMA ############ 
+\n 
+29\t 
+Boolean + Entero\n 
+\n 
+30\t 
+nummatrix1 no debio cambiar\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  1      4      7      1      4      7      1      4      7     
+[2]  2      5      8      2      5      8      2      5      8     
+[3]  3      6      9      3      6      9      3      6      9     
 
-41	Entero + Double
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]            11.1            11.1            11.1            11.1            11.1            11.1            11.1            11.1            11.1      
-      [2,]            12.1            12.1            12.1            12.1            12.1            12.1            12.1            12.1            12.1      
-      [3,]            13.1            13.1            13.1            13.1            13.1            13.1            13.1            13.1            13.1      
+\n 
+31\t 
+Numeros\nEntero + Entero\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  12      18      24      12      18      24      12      18      24     
+[2]  14      20      26      14      20      26      14      20      26     
+[3]  16      22      28      16      22      28      16      22      28     
 
-nummatrix2 no debio cambiar
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]              11                11                11                11                11                11                11                11                11        
-      [2,]              12                12                12                12                12                12                12                12                12        
-      [3,]              13                13                13                13                13                13                13                13                13        
+\n 
+32\t 
+nummatrix1 no debio cambiar\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  1      4      7      1      4      7      1      4      7     
+[2]  2      5      8      2      5      8      2      5      8     
+[3]  3      6      9      3      6      9      3      6      9     
 
-nummatrix2 no debio cambiar de tipo:	integer
-String + Entero
-                                                                                            [,1]                                                        [,2]                                                        [,3]                                                        [,4]                                                        [,5]                                                        [,6]                                                        [,7]                                                        [,8]                                                        [,9]                            
-                            [1,]                                                      1taco                                                    1taco                                                    1taco                                                    1taco                                                    1taco                                                    1taco                                                    1taco                                                    1taco                                                    1taco                          
-                            [2,]                                                      2taco                                                    2taco                                                    2taco                                                    2taco                                                    2taco                                                    2taco                                                    2taco                                                    2taco                                                    2taco                          
-                            [3,]                                                      3taco                                                    3taco                                                    3taco                                                    3taco                                                    3taco                                                    3taco                                                    3taco                                                    3taco                                                    3taco                          
+\n 
+33\t 
+Entero + Double\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  11.1      14.1      17.1      11.1      14.1      17.1      11.1      14.1      17.1     
+[2]  12.1      15.1      18.1      12.1      15.1      18.1      12.1      15.1      18.1     
+[3]  13.1      16.1      19.1      13.1      16.1      19.1      13.1      16.1      19.1     
 
-nummatrix1 no debio cambiar
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]              1                1                1                1                1                1                1                1                1        
-      [2,]              2                2                2                2                2                2                2                2                2        
-      [3,]              3                3                3                3                3                3                3                3                3        
+\nnummatrix2 no debio cambiar\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  11      14      17      11      14      17      11      14      17     
+[2]  12      15      18      12      15      18      12      15      18     
+[3]  13      16      19      13      16      19      13      16      19     
 
-nummatrix1 no debio cambiar de tipo:	integer
-String + Double
-                                                                                            [,1]                                                        [,2]                                                        [,3]                                                        [,4]                                                        [,5]                                                        [,6]                                                        [,7]                                                        [,8]                                                        [,9]                            
-                            [1,]                                                      11taco                                                    11taco                                                    11taco                                                    11taco                                                    11taco                                                    11taco                                                    11taco                                                    11taco                                                    11taco                          
-                            [2,]                                                      12taco                                                    12taco                                                    12taco                                                    12taco                                                    12taco                                                    12taco                                                    12taco                                                    12taco                                                    12taco                          
-                            [3,]                                                      13taco                                                    13taco                                                    13taco                                                    13taco                                                    13taco                                                    13taco                                                    13taco                                                    13taco                                                    13taco                          
+\nnummatrix2 no debio cambiar de tipo:\tinteger 
+\nString + Entero\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  1taco      4taco      7taco      1taco      4taco      7taco      1taco      4taco      7taco     
+[2]  2taco      5taco      8taco      2taco      5taco      8taco      2taco      5taco      8taco     
+[3]  3taco      6taco      9taco      3taco      6taco      9taco      3taco      6taco      9taco     
 
-nummatrix2 no debio cambiar
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]              11                11                11                11                11                11                11                11                11        
-      [2,]              12                12                12                12                12                12                12                12                12        
-      [3,]              13                13                13                13                13                13                13                13                13        
+\nnummatrix1 no debio cambiar\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  1      4      7      1      4      7      1      4      7     
+[2]  2      5      8      2      5      8      2      5      8     
+[3]  3      6      9      3      6      9      3      6      9     
 
-nummatrix2 no debio cambiar de tipo:	integer
+\nnummatrix1 no debio cambiar de tipo:\tinteger 
+\nString + Double\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  11taco      14taco      17taco      11taco      14taco      17taco      11taco      14taco      17taco     
+[2]  12taco      15taco      18taco      12taco      15taco      18taco      12taco      15taco      18taco     
+[3]  13taco      16taco      19taco      13taco      16taco      19taco      13taco      16taco      19taco     
 
+\nnummatrix2 no debio cambiar\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  11      14      17      11      14      17      11      14      17     
+[2]  12      15      18      12      15      18      12      15      18     
+[3]  13      16      19      13      16      19      13      16      19     
 
-$$$$$$$$$$$$$$$$ RESTA $$$$$$$$$$$$$$$$$$$
+\nnummatrix2 no debio cambiar de tipo:\tinteger 
+\n\n\n$$$$$$$$$$$$$$$$ RESTA $$$$$$$$$$$$$$$$$$$\n\n 
+\n Double - Double\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  0.0      0.0      0.0      0.0      0.0      0.0      0.0      0.0      0.0     
+[2]  0.0      0.0      0.0      0.0      0.0      0.0      0.0      0.0      0.0     
+[3]  0.0      0.0      0.0      0.0      0.0      0.0      0.0      0.0      0.0     
 
-
- Double - Double
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0      
-      [2,]            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0      
-      [3,]            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0            0.0      
-
-nummatrix3 no debio cambiar
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
-      [2,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
-      [3,]            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1            0.1      
-
-
+\nnummatrix3 no debio cambiar\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1     
+[2]  0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1     
+[3]  0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1      0.1     
 
 ================ NATIVAS ================
 
+\n\n\n================ NATIVAS ================\n\n 
+\ntrunk: 5 
+\nround: 5 
+\nstringlength: 11 
+\nremove: yam123* 
+\ntoupper: HESOYAM123* 
+\ntolower: hesoyam123* 
+\nValor de columnas matriz: 9\n 
+Valor de filas matriz: 3\n 
+     [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+[1]  5      30      9      8      5      30      9      8      5     
+[2]  8      5      30      9      8      5      30      9      8     
+[3]  9      8      5      30      9      8      5      30      9     
 
-trunk: 5
-round: 5
-stringlength: 11
-remove: yam123*
-toupper: HESOYAM123*
-tolower: hesoyam123*
-Valor de columnas matriz: 9
-Valor de filas matriz: 3
-                          [,1]            [,2]            [,3]            [,4]            [,5]            [,6]            [,7]            [,8]            [,9]      
-      [1,]              5                5                5                5                5                5                5                5                5        
-      [2,]              8                8                8                8                8                8                8                8                8        
-      [3,]              9                9                9                9                9                9                9                9                9        
+\nfilas:\n 
+9 8 5 30 9 8 5 30 9 
+\ncolumnas:\n 
+9 30 5 
+\nvalor individual:9\n 
+\nvalor acceso tipo 4: 8\n 
+\nvalor acceso tipo 4: 9\n 
+################## BOOLEAN ################\n 
+     [1]    [2]    [3]    [4]    
+[1]  true      true      true      true     
+[2]  true      true      true      true     
+[3]  true      true      true      true     
 
-filas:
-9,  9,  9,  9,  9,  9,  9,  9,  9
-columnas:
-5,  8,  9
-valor individual:8
+\n################ INTEGER ###################\n 
+     [1]    [2]    [3]    [4]    
+[1]  true      true      true      true     
+[2]  true      true      true      true     
+[3]  true      true      true      true     
 
-valor acceso tipo 4: 8
+\n################ BOOLEAN ###################\n 
+     [1]    [2]    [3]    [4]    
+[1]  true      true      true      true     
+[2]  true      true      true      true     
+[3]  true      true      true      true     
 
-valor acceso tipo 4: 9
-################## BOOLEAN ################
-                          [,1]            [,2]            [,3]            [,4]      
-      [1,]            true            true            true            true      
-      [2,]            true            true            true            true      
-      [3,]            true            true            true            true      
+\n############# STRING ######################\n 
+     [1]    [2]    [3]    [4]    
+[1]  true      hola      true      prueba     
+[2]  true      true      true      true     
+[3]  true      true      true      true     
 
-################ INTEGER ###################
-                          [,1]            [,2]            [,3]            [,4]      
-      [1,]              1                1                1                1        
-      [2,]              1                1                1                1        
-      [3,]              3                3                3                3        
+\n---------------------------- fin de asignacion 1 ---------------------------- 
+\nvalor por defecto 88\n 
+[ 5  , 8  , true  , lul  , 9.0 8.0 7.0 0.0  ]
+\n 
+[ 5  , 8  , true  , 9 15 16  , 9.0 8.0 7.0 0.0  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , NULL  , hi  ]
+\n 
+49z 
+\n65 
+5\n 
+queso 
+\n 
+15.0 23.0 21.0 19.0 
+\n 
+30.0 46.0 42.0 38.0 
+\n 
+0.0 16.0 12.0 8.0 
+\n 
+0.0 256.0 144.0 64.0 
+\n 
+34\t 
+--------------------- RESULTADO DEL SWITCH ---------------------  
+\ndefecto 
+\n 
+35\t 
+++++++++++++++++++++++++++++++++++++ 
+\n 
+36\t 
+++++++++++++++++++++++++++++++++++++ 
+\n 
+37\t 
+++++++++++++++++++++++++++++++++++++ 
+\n 
+38\t 
+++++++++++++++++++++++++++++++++++++ 
+\n 
+39\t 
+++++++++++++++++++++++++++++++++++++ 
+\n 
+40\t 
+ANTES DEL CAMBIO! 
+\n 
+41\t 
+1 2 6 
+\n 
+42\t 
+INSIDE FUNCTION:\t 
+9 8 10 9 10 14 
+\n 
+43\t 
+INSIDE FUNCTION:\t 
+9 8 10 9 10 14 
+\n 
+44\t 
+INSIDE FUNCTION:\t 
+9 8 10 9 10 14 
+\n 
+45\t 
+INSIDE FUNCTION:\t 
+9 8 10 9 10 14 
+\n 
+46\t 
+INSIDE FUNCTION:\t 
+9 8 10 9 10 14 
+\n 
+47\t 
+INSIDE FUNCTION:\t 
+9 8 10 9 10 14 
+\n 
+48\t 
+--------------------------------------------------------------------------------- 
+\n 
+49\t 
+DESPUES DEL CAMBIO! 
+\n 
+50\t 
+1 2 6 
+\n 
+51\t 
+################################# 
+\n 
+52\t 
+################################# 
+\n 
+53\t 
+Probando relacionales de vectores 
+\n 
+54\t 
+5 9 7 8 9 1 2 5 30 
+\n 
+55\t 
+El vector debe cambiar a booleano 
+\n 
+56\t 
+Comparar < 
+\n 
+57\t 
+int - int 
+\n 
+58\t 
+true true true true true true true true false 
+\n 
+59\t 
+integer 
+\n 
+60\t 
+5 
+\n 
+61\t 
+double - int 
+\n 
+62\t 
+true true true true true true true true false 
+\n 
+63\t 
+################################# 
+\n 
+64\t 
+################################# 
+\n 
+65\t 
+generando graficas 
+\n 
+66\t 
+################################# 
+\n 
+67\t 
+################################# 
+\n 
+68\t 
+graficando pie... 
+\n 
+69\t 
+graficando barplot... 
+\n 
+70\t 
+graficando plot con todo... 
+\n 
+71\t 
+graficando plot sin lineas... 
+\n 
+72\t 
+graficando plot sin puntos... 
+\n 
+73\t 
+graficando plot sin puntos... 
 
-################ BOOLEAN ###################
-                          [,1]            [,2]            [,3]            [,4]      
-      [1,]            1.0            1.0            88.0            1.0      
-      [2,]            1.0            1.0            88.0            1.0      
-      [3,]            3.0            3.0            88.0            3.0      
-
-############# STRING ######################
-                                                                                            [,1]                                                        [,2]                                                        [,3]                                                        [,4]                            
-                            [1,]                                                        1.0                                                        hola                                                        88.0                                                        1.0                            
-                            [2,]                                                        1.0                                                        1.0                                                        88.0                                                        1.0                            
-                            [3,]                                                        3.0                                                        3.0                                                        88.0                                                      prueba                          
-
----------------------------- fin de asignacion 1 ----------------------------
-valor por defecto 88
-[ 5,  8,  true,  lul,  (9.0,  8.0,  7.0,  0.0) ]
-[ 5,  8,  true,  (9,  15,  16),  (9.0,  8.0,  7.0,  0.0),  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  NULL,  hi ]
-49z
-655
-queso
-15.0,  23.0,  21.0,  19.0
-30.0,  46.0,  42.0,  38.0
-0.0,  16.0,  12.0,  8.0
-0.0,  256.0,  144.0,  64.0
-42	--------------------- RESULTADO DEL SWITCH --------------------- 
-defecto
-si a caso 2
-43	++++++++++++++++++++++++++++++++++++
-44	++++++++++++++++++++++++++++++++++++
-45	++++++++++++++++++++++++++++++++++++
-46	++++++++++++++++++++++++++++++++++++
-47	++++++++++++++++++++++++++++++++++++
-48	ANTES DEL CAMBIO!
-49	1,  2,  6
-50	INSIDE FUNCTION:	9,  10,  14,  9,  8,  10
-51	INSIDE FUNCTION:	17,  18,  22,  17,  16,  18,  9,  8,  10
-52	INSIDE FUNCTION:	25,  26,  30,  25,  24,  26,  17,  16,  18,  9,  8,  10
-53	INSIDE FUNCTION:	33,  34,  38,  33,  32,  34,  25,  24,  26,  17,  16,  18,  9,  8,  10
-54	INSIDE FUNCTION:	41,  42,  46,  41,  40,  42,  33,  32,  34,  25,  24,  26,  17,  16,  18,  9,  8,  10
-55	INSIDE FUNCTION:	49,  50,  54,  49,  48,  50,  41,  40,  42,  33,  32,  34,  25,  24,  26,  17,  16,  18,  9,  8,  10
-56	---------------------------------------------------------------------------------
-57	DESPUES DEL CAMBIO!
-58	49,  50,  54,  49,  48,  50,  41,  40,  42,  33,  32,  34,  25,  24,  26,  17,  16,  18,  9,  8,  10
-59	#################################
-60	#################################
-61	Probando relacionales de vectores
-62	5,  9,  7,  8,  9,  1,  2,  5,  30
-63	El vector debe cambiar a booleano
-64	Comparar <
-65	int - int
-66	true,  true,  true,  true,  true,  true,  true,  true,  false
-67	integer
-68	5
-69	double - int
-70	true,  true,  true,  true,  true,  true,  true,  true,  false
-71	#################################
-72	#################################
-73	generando graficas
-74	#################################
-75	#################################
-76	graficando pie...
-77	graficando barplot...
-78	graficando plot con todo...
-79	graficando plot sin lineas...
-80	graficando plot sin puntos...
-81	graficando plot sin puntos...
 
 *#
 

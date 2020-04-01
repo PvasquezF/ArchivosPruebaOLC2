@@ -1,5 +1,8 @@
 #201700342
 
+
+#DECLARACION DE VECTORES Y LISTAS
+
 vectorNombre = "NULL";
 vectorVotos = 0;
 vectorPorcentaje = 0;
@@ -15,12 +18,10 @@ addNode = function(list, est) {
     return(list)
 }
 
-printList = function(list){
 
-    for(i in list){
-	print(i)
-    }
-}
+
+#METODO PARA LLENAR LA LISTA QUE CONTENGA LOS DATOS RESUMIDOS, AGRUPANDOLOS POR SU ESTADO Y OBTENIENDO EL % DE VOTOS VALIDOS.
+
 fillVector = function(list){
     for(i in list){
 	existe = false;
@@ -40,6 +41,9 @@ fillVector = function(list){
 	}
 
     }
+
+    #LLENADO DE LOS VECTORES PARA LAS GRAFICAS
+
     contador = 1
     for(name in Votos)
     {
@@ -50,45 +54,7 @@ fillVector = function(list){
     }
 }
 
-bubblesort = function(v) {
-  itemCount = length(v)
-  while(TRUE) {
-    hasChanged = FALSE
-    itemCount = itemCount - 1
-    if(itemCount == 0){
-        break;
-    }
-    range = getVectorRango(1, itemCount)
-    for(i in range) {
-      if ( v[i] > v[i+1] ) {
-        t = v[i]
-        v[i] = v[i+1]
-        v[i+1] = t
-
-
-        hasChanged = TRUE
-      }
-    }
-    if ( !hasChanged ){ break}
-  }
-  return(v)
-}
-
-getVectorRango = function(inicio, fin){
-    salida = inicio;
-    if(fin > inicio){
-        
-        inicio = inicio + 1;
-        while(inicio <= fin){
-            salida = c(salida, inicio);
-            inicio = inicio + 1;
-        }
-        return(salida)
-    }else if(fin == inicio){
-        return(inicio);
-    }
-    return(0);
-}
+#AQUI SE AGREGAN LOS DATOS ESTADISTICOS
 
 VotacionesPortugal = getListDatos("2019-10-06 18:56:26","Território Nacional","PPD/PSD.CDS-PP",99,36.83,38.24,1981459);
 VotacionesPortugal = addNode(VotacionesPortugal, getListDatos("2019-10-06 18:56:26","Território Nacional","PS",85,32.38,33.62,1742012))
@@ -596,6 +562,9 @@ VotacionesPortugal = addNode(VotacionesPortugal, getListDatos("2019-10-06 19:00:
 
 
 fillVector(VotacionesPortugal)
+
+#CREACION DE GRAFICAS
+
 titulo = "VOTACIONES PORTUGAL 2019"
 
 pie(vectorVotos,vectorNombre,titulo)

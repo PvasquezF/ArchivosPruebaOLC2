@@ -586,3 +586,4 @@ titulo = "% de Votos Validos en Portugal"
 
 barplot(vectorPorcentaje,x,y,titulo,vectorNombre)
 
+# 201504420

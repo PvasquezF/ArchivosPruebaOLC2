@@ -108,3 +108,5 @@ void principal() {
     // TAIL -> Army
     // Horoscope->Game->Fungus->Fruit->Freeway->Fork->Diamond->Data Base->Cycle->Cup->Crystal->Computer->Compass->Compact Disc->Comet->Coffee-shop->Coffee->Clown->Clock->Church->Chocolates->Chisel->Cappuccino->Brain->Bomb->Bible->Banana->Army
 }
+
+//201701048

@@ -10,8 +10,8 @@
 
 
 // Archivo de alba :D
-var var1 = 1;
-var punteo = 0;
+var var1 := 1;
+var punteo := 0;
 
 void principal() {
     print("---------------------------------- EVALUANDO ARCHIVO DE ALBA --------------------------------------------------")
@@ -31,7 +31,7 @@ void principal() {
     Declaracion();
     
     // seccion de manejo de ámbitos 2
-    amb1 = 5;
+    var amb1 := 5;
     Ambitos2();
 
     // Sección de expresiones aritméticas
@@ -57,11 +57,11 @@ void Declaracion(){
      *
     */
     print("========= Metodo Declaracion =========");
-    var n4 = 2;
-    var str4 = "Voy a ganar Compiladore";
-    var db4 = 0.0;
-    var db1 = db4;
-    var chr4 = "s";
+    var n4 := 2;
+    var str4 := "Voy a ganar Compiladore";
+    var db4 := 0.0;
+    var db1 := db4;
+    var chr4 := "s";
     // if n modificar la asignación
     if (db1 == db4){
         print(str4 + chr4 +" " +n4+" :D");
@@ -77,7 +77,7 @@ void Ambitos2(){
     // comentar luego de que lanze el error
     print("========= Error Ambitos ==============");
     print("Debería lanzar error: "+amb1);
-    var amb1 = "Desde ambito2";
+    var amb1 := "Desde ambito2";
     print("======================================");
     print("================ Nice ================");
     punteo = punteo + 5;
@@ -101,7 +101,7 @@ void Aritmeticas(){
     *    ======================================
     */
     print("==============Aritmeticas=============");
-    var art1 = "Hola "+"C"+""+"O"+""+"M"+""+"P"+""+"I";
+    var art1 := "Hola "+"C"+""+"O"+""+"M"+""+"P"+""+"I";
     print(art1);
     if (art1=="Hola COMPI"){
         punteo = punteo + 3;
@@ -109,7 +109,7 @@ void Aritmeticas(){
         print("Perdiste 3 puntos en suma de y :c");
     }
 
-    var n1 = 0.0 + 1 + 1 + 1 + 0.1 + 49;
+    var n1 := 0.0 + 1 + 1 + 1 + 0.1 + 49;
     print("El valor de  n1 = "+n1);
     if (n1 == 52.1){
         punteo = punteo + 5;
@@ -117,8 +117,8 @@ void Aritmeticas(){
         print("Perdiste 5 puntos en suma de enteros booleanos y caracteres :c");
     }
 
-    var n4 = (5750 * 2) - 11800 + 1.0;
-    var n3 = (((3 * 3) + 4) - 80 + 40.00 * 2 + 358.50 - (29 / 14.50)) - (0.50) + n4;
+    var n4 := (5750 * 2) - 11800 + 1.0;
+    var n3 := (((3 * 3) + 4) - 80 + 40.00 * 2 + 358.50 - (29 / 14.50)) - (0.50) + n4;
     print("El valor de n3 = "+n3);
     if (n3 == 70 || n3 == 70.0)
     {
@@ -137,10 +137,10 @@ void Aritmeticas(){
 
 void operacionesBasicas(){
     print("Operaciones Aritmeticas 1: valor esperado:  \na)62   \nb)0   \nc)-19   \nd)256   \nresultados>");
-    var a = (20-10+8/2*3+10-10-10+50);
-    var b = (50/50*50+50-100+100-100);
-    var c = (100/20*9-78+6-7+8-7+7*1*2*3/3);
-    var d = (2^(20/5*2));
+    var a := (20-10+8/2*3+10-10-10+50);
+    var b := (50/50*50+50-100+100-100);
+    var c := (100/20*9-78+6-7+8-7+7*1*2*3/3);
+    var d := (2^^(integer)(20/5*2));	//se debe castear el exponente a integer ya que potencia solamente funciona con base y exponente INTEGER.
     print("a) " +a);
     print("b) " +b);
     print("c) " +c);
@@ -154,14 +154,14 @@ void operacionesBasicas(){
 }
 
 void operacionesAvanzadas(){
-    var aritmetica1 = 2;
-    var aritmetica2 = -10;
+    var aritmetica1 := 2;
+    var aritmetica2 := -10;
     print("Operaciones Aritmeticas 2: valor esperado> -20  41, resultado>");
     
-    var aritmetica3 = aritmetica2*aritmetica1;
+    var aritmetica3 := aritmetica2*aritmetica1;
     print(aritmetica3+"");
     
-    aritmetica1 = aritmetica3/aritmetica1+50^2/50+50*2-100+100/100-0;
+    aritmetica1 = (integer)(aritmetica3/aritmetica1+50^^2/50+50*2-100+100/100-0);      //EL resultado de la division siempre es DOUBLE, y 'aritmetica1' es INTEGER. Se debe realizar un casteo
     print(aritmetica1+"");
     
     if (aritmetica3 == -20 && aritmetica1 == 41){
@@ -194,7 +194,7 @@ void Logicas(){
 }
 
 void Logicas2(){
-    var n0 = 16;
+    var n0 := 16;
     print("==============Logicas2=============");
 
     if (!(!(n0 == 16 && false==true) && !(true))){
@@ -204,21 +204,21 @@ void Logicas2(){
         print("No funcionan nots y ands :(");
     }
 
-    var n1 = n0 / 16;
+    var n1 := n0 / 16;
     if(true){
         n1 = n1 + 1;
     }else{
         n1 = n1 + 0;
     }
-    var condicion1 = n1 !=2; //esto es false
-    var aritmetica1 = n0/16;
-    if(((((!(true|false)))))){
+    var condicion1 := n1 !=2; //esto es false
+    var aritmetica1 := n0/16;
+    if(((((!(true||false)))))){
         aritmetica1 = aritmetica1 + 1;
     }else{
         aritmetica1 = aritmetica1 + 0;
     }
-    var condicion2 = aritmetica1 == n1; //false
-    var condicion3 = !true; //false
+    var condicion2 := aritmetica1 == n1; //false
+    var condicion3 := !true; //false
         
     if (!(!(!(condicion1||condicion2) || condicion3 ))){
         print("Nots y Ors correectos");
@@ -230,8 +230,8 @@ void Logicas2(){
 }
 
 void Relacionales(){
-    var n0 = 34;
-    var n1 = 16;
+    var n0 := 34;
+    var n1 := 16;
     
     relaciones1(n0);
     relaciones2(n1);
@@ -241,18 +241,18 @@ void Relacionales(){
 void relaciones1(integer salida)
 {
         print("==============relacionales1=============");
-        var n0 = salida + 0.0;
+        var n0 := salida + 0.0;
         if (n0 < 34.44)
+        {
+            salida = salida+15;
+            if (salida > 44)
             {
-                salida = salida+15;
-                if (salida > 44)
-                    {
-                        salida = salida +1
-                    }
+                salida = salida +1
             }
-            else {
-                salida = 1;
-            }
+        }
+        else {
+            salida = 1;
+        }
         
         if (salida != 1)
             {
@@ -306,14 +306,14 @@ void relaciones2(integer n0){
 }
 
 void figura1(integer n){
-    var StringFigura = "";
-    var i = -3*n/2
+    var StringFigura := "";
+    var i := -3*n/2
     while (i < n+1) {
         StringFigura = "";
-        var j = -3*n/2
+        var j := -3*n/2
         while (j < ((3*n/2)+1)) {
-            var absolutoi = i;
-            var absolutoj = j;
+            var absolutoi := i;
+            var absolutoj := j;
             if (i <0){
                 absolutoi = i*-1;
             }
@@ -337,15 +337,15 @@ void figura1(integer n){
 }
 
 void figura2(){
-    var StringFigura = "";
-    var c = "* ";
-    var b = "  ";
-    var altura = 10;
-    var ancho = 1;
-    var i = 0;
+    var StringFigura := "";
+    var c := "* ";
+    var b := "  ";
+    var altura := 10;
+    var ancho := 1;
+    var i := 0;
     while (i < (altura/4)){
-        var k = 0
-        var j = 0
+        var k := 0
+        var j := 0
         while (k < (altura - i)){
             StringFigura = StringFigura+b
             k = k+1;
@@ -362,8 +362,8 @@ void figura2(){
     StringFigura = "";
     i = 0
     while(i < (altura/4)){
-        var k = 0
-        var j = 0
+        var k := 0
+        var j := 0
         while(k < ((altura - i) - 2)){
             StringFigura = StringFigura + b;
             k = k+1
@@ -381,8 +381,8 @@ void figura2(){
     StringFigura = "";
     i = 0;
     while(i < (altura/4)){
-        var k = 0
-        var j = 0;
+        var k := 0
+        var j := 0;
         while(k < ((altura - i) - 4)){
             StringFigura = StringFigura + b;
             k = k+1;
@@ -397,15 +397,15 @@ void figura2(){
         i = i+1
     }
         
-    var StringFigura ="";
-    var i = 0;
+    StringFigura ="";
+    i = 0;
     while(i < (altura/4)){
-        var k = 0;
+        var k := 0;
         while(k < ((altura - i) - 6)){
             StringFigura = StringFigura + b;
             k = k+1
         }
-        var j = 0
+        var j := 0
         while(j < (i*2 + 13)){
             StringFigura = StringFigura + c;
             j = j+1;
@@ -419,8 +419,8 @@ void figura2(){
     StringFigura = "";
     i = 0;
     while(i < (altura/4)){
-        var k = 0;
-        var j = 0
+        var k := 0;
+        var j := 0
         while(k < (altura -2)){
             StringFigura = StringFigura + b;
             k = k+1;
@@ -439,7 +439,7 @@ void figura2(){
 }
 
 void SentenciasAnidadas(){
-    var numero1 = 0;
+    var numero1 := 0;
     do{
     switch(numero1){
         case 0:
@@ -459,11 +459,11 @@ void SentenciasAnidadas(){
 }
 
 void figura0(integer numero){
-    var i = 0;
+    var i := 0;
     while(i < numero){
-        var j = 0;
-        var numeroMostrar = 1;
-        var unaFila = "";
+        var j := 0;
+        var numeroMostrar := 1;
+        var unaFila := "";
         while(j <= i){
             unaFila = unaFila + " " + numeroMostrar;
             numeroMostrar  = numeroMostrar + 1;
@@ -475,3 +475,4 @@ void figura0(integer numero){
 }
 
 // fin
+// 201701048

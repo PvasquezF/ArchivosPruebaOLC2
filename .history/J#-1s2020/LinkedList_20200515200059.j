@@ -38,7 +38,7 @@ void prepend(string value) {
 }
 
 void append(string value) {
-    const newNode := nuevoNodo(value, null);
+    const newNode := new nuevoNodo(value, null);
 
     // If there is no head yet let's make new node a head.
     if (lista.head == null) {

@@ -8,12 +8,13 @@
 */
 
 
-print("---------------------------------- EVALUANDO ARCHIVO DE ALBA --------------------------------------------------")
+
 // Archivo de alba :D
 var var1 = 1;
 var punteo = 0;
 
 void principal() {
+    print("---------------------------------- EVALUANDO ARCHIVO DE ALBA --------------------------------------------------")
     print("-----------------CALIFICACION-----------------");
     var1 = 0;
     // Verificar ámbitos, se toma con prioridad la variable local ante la global.

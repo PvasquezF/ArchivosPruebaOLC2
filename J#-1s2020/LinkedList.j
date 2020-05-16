@@ -28,7 +28,7 @@ LinkedListNode nuevoNodo(string value, LinkedListNode next) {
 
 void prepend(string value) {
     // Make new node to be a head.
-    const newNode := new nuevoNodo(value, lista.head);
+    const newNode := nuevoNodo(value, lista.head);
     lista.head = newNode;
 
     // If there is no tail yet let's make new node a tail.
@@ -38,7 +38,7 @@ void prepend(string value) {
 }
 
 void append(string value) {
-    const newNode := new nuevoNodo(value, null);
+    const newNode := nuevoNodo(value, null);
 
     // If there is no head yet let's make new node a head.
     if (lista.head == null) {
@@ -108,3 +108,5 @@ void principal() {
     // TAIL -> Army
     // Horoscope->Game->Fungus->Fruit->Freeway->Fork->Diamond->Data Base->Cycle->Cup->Crystal->Computer->Compass->Compact Disc->Comet->Coffee-shop->Coffee->Clown->Clock->Church->Chocolates->Chisel->Cappuccino->Brain->Bomb->Bible->Banana->Army
 }
+
+//201701048

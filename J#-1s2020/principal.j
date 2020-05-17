@@ -1,5 +1,5 @@
 import arbol
-Define BNode as [BNode left, BNode right, string value];
+Define BNode as [BNode left, BNode rigth, string value];
 Define BTree as [BNode root];
 void principal() {
     // Arbol Binario

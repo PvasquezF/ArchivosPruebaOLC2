@@ -14,3 +14,13 @@ void principal() {
     tree.root=addNode("Luis", tree.root);    
     preOrder(tree.root);  
 }
+/* Salida Esperada:
+    Luis está repetido
+    Bayron
+    Edgar
+    Erick
+    Juan Carlos
+    Luis
+    Pavel
+    Rainman
+*/

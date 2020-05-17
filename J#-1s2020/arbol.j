@@ -8,7 +8,7 @@
 
     BNode add(String value, BNode subRoot) {
         if (subRoot == null) {
-            subRoot = new BNode();
+            subRoot = strc BNode();
             subRoot.value = value;
         } else if (esMayor(subRoot.value, value)) {
             subRoot.left = add(value, subRoot.left);

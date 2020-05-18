@@ -361,3 +361,217 @@ String grafo(Matriz m){
 	salida = salida + "}";
     return salida;
 }
+
+
+/**                          S       A       L       I       D       A
+*Recorrido por filas: A, 
+B, 
+C, 
+D, 
+E, 
+F, 
+G, 
+H, 
+I, 
+D, 
+D, 
+D, 
+A, 
+B, 
+C, 
+D, 
+E, 
+D, 
+D, 
+D, 
+D, 
+D, 
+D
+Recorrido por columnas: A, 
+D, 
+D, 
+D, 
+A, 
+D, 
+D, 
+D, 
+D, 
+D, 
+D, 
+B, 
+B, 
+C, 
+C, 
+D, 
+D, 
+E, 
+E, 
+F, 
+G, 
+H, 
+I
+digraph G{
+node[shape=box, style=filled, color=Gray95];
+edge[color=black];
+rankdir=UD;
+{rank = min;"Matriz";
+"x0";
+"x1";
+"x2";
+"x3";
+"x4";
+"x5";
+"x6";
+"x7";
+"x8";
+};
+{rank = same;
+"y0";
+"0,0\\nA";
+"0,1\\nB";
+"0,2\\nC";
+"0,3\\nD";
+"0,4\\nE";
+"0,5\\nF";
+"0,6\\nG";
+"0,7\\nH";
+"0,8\\nI";
+};
+{rank = same;
+"y1";
+"1,0\\nD";
+};
+{rank = same;
+"y2";
+"2,0\\nD";
+};
+{rank = same;
+"y3";
+"3,0\\nD";
+};
+{rank = same;
+"y4";
+"4,0\\nA";
+"4,1\\nB";
+"4,2\\nC";
+"4,3\\nD";
+"4,4\\nE";
+};
+{rank = same;
+"y5";
+"5,0\\nD";
+};
+{rank = same;
+"y6";
+"6,0\\nD";
+};
+{rank = same;
+"y7";
+"7,0\\nD";
+};
+{rank = same;
+"y8";
+"8,0\\nD";
+};
+{rank = same;
+"y9";
+"9,0\\nD";
+};
+{rank = same;
+"y10";
+"10,0\\nD";
+};
+"0,0\\nA"->"0,1\\nB"[constraint=false];
+"0,1\\nB"->"0,0\\nA"[constraint=false];
+"0,1\\nB"->"0,2\\nC"[constraint=false];
+"0,2\\nC"->"0,1\\nB"[constraint=false];
+"0,2\\nC"->"0,3\\nD"[constraint=false];
+"0,3\\nD"->"0,2\\nC"[constraint=false];
+"0,3\\nD"->"0,4\\nE"[constraint=false];
+"0,4\\nE"->"0,3\\nD"[constraint=false];
+"0,4\\nE"->"0,5\\nF"[constraint=false];
+"0,5\\nF"->"0,4\\nE"[constraint=false];
+"0,5\\nF"->"0,6\\nG"[constraint=false];
+"0,6\\nG"->"0,5\\nF"[constraint=false];
+"0,6\\nG"->"0,7\\nH"[constraint=false];
+"0,7\\nH"->"0,6\\nG"[constraint=false];
+"0,7\\nH"->"0,8\\nI"[constraint=false];
+"0,8\\nI"->"0,7\\nH"[constraint=false];
+"4,0\\nA"->"4,1\\nB"[constraint=false];
+"4,1\\nB"->"4,0\\nA"[constraint=false];
+"4,1\\nB"->"4,2\\nC"[constraint=false];
+"4,2\\nC"->"4,1\\nB"[constraint=false];
+"4,2\\nC"->"4,3\\nD"[constraint=false];
+"4,3\\nD"->"4,2\\nC"[constraint=false];
+"4,3\\nD"->"4,4\\nE"[constraint=false];
+"4,4\\nE"->"4,3\\nD"[constraint=false];
+"x0"->"0,0\\nA";
+"x1"->"0,1\\nB";
+"x2"->"0,2\\nC";
+"x3"->"0,3\\nD";
+"x4"->"0,4\\nE";
+"x5"->"0,5\\nF";
+"x6"->"0,6\\nG";
+"x7"->"0,7\\nH";
+"x8"->"0,8\\nI";
+"0,0\\nA"->"1,0\\nD";
+"1,0\\nD"->"0,0\\nA";
+"1,0\\nD"->"2,0\\nD";
+"2,0\\nD"->"1,0\\nD";
+"2,0\\nD"->"3,0\\nD";
+"3,0\\nD"->"2,0\\nD";
+"3,0\\nD"->"4,0\\nA";
+"4,0\\nA"->"3,0\\nD";
+"4,0\\nA"->"5,0\\nD";
+"5,0\\nD"->"4,0\\nA";
+"5,0\\nD"->"6,0\\nD";
+"6,0\\nD"->"5,0\\nD";
+"6,0\\nD"->"7,0\\nD";
+"7,0\\nD"->"6,0\\nD";
+"7,0\\nD"->"8,0\\nD";
+"8,0\\nD"->"7,0\\nD";
+"8,0\\nD"->"9,0\\nD";
+"9,0\\nD"->"8,0\\nD";
+"9,0\\nD"->"10,0\\nD";
+"10,0\\nD"->"9,0\\nD";
+"0,1\\nB"->"4,1\\nB";
+"4,1\\nB"->"0,1\\nB";
+"0,2\\nC"->"4,2\\nC";
+"4,2\\nC"->"0,2\\nC";
+"0,3\\nD"->"4,3\\nD";
+"4,3\\nD"->"0,3\\nD";
+"0,4\\nE"->"4,4\\nE";
+"4,4\\nE"->"0,4\\nE";
+"y0"->"0,0\\nA";
+"y1"->"1,0\\nD";
+"y2"->"2,0\\nD";
+"y3"->"3,0\\nD";
+"y4"->"4,0\\nA";
+"y5"->"5,0\\nD";
+"y6"->"6,0\\nD";
+"y7"->"7,0\\nD";
+"y8"->"8,0\\nD";
+"y9"->"9,0\\nD";
+"y10"->"10,0\\nD";
+"y0"->"y1"[rankdir=UD];
+"y1"->"y2"[rankdir=UD];
+"y2"->"y3"[rankdir=UD];
+"y3"->"y4"[rankdir=UD];
+"y4"->"y5"[rankdir=UD];
+"y5"->"y6"[rankdir=UD];
+"y6"->"y7"[rankdir=UD];
+"y7"->"y8"[rankdir=UD];
+"y8"->"y9"[rankdir=UD];
+"y9"->"y10"[rankdir=UD];
+"x0"->"x1";
+"x1"->"x2";
+"x2"->"x3";
+"x3"->"x4";
+"x4"->"x5";
+"x5"->"x6";
+"x6"->"x7";
+"x7"->"x8";
+Matriz ->x0;
+Matriz ->y0[rankdir=UD];
+}
+**/

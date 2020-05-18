@@ -7,20 +7,20 @@
 */
 
 Define Nodo as [
-    integer fila;
-    integer columna;
-    string valor;
-    Nodo abajo;
-    Nodo arriba;
-    Nodo derecha;
-    Nodo izquierda;
+    integer fila,
+    integer columna,
+    string valor,
+    Nodo abajo,
+    Nodo arriba,
+    Nodo derecha,
+    Nodo izquierda
 ];
 
 Define Encabezado as [
-    integer id;
-	Encabezado siguiente;
-	Encabezado anterior;
-	Nodo acceso;
+    integer id,
+	Encabezado siguiente,
+	Encabezado anterior,
+	Nodo acceso
 ];
 
 Define ListaEncabezados as [
@@ -28,8 +28,8 @@ Define ListaEncabezados as [
 ];
 
 Define Matriz as [
-    ListaEncabezados eFilas;
-	ListaEncabezados eColumnas;
+    ListaEncabezados eFilas,
+	ListaEncabezados eColumnas
 ];
 
 Matriz m;

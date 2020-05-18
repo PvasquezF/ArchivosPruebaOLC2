@@ -237,7 +237,7 @@ void principal(){
 	// print(grafo(m)); // 🥳🥳🥳🥳🥳
 }
 
-void grafo(Matriz m){
+String grafo(Matriz m){
     Encabezado eFila, eColumna, actual;
     Nodo nodoActual;
     String salida = "";

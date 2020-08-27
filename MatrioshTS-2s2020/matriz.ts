@@ -27,7 +27,7 @@ function print(matrix : number[][]) : void{
     }
 }
 
-function suma(matrix1 : number[][], matrix2 : number[][], matrixR : number[][]){
+function suma(matrix1 : number[][], matrix2 : number[][], matrixR : number[][]): void{
     for(let i = min; i < max; i++){
         for(let j = min; j < max; j++){
             matrixR[i][j] = matrix1[i][j] + matrix2[i][j];
@@ -63,7 +63,7 @@ function sumarColumnas(matrix : number[][]) : void{
 }
 
 
-function resta(matrix1 : number[][], matrix2 : number[][], matrixR : number[][]){
+function resta(matrix1 : number[][], matrix2 : number[][], matrixR : number[][]): void{
     for(let i = min; i < max; i++){
         for(let j = min; j < max; j++){
             matrixR[i][j] = matrix1[i][j] - matrix2[i][j];
@@ -72,7 +72,7 @@ function resta(matrix1 : number[][], matrix2 : number[][], matrixR : number[][])
 }
 
 
-function multiplicar(matrix1 : number[][], matrix2 : number[][], matrixR : number[][]){
+function multiplicar(matrix1 : number[][], matrix2 : number[][], matrixR : number[][]): void{
     for(let i = min; i < max; i++){
         for(let j = min; j < max; j++){
             for(let k = min; k < max; k++){
@@ -82,7 +82,7 @@ function multiplicar(matrix1 : number[][], matrix2 : number[][], matrixR : numbe
     }
 }
 
-function transpuesta(matrix1: number[][]){
+function transpuesta(matrix1: number[][]): void{
     const matrixAux : number[][] = [];
     for(let i = 0; i < max; i++){
         matrixAux[i] = [];
@@ -128,7 +128,7 @@ function maxValue(matrix1 : number[][]) : number{
     return temp;
 }
 
-function ordenar(matrix1 : number[][]){
+function ordenar(matrix1 : number[][]): void{
     let aux = 0;
     for(let i = 0; i < matrix1.length; i++){
         for(let j = 0; j < matrix1[i].length; j++){
@@ -145,7 +145,7 @@ function ordenar(matrix1 : number[][]){
     }
 }
 
-function clearMat(matrix : number[][]){
+function clearMat(matrix : number[][]): void{
     for(let i = 0; i < matrix.length; i++){
         for(let j = 0; j < matrix[i].length; j++){
             matrix[i][j] = 0;

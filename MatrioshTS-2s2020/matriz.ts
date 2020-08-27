@@ -45,7 +45,7 @@ function sumarFilas(matrix : number[][]) : void{
             contador = contador + matrix[i][j];
 			salida = salida + "\t|\t" + matrix[i][j];
         }
-        console.log(salida, "\t|\t",contador);
+        console.log(salida+"\t|\t"+contador);
     }
 }
 
@@ -109,7 +109,7 @@ function minValue(matrix1 : number[][]) : number{
             }
         }
     }
-    console.log("Min -> [",iAux,",",jAux,"] = ",temp);
+    console.log("Min -> ["+iAux+","+jAux+"] = "+temp);
     return temp;
 }
 
@@ -124,7 +124,7 @@ function maxValue(matrix1 : number[][]) : number{
             }
         }
     }
-    console.log("Max -> [",iAux,",",jAux,"] = ",temp);
+    console.log("Max -> ["+iAux+","+jAux+"] = "+temp);
     return temp;
 }
 

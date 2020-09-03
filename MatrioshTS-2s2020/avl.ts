@@ -3,11 +3,11 @@ type AVLNode = {
     right: AVLNode,
     height: number,
     value: number
-}
+};
 
 type AVLTree = {
     root: AVLNode
-}
+};
 
 function height(n: AVLNode): number {
     if (n == null) {
@@ -24,7 +24,7 @@ function insert(node: AVLNode, value: number) :AVLNode {
             right: null,
             height: 0,
             value: value
-        }
+        };
         return node;
     }
 

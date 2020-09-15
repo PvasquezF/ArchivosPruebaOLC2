@@ -138,16 +138,17 @@ Inicio();
 }
 
  function  operacionesBasicas(){
-    console.log("Operaciones Aritmeticas 1: valor esperado:  \na)62   \nb)0   \nc)-19   \nd)256   \nresultados>");
+    console.log("Operaciones Aritmeticas 1: valor esperado:  \na)62   \nb)0   \nc)-19   \nd)16   \nresultados>");
     let a = (20-10+8/2*3+10-10-10+50);
     let b = (50/50*50+50-100+100-100);
     let c = (100/20*9-78+6-7+8-7+7*1*2*3/3);
-    let d = (2 **(20/5*2));
+    let d = (2 
+             (20/5*2));
     console.log("a) " +a);
     console.log("b) " +b);
     console.log("c) " +c);
     console.log("d) " +d);
-    if (a==62 && b==0 && c == -19 && d ==256){
+    if (a==62 && b==0 && c == -19 && d ==16){
         console.log("Operaciones aritmeticas 1 bien :D");
         punteo = punteo + 5;
     }else {
@@ -158,12 +159,12 @@ Inicio();
  function  operacionesAvanzadas(){
     let aritmetica1 = 2;
     let aritmetica2 = -10;
-    console.log("Operaciones Aritmeticas 2: valor esperado> -20  41, resultado>");
+    console.log("Operaciones Aritmeticas 2: valor esperado> -20  -7, resultado>");
     let aritmetica3 = aritmetica2*aritmetica1;
     console.log(aritmetica3+"");
-    aritmetica1 = aritmetica3/aritmetica1+50 **2/50+50*2-100+100/100-0;
+    aritmetica1 = aritmetica3/aritmetica1+50*2/50+50*2-100+100/100-0;
     console.log(aritmetica1+"");
-    if (aritmetica3 == -20 && aritmetica1 == 41){
+    if (aritmetica3 == -20 && aritmetica1 == -7){
         console.log("Operaciones aritmeticas 2 bien :D");
         punteo = punteo + 5;
     }else {

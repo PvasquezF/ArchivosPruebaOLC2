@@ -142,11 +142,11 @@ function getDot(root: AVLNode): String {
         let ret = `${root.value}\n`;
         let tmp = getDot(root.left);
         if (tmp != null) {
-            ret += `${root.value} -> ${tmp}`;
+            ret = ret + `${root.value} -> ${tmp}`;
         }
         tmp = getDot(root.right);
         if (tmp != null) {
-            ret += `${root.value} -> ${tmp}`;
+            ret = ret + `${root.value} -> ${tmp}`;
         }
         return ret;
     }

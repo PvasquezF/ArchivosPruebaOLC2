@@ -99,7 +99,9 @@ function transpuesta(matrix1: number[][]): void{
 
 function minValue(matrix1 : number[][]) : number{   
 
-    let iAux = 0, jAux = 0, temp = matrix1[min][min];
+    let iAux = 0;
+    let jAux = 0;
+    let temp = matrix1[min][min];
     for(let i = 0; i < matrix1.length; i++){
         for(let j = 0; j < matrix1[i].length; j++){
             if(matrix1[i][j] < temp){
@@ -114,7 +116,9 @@ function minValue(matrix1 : number[][]) : number{
 }
 
 function maxValue(matrix1 : number[][]) : number{   
-    let iAux = 0, jAux = 0, temp = matrix1[min][min];
+    let iAux = 0;
+    let jAux = 0;
+    let temp = matrix1[min][min];
     for(let i = 0; i < matrix1.length; i++){
         for(let j = 0; j < matrix1[i].length; j++){
             if(matrix1[i][j] > temp){

@@ -86,7 +86,7 @@ function menu() {
     console.log(ackermann(3, 6)); //509
     console.log(par(13)); //0
     console.log(par(20)); //1
-    console.log(hofstaderMasculino(1238)); //75
+    console.log(hofstaderMasculino(1238)); //619
     console.log(factorial(10)); //362880 
     console.log(potencia(5, 4)); //625
     console.log(mcd(240,506)); //2

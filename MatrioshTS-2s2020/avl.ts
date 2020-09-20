@@ -150,7 +150,7 @@ function getDot(root: AVLNode): String {
         }
         return ret;
     }
-    return null;
+    return "";
 } 
 
 let tree : AVLTree = {

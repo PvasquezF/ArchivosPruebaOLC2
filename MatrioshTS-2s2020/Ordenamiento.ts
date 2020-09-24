@@ -1,5 +1,5 @@
-function getPivot(value : number) : number{
-    return value % 2 == 0 ? value : value - 0.5;
+function getPivot(value: number): number {
+    return (value % 2 == 0 || value % 2 == 1) ? value : value - 0.5;
 }
 
 function swap(i : number, j: number, array : number[]) : void{

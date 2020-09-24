@@ -2,10 +2,29 @@ function getPivot(value : number) : number{
     return value % 2 == 0 ? value : value - 0.5;
 }
 
+function getPivot2(value : number) : number{
+    return value % 2 == 0 ? value : value + 0.5;
+}
+
 function swap(i : number, j: number, array : number[]) : void{
     const temp = array[i];
     array[i] = array[j];
     array[j] = temp;
+}
+
+function partition(array: number[], low: number, high: number) : number{
+    let pivot = array[high];
+
+    let i: number = low-1;
+
+    for(let j=low; j <= high-1; j++){
+        if(array[j] < pivot){
+            i++;
+            swap(i, j, array);
+        }
+    }
+    swap(i+1, high, array);
+    return i+1;
 }
 
 function bubbleSort(array : number[]) : void{
@@ -21,7 +40,7 @@ function bubbleSort(array : number[]) : void{
 function quickSort(low: number, high: number, array : number[]) : void{
     let i = low;
     let j = high;
-    let pivot = array[getPivot((low + high) / 2)];
+    let pivot = array[getPivot2((low + high) / 2)];
 
     while(i <= j){
         while(array[i] < pivot){
@@ -43,6 +62,15 @@ function quickSort(low: number, high: number, array : number[]) : void{
     }
     if(i < high){
         quickSort(i, high, array);
+    }
+}
+
+function quickSort2(array: number[], low: number, high: number) : void{
+    if(low < high){
+        let pi: number = partition(array, low, high);
+
+        quickSort2(array, low, pi-1);
+        quickSort2(array, pi+1, high);
     }
 }
 
@@ -139,14 +167,18 @@ function menu() : void{
                 console.log('QuickSort: ', array);
                 break;
             case 2:
+                quickSort2(array, 0, array.length-1);
+                console.log('QuickSort 2: ', array);
+                break;
+            case 3:
                 insertionSort(array);
                 console.log('InsertionSort', array);
                 break;
-            case 3:
+            case 4:
                 selectionSort(array);
                 console.log('SelectionSort', array);
                 break;
-            case 4:
+            case 5:
                 mergeSort(array, 0, array.length - 1);
                 console.log('MergeSort: ' , array);
             default:

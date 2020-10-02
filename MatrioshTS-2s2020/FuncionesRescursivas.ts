@@ -9,10 +9,10 @@ function fibonacci(n: number): number {
 
 function hanoi(discos: number, origen: number, auxiliar: number, destino: number): void {
     if (discos == 1) {
-        console.log(`Mover disco de ${origen} a ${destino}`);
+        console.log("Mover disco de " + origen + " a " + destino);
     } else {
         hanoi(discos - 1, origen, destino, auxiliar);
-        console.log(`Mover disco de ${origen} a ${destino}`);
+        console.log("Mover disco de "+origen+ " a " + destino);
         hanoi(discos - 1, auxiliar, origen, destino);
     }
 }
@@ -83,10 +83,10 @@ function multiplicacion(a : number, b : number) : number{
 function menu() {
     console.log(fibonacci(13));  // 233
     hanoi(3, 1, 2, 3);
-    console.log(ackermann(3, 6)); //509
+    console.log(ackermann(3, 7)); //1021
     console.log(par(13)); //0
     console.log(par(20)); //1
-    console.log(hofstaderMasculino(1238)); //619
+    console.log(hofstaderMasculino(444)); //222
     console.log(factorial(10)); //362880 
     console.log(potencia(5, 4)); //625
     console.log(mcd(240,506)); //2

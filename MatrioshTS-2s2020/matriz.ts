@@ -83,7 +83,7 @@ function multiplicar(matrix1 : number[][], matrix2 : number[][], matrixR : numbe
 }
 
 function transpuesta(matrix1: number[][]): void{
-    const matrixAux : number[][] = [];
+    let matrixAux : number[][] = [];
     for(let i = 0; i < max; i++){
         matrixAux[i] = [];
         for(let j = 0; j < max; j++){

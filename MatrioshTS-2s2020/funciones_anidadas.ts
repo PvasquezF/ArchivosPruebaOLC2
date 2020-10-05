@@ -20,8 +20,8 @@ function ml_list_constructor(head:string, tail:string[]):string[]{
 
 console.log(ml_list_constructor("head", ["tail", "tail2"]));
 
-function contains(str:string, strs:Array<string>):boolean{
-    function imp(strs:Array<string>):boolean{
+function contains(str:string, strs:string[]):boolean{
+    function imp(strs:string[]):boolean{
         if(strs.length == 0){
             return false;
         }
@@ -39,8 +39,8 @@ function contains(str:string, strs:Array<string>):boolean{
     return imp(strs);
 }
 
-function replace(target:string, replacement:string, strs:Array<string>):string[]{
-    function imp(strs:Array<string>):string[]{
+function replace(target:string, replacement:string, strs:string[]):string[]{
+    function imp(strs:string[]):string[]{
         if(strs.length == 0){
             return [];
         }
@@ -58,8 +58,8 @@ function replace(target:string, replacement:string, strs:Array<string>):string[]
     return imp(strs);
 }
 
-function replaceAll(target:string, replacement:string, strs:Array<string>):string[]{
-    function imp(strs:Array<string>):string[]{
+function replaceAll(target:string, replacement:string, strs:string[]):string[]{
+    function imp(strs:string[]):string[]{
         if(strs.length == 0){
             return [];
         }
@@ -103,7 +103,7 @@ function replaceInListOfLists(target:string, replacement:string, lists_of_strs:s
     function imp(lists_of_strs:string[][]):string[][]{
 
         function helperReplaceAll(strs:string[]):string[]{
-            function imp(strs:Array<string>):string[]{
+            function imp(strs:string[]):string[]{
                 if(strs.length == 0){
                     return [];
                 }

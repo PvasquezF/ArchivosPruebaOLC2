@@ -21,7 +21,7 @@
     int2_ = 45;
     int2_ --; 
     String_3 = (int2_ > 77 || FALSE) + "," + (int2_ < 78 && TRUE) + "," + (int2_ + 10 <= int2_ || FALSE) + "," + (!!!!!!!!!!!! (int2_ + 10 >= int2_));
-    String_4 = (int2_ >= 77 || -1 < 100) + "," + (int2_ > 78 && 100 + 0);
+    String_4 = (int2_ >= 77 || -1 < 100) + "," + (int2_ > 78 && 100 > 0);
 
     console.log("Lógica 1" + " = " + String_3); //false,true,false,true
     console.log("Lógica 2" + " = " + String_4); //true,false

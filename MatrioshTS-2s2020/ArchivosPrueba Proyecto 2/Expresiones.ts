@@ -193,7 +193,7 @@ console.log("       MULTIPLICACION        ");
 console.log("-----------------------------");
 const mult:number = 50*2*3*10*5;
 console.log(mult);
-if(mult == 1500){
+if(mult == 15000){
     console.log("R// mult correcta");
 }else{
     console.log("R// mult incorrecta");
